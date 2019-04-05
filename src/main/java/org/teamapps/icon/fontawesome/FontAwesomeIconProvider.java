@@ -1,6 +1,6 @@
 /*-
  * ========================LICENSE_START=================================
- * TeamApps
+ * TeamApps Font Awesome Icon Provider
  * ---
  * Copyright (C) 2014 - 2019 TeamApps.org
  * ---
