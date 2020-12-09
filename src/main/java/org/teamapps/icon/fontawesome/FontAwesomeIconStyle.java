@@ -2,7 +2,7 @@
  * ========================LICENSE_START=================================
  * TeamApps Font Awesome Icon Provider
  * ---
- * Copyright (C) 2014 - 2019 TeamApps.org
+ * Copyright (C) 2014 - 2021 TeamApps.org
  * ---
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,30 +20,13 @@
 package org.teamapps.icon.fontawesome;
 
 import org.teamapps.common.format.Color;
-import org.teamapps.icons.api.IconStyle;
 
-public class SingleColorStyle implements IconStyle {
+public class FontAwesomeIconStyle {
 
-    private final String styleId;
     private final Color color;
 
-    public SingleColorStyle(String styleId, Color color) {
-        this.styleId = styleId;
+    public FontAwesomeIconStyle(Color color) {
         this.color = color;
-    }
-
-    public String getStyleId() {
-        return styleId;
-    }
-
-    @Override
-    public String getStyleName() {
-        return null;
-    }
-
-    @Override
-    public boolean canBeUsedAsSubIcon() {
-        return true;
     }
 
     public Color getColor() {
@@ -56,5 +39,13 @@ public class SingleColorStyle implements IconStyle {
         styledSvg += svg;
         styledSvg += "\n</g></svg>";
         return styledSvg;
+    }
+
+    public String encode() {
+        return color.toHtmlColorString();
+    }
+
+    public static FontAwesomeIconStyle decode(String string) {
+        return new FontAwesomeIconStyle(Color.fromHtmlString(string));
     }
 }

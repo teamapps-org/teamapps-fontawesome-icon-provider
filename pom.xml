@@ -36,7 +36,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven-assembly-plugin-version>3.0.0</maven-assembly-plugin-version>
         <slf4j-version>1.7.25</slf4j-version>
-        <teamapps.version>0.9.5</teamapps.version>
+        <teamapps.version>0.9.85</teamapps.version>
     </properties>
 
     <distributionManagement>
@@ -71,6 +71,13 @@
             <artifactId>teamapps-common</artifactId>
             <version>${teamapps.version}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.teamapps</groupId>
+            <artifactId>teamapps-server-jetty-embedded</artifactId>
+            <version>${teamapps.version}</version>
+            <scope>test</scope>
         </dependency>
 
         <dependency>

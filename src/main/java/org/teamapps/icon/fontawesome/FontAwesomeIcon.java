@@ -2,14 +2,14 @@
  * ========================LICENSE_START=================================
  * TeamApps Font Awesome Icon Provider
  * ---
- * Copyright (C) 2014 - 2019 TeamApps.org
+ * Copyright (C) 2014 - 2021 TeamApps.org
  * ---
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -19,1550 +19,1573 @@
  */
 package org.teamapps.icon.fontawesome;
 
-import org.teamapps.icons.api.Icon;
-import org.teamapps.icons.api.SimpleIcon;
-import org.teamapps.icons.api.StyledIcon;
+import org.teamapps.icons.Icon;
+import org.teamapps.icons.spi.IconLibrary;
 
-import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
-public enum FontAwesomeIcon implements SimpleIcon {
-	BRANDS_VIADEO_SQUARE("brands_viadeo-square.svg"),
-	BRANDS_SUPPLE("brands_supple.svg"),
-	BRANDS_BOOTSTRAP("brands_bootstrap.svg"),
-	BRANDS_WEIXIN("brands_weixin.svg"),
-	BRANDS_CONNECTDEVELOP("brands_connectdevelop.svg"),
-	BRANDS_MEDIUM("brands_medium.svg"),
-	BRANDS_IOXHOST("brands_ioxhost.svg"),
-	BRANDS_SNAPCHAT_GHOST("brands_snapchat-ghost.svg"),
-	BRANDS_FONTICONS("brands_fonticons.svg"),
-	BRANDS_FIGMA("brands_figma.svg"),
-	BRANDS_REDDIT_ALIEN("brands_reddit-alien.svg"),
-	BRANDS_ANGRYCREATIVE("brands_angrycreative.svg"),
-	BRANDS_IMDB("brands_imdb.svg"),
-	BRANDS_STEAM("brands_steam.svg"),
-	BRANDS_D_AND_D_BEYOND("brands_d-and-d-beyond.svg"),
-	BRANDS_FONT_AWESOME_LOGO_FULL("brands_font-awesome-logo-full.svg"),
-	BRANDS_TUMBLR("brands_tumblr.svg"),
-	BRANDS_TRIPADVISOR("brands_tripadvisor.svg"),
-	BRANDS_PENNY_ARCADE("brands_penny-arcade.svg"),
-	BRANDS_BANDCAMP("brands_bandcamp.svg"),
-	BRANDS_RED_RIVER("brands_red-river.svg"),
-	BRANDS_STRAVA("brands_strava.svg"),
-	BRANDS_DROPBOX("brands_dropbox.svg"),
-	BRANDS_MICROSOFT("brands_microsoft.svg"),
-	BRANDS_CREATIVE_COMMONS_ND("brands_creative-commons-nd.svg"),
-	BRANDS_DYALOG("brands_dyalog.svg"),
-	BRANDS_SQUARESPACE("brands_squarespace.svg"),
-	BRANDS_GOOGLE_PLUS_SQUARE("brands_google-plus-square.svg"),
-	BRANDS_WHATSAPP_SQUARE("brands_whatsapp-square.svg"),
-	BRANDS_ACCUSOFT("brands_accusoft.svg"),
-	BRANDS_LASTFM("brands_lastfm.svg"),
-	BRANDS_PHOENIX_SQUADRON("brands_phoenix-squadron.svg"),
-	BRANDS_YELP("brands_yelp.svg"),
-	BRANDS_DEVIANTART("brands_deviantart.svg"),
-	BRANDS_AIRBNB("brands_airbnb.svg"),
-	BRANDS_USPS("brands_usps.svg"),
-	BRANDS_ENVIRA("brands_envira.svg"),
-	BRANDS_FULCRUM("brands_fulcrum.svg"),
-	BRANDS_LINUX("brands_linux.svg"),
-	BRANDS_FOURSQUARE("brands_foursquare.svg"),
-	BRANDS_DRUPAL("brands_drupal.svg"),
-	BRANDS_CC_STRIPE("brands_cc-stripe.svg"),
-	BRANDS_DEV("brands_dev.svg"),
-	BRANDS_SPEAKAP("brands_speakap.svg"),
-	BRANDS_ANDROID("brands_android.svg"),
-	BRANDS_ADOBE("brands_adobe.svg"),
-	BRANDS_GIT_SQUARE("brands_git-square.svg"),
-	BRANDS_ETHEREUM("brands_ethereum.svg"),
-	BRANDS_SHIRTSINBULK("brands_shirtsinbulk.svg"),
-	BRANDS_BLACK_TIE("brands_black-tie.svg"),
-	BRANDS_ODNOKLASSNIKI("brands_odnoklassniki.svg"),
-	BRANDS_FONTICONS_FI("brands_fonticons-fi.svg"),
-	BRANDS_CC_AMEX("brands_cc-amex.svg"),
-	BRANDS_JS("brands_js.svg"),
-	BRANDS_GALACTIC_SENATE("brands_galactic-senate.svg"),
-	BRANDS_REACTEUROPE("brands_reacteurope.svg"),
-	BRANDS_OPENID("brands_openid.svg"),
-	BRANDS_GITLAB("brands_gitlab.svg"),
-	BRANDS_SOURCETREE("brands_sourcetree.svg"),
-	BRANDS_GG("brands_gg.svg"),
-	BRANDS_JOGET("brands_joget.svg"),
-	BRANDS_WEIBO("brands_weibo.svg"),
-	BRANDS_AWS("brands_aws.svg"),
-	BRANDS_SASS("brands_sass.svg"),
-	BRANDS_CC_PAYPAL("brands_cc-paypal.svg"),
-	BRANDS_SUPERPOWERS("brands_superpowers.svg"),
-	BRANDS_SELLCAST("brands_sellcast.svg"),
-	BRANDS_JAVA("brands_java.svg"),
-	BRANDS_TENCENT_WEIBO("brands_tencent-weibo.svg"),
-	BRANDS_TRADE_FEDERATION("brands_trade-federation.svg"),
-	BRANDS_VIBER("brands_viber.svg"),
-	BRANDS_ELLO("brands_ello.svg"),
-	BRANDS_WIX("brands_wix.svg"),
-	BRANDS_MIZUNI("brands_mizuni.svg"),
-	BRANDS_LEANPUB("brands_leanpub.svg"),
-	BRANDS_BITBUCKET("brands_bitbucket.svg"),
-	BRANDS_PAGELINES("brands_pagelines.svg"),
-	BRANDS_CREATIVE_COMMONS("brands_creative-commons.svg"),
-	BRANDS_GITHUB("brands_github.svg"),
-	BRANDS_VIACOIN("brands_viacoin.svg"),
-	BRANDS_FREEBSD("brands_freebsd.svg"),
-	BRANDS_REBEL("brands_rebel.svg"),
-	BRANDS_FEDEX("brands_fedex.svg"),
-	BRANDS_USB("brands_usb.svg"),
-	BRANDS_EMPIRE("brands_empire.svg"),
-	BRANDS_SIMPLYBUILT("brands_simplybuilt.svg"),
-	BRANDS_GOOGLE_DRIVE("brands_google-drive.svg"),
-	BRANDS_ETSY("brands_etsy.svg"),
-	BRANDS_BIMOBJECT("brands_bimobject.svg"),
-	BRANDS_APP_STORE_IOS("brands_app-store-ios.svg"),
-	BRANDS_GRIPFIRE("brands_gripfire.svg"),
-	BRANDS_500PX("brands_500px.svg"),
-	BRANDS_SPEAKER_DECK("brands_speaker-deck.svg"),
-	BRANDS_DESKPRO("brands_deskpro.svg"),
-	BRANDS_CRITICAL_ROLE("brands_critical-role.svg"),
-	BRANDS_VIMEO_V("brands_vimeo-v.svg"),
-	BRANDS_STRIPE_S("brands_stripe-s.svg"),
-	BRANDS_KEYBASE("brands_keybase.svg"),
-	BRANDS_YANDEX_INTERNATIONAL("brands_yandex-international.svg"),
-	BRANDS_JOOMLA("brands_joomla.svg"),
-	BRANDS_GOOGLE_PLAY("brands_google-play.svg"),
-	BRANDS_UNIREGISTRY("brands_uniregistry.svg"),
-	BRANDS_D_AND_D("brands_d-and-d.svg"),
-	BRANDS_KAGGLE("brands_kaggle.svg"),
-	BRANDS_HUBSPOT("brands_hubspot.svg"),
-	BRANDS_CONFLUENCE("brands_confluence.svg"),
-	BRANDS_YOUTUBE_SQUARE("brands_youtube-square.svg"),
-	BRANDS_SERVICESTACK("brands_servicestack.svg"),
-	BRANDS_REDDIT_SQUARE("brands_reddit-square.svg"),
-	BRANDS_NPM("brands_npm.svg"),
-	BRANDS_CREATIVE_COMMONS_NC("brands_creative-commons-nc.svg"),
-	BRANDS_GALACTIC_REPUBLIC("brands_galactic-republic.svg"),
-	BRANDS_RASPBERRY_PI("brands_raspberry-pi.svg"),
-	BRANDS_TUMBLR_SQUARE("brands_tumblr-square.svg"),
-	BRANDS_MASTODON("brands_mastodon.svg"),
-	BRANDS_ANGULAR("brands_angular.svg"),
-	BRANDS_UNTAPPD("brands_untappd.svg"),
-	BRANDS_APPER("brands_apper.svg"),
-	BRANDS_BEHANCE_SQUARE("brands_behance-square.svg"),
-	BRANDS_VK("brands_vk.svg"),
-	BRANDS_VIMEO("brands_vimeo.svg"),
-	BRANDS_DISCOURSE("brands_discourse.svg"),
-	BRANDS_HOTJAR("brands_hotjar.svg"),
-	BRANDS_SYMFONY("brands_symfony.svg"),
-	BRANDS_SLACK_HASH("brands_slack-hash.svg"),
-	BRANDS_SKYATLAS("brands_skyatlas.svg"),
-	BRANDS_HACKER_NEWS("brands_hacker-news.svg"),
-	BRANDS_INSTAGRAM("brands_instagram.svg"),
-	BRANDS_Y_COMBINATOR("brands_y-combinator.svg"),
-	BRANDS_MENDELEY("brands_mendeley.svg"),
-	BRANDS_FORT_AWESOME_ALT("brands_fort-awesome-alt.svg"),
-	BRANDS_R_PROJECT("brands_r-project.svg"),
-	BRANDS_EDGE("brands_edge.svg"),
-	BRANDS_YAMMER("brands_yammer.svg"),
-	BRANDS_FLY("brands_fly.svg"),
-	BRANDS_SAFARI("brands_safari.svg"),
-	BRANDS_PIED_PIPER_HAT("brands_pied-piper-hat.svg"),
-	BRANDS_AUDIBLE("brands_audible.svg"),
-	BRANDS_YOAST("brands_yoast.svg"),
-	BRANDS_FORT_AWESOME("brands_fort-awesome.svg"),
-	BRANDS_PYTHON("brands_python.svg"),
-	BRANDS_CC_APPLE_PAY("brands_cc-apple-pay.svg"),
-	BRANDS_DOCKER("brands_docker.svg"),
-	BRANDS_GIT("brands_git.svg"),
-	BRANDS_BLOGGER("brands_blogger.svg"),
-	BRANDS_ITCH_IO("brands_itch-io.svg"),
-	BRANDS_CREATIVE_COMMONS_NC_EU("brands_creative-commons-nc-eu.svg"),
-	BRANDS_SCHLIX("brands_schlix.svg"),
-	BRANDS_MAILCHIMP("brands_mailchimp.svg"),
-	BRANDS_NEOS("brands_neos.svg"),
-	BRANDS_CREATIVE_COMMONS_PD("brands_creative-commons-pd.svg"),
-	BRANDS_PINTEREST_P("brands_pinterest-p.svg"),
-	BRANDS_DIGG("brands_digg.svg"),
-	BRANDS_ACQUISITIONS_INCORPORATED("brands_acquisitions-incorporated.svg"),
-	BRANDS_BITCOIN("brands_bitcoin.svg"),
-	BRANDS_WHMCS("brands_whmcs.svg"),
-	BRANDS_DELICIOUS("brands_delicious.svg"),
-	BRANDS_HACKERRANK("brands_hackerrank.svg"),
-	BRANDS_VIMEO_SQUARE("brands_vimeo-square.svg"),
-	BRANDS_TELEGRAM("brands_telegram.svg"),
-	BRANDS_CC_DISCOVER("brands_cc-discover.svg"),
-	BRANDS_CENTERCODE("brands_centercode.svg"),
-	BRANDS_ERLANG("brands_erlang.svg"),
-	BRANDS_MEDRT("brands_medrt.svg"),
-	BRANDS_SALESFORCE("brands_salesforce.svg"),
-	BRANDS_MEETUP("brands_meetup.svg"),
-	BRANDS_WIZARDS_OF_THE_COAST("brands_wizards-of-the-coast.svg"),
-	BRANDS_MARKDOWN("brands_markdown.svg"),
-	BRANDS_GOODREADS("brands_goodreads.svg"),
-	BRANDS_DRIBBBLE_SQUARE("brands_dribbble-square.svg"),
-	BRANDS_CREATIVE_COMMONS_SAMPLING_PLUS("brands_creative-commons-sampling-plus.svg"),
-	BRANDS_INVISION("brands_invision.svg"),
-	BRANDS_MIX("brands_mix.svg"),
-	BRANDS_GRATIPAY("brands_gratipay.svg"),
-	BRANDS_MAGENTO("brands_magento.svg"),
-	BRANDS_BLUETOOTH("brands_bluetooth.svg"),
-	BRANDS_HOUZZ("brands_houzz.svg"),
-	BRANDS_EXPEDITEDSSL("brands_expeditedssl.svg"),
-	BRANDS_THE_RED_YETI("brands_the-red-yeti.svg"),
-	BRANDS_CANADIAN_MAPLE_LEAF("brands_canadian-maple-leaf.svg"),
-	BRANDS_SITH("brands_sith.svg"),
-	BRANDS_ALGOLIA("brands_algolia.svg"),
-	BRANDS_USSUNNAH("brands_ussunnah.svg"),
-	BRANDS_SELLSY("brands_sellsy.svg"),
-	BRANDS_JIRA("brands_jira.svg"),
-	BRANDS_SPOTIFY("brands_spotify.svg"),
-	BRANDS_INTERCOM("brands_intercom.svg"),
-	BRANDS_WOLF_PACK_BATTALION("brands_wolf-pack-battalion.svg"),
-	BRANDS_FLIPBOARD("brands_flipboard.svg"),
-	BRANDS_GOOGLE_WALLET("brands_google-wallet.svg"),
-	BRANDS_SHOPWARE("brands_shopware.svg"),
-	BRANDS_PHOENIX_FRAMEWORK("brands_phoenix-framework.svg"),
-	BRANDS_KICKSTARTER_K("brands_kickstarter-k.svg"),
-	BRANDS_CC_JCB("brands_cc-jcb.svg"),
-	BRANDS_RESEARCHGATE("brands_researchgate.svg"),
-	BRANDS_LYFT("brands_lyft.svg"),
-	BRANDS_WPRESSR("brands_wpressr.svg"),
-	BRANDS_LASTFM_SQUARE("brands_lastfm-square.svg"),
-	BRANDS_PERISCOPE("brands_periscope.svg"),
-	BRANDS_MODX("brands_modx.svg"),
-	BRANDS_KICKSTARTER("brands_kickstarter.svg"),
-	BRANDS_SLIDESHARE("brands_slideshare.svg"),
-	BRANDS_SNAPCHAT("brands_snapchat.svg"),
-	BRANDS_FONT_AWESOME("brands_font-awesome.svg"),
-	BRANDS_README("brands_readme.svg"),
-	BRANDS_CREATIVE_COMMONS_NC_JP("brands_creative-commons-nc-jp.svg"),
-	BRANDS_THEMEISLE("brands_themeisle.svg"),
-	BRANDS_HTML5("brands_html5.svg"),
-	BRANDS_REPLYD("brands_replyd.svg"),
-	BRANDS_CUTTLEFISH("brands_cuttlefish.svg"),
-	BRANDS_ROCKRMS("brands_rockrms.svg"),
-	BRANDS_RAVELRY("brands_ravelry.svg"),
-	BRANDS_QUORA("brands_quora.svg"),
-	BRANDS_FONT_AWESOME_ALT("brands_font-awesome-alt.svg"),
-	BRANDS_MONERO("brands_monero.svg"),
-	BRANDS_HIRE_A_HELPER("brands_hire-a-helper.svg"),
-	BRANDS_GITHUB_ALT("brands_github-alt.svg"),
-	BRANDS_CREATIVE_COMMONS_SHARE("brands_creative-commons-share.svg"),
-	BRANDS_YARN("brands_yarn.svg"),
-	BRANDS_CC_VISA("brands_cc-visa.svg"),
-	BRANDS_DOCHUB("brands_dochub.svg"),
-	BRANDS_GITHUB_SQUARE("brands_github-square.svg"),
-	BRANDS_LARAVEL("brands_laravel.svg"),
-	BRANDS_DIGITAL_OCEAN("brands_digital-ocean.svg"),
-	BRANDS_XING_SQUARE("brands_xing-square.svg"),
-	BRANDS_EARLYBIRDS("brands_earlybirds.svg"),
-	BRANDS_CENTOS("brands_centos.svg"),
-	BRANDS_BLUETOOTH_B("brands_bluetooth-b.svg"),
-	BRANDS_TEAMSPEAK("brands_teamspeak.svg"),
-	BRANDS_WPEXPLORER("brands_wpexplorer.svg"),
-	BRANDS_FIRST_ORDER_ALT("brands_first-order-alt.svg"),
-	BRANDS_UBUNTU("brands_ubuntu.svg"),
-	BRANDS_OPENCART("brands_opencart.svg"),
-	BRANDS_PIED_PIPER("brands_pied-piper.svg"),
-	BRANDS_PAYPAL("brands_paypal.svg"),
-	BRANDS_SUSE("brands_suse.svg"),
-	BRANDS_WPBEGINNER("brands_wpbeginner.svg"),
-	BRANDS_BLOGGER_B("brands_blogger-b.svg"),
-	BRANDS_ROCKETCHAT("brands_rocketchat.svg"),
-	BRANDS_DRAFT2DIGITAL("brands_draft2digital.svg"),
-	BRANDS_PLAYSTATION("brands_playstation.svg"),
-	BRANDS_FACEBOOK("brands_facebook.svg"),
-	BRANDS_AMAZON_PAY("brands_amazon-pay.svg"),
-	BRANDS_NINTENDO_SWITCH("brands_nintendo-switch.svg"),
-	BRANDS_AMAZON("brands_amazon.svg"),
-	BRANDS_QUINSCAPE("brands_quinscape.svg"),
-	BRANDS_FREE_CODE_CAMP("brands_free-code-camp.svg"),
-	BRANDS_VINE("brands_vine.svg"),
-	BRANDS_PINTEREST("brands_pinterest.svg"),
-	BRANDS_CREATIVE_COMMONS_SA("brands_creative-commons-sa.svg"),
-	BRANDS_CREATIVE_COMMONS_PD_ALT("brands_creative-commons-pd-alt.svg"),
-	BRANDS_STACK_OVERFLOW("brands_stack-overflow.svg"),
-	BRANDS_PAGE4("brands_page4.svg"),
-	BRANDS_OSI("brands_osi.svg"),
-	BRANDS_YANDEX("brands_yandex.svg"),
-	BRANDS_WHATSAPP("brands_whatsapp.svg"),
-	BRANDS_GOOGLE("brands_google.svg"),
-	BRANDS_CHROMECAST("brands_chromecast.svg"),
-	BRANDS_LINE("brands_line.svg"),
-	BRANDS_BATTLE_NET("brands_battle-net.svg"),
-	BRANDS_AFFILIATETHEME("brands_affiliatetheme.svg"),
-	BRANDS_ATLASSIAN("brands_atlassian.svg"),
-	BRANDS_AVIATO("brands_aviato.svg"),
-	BRANDS_BITY("brands_bity.svg"),
-	BRANDS_PHP("brands_php.svg"),
-	BRANDS_STUMBLEUPON_CIRCLE("brands_stumbleupon-circle.svg"),
-	BRANDS_STRIPE("brands_stripe.svg"),
-	BRANDS_JEDI_ORDER("brands_jedi-order.svg"),
-	BRANDS_THINK_PEAKS("brands_think-peaks.svg"),
-	BRANDS_BUROMOBELEXPERTE("brands_buromobelexperte.svg"),
-	BRANDS_PHABRICATOR("brands_phabricator.svg"),
-	BRANDS_APPLE_PAY("brands_apple-pay.svg"),
-	BRANDS_ARTSTATION("brands_artstation.svg"),
-	BRANDS_FONT_AWESOME_FLAG("brands_font-awesome-flag.svg"),
-	BRANDS_SCRIBD("brands_scribd.svg"),
-	BRANDS_STACK_EXCHANGE("brands_stack-exchange.svg"),
-	BRANDS_FEDORA("brands_fedora.svg"),
-	BRANDS_JENKINS("brands_jenkins.svg"),
-	BRANDS_STUDIOVINARI("brands_studiovinari.svg"),
-	BRANDS_GLIDE("brands_glide.svg"),
-	BRANDS_ADN("brands_adn.svg"),
-	BRANDS_CSS3_ALT("brands_css3-alt.svg"),
-	BRANDS_XING("brands_xing.svg"),
-	BRANDS_MEDAPPS("brands_medapps.svg"),
-	BRANDS_REDHAT("brands_redhat.svg"),
-	BRANDS_FANTASY_FLIGHT_GAMES("brands_fantasy-flight-games.svg"),
-	BRANDS_FACEBOOK_F("brands_facebook-f.svg"),
-	BRANDS_HIPS("brands_hips.svg"),
-	BRANDS_TWITCH("brands_twitch.svg"),
-	BRANDS_CC_DINERS_CLUB("brands_cc-diners-club.svg"),
-	BRANDS_WINDOWS("brands_windows.svg"),
-	BRANDS_REV("brands_rev.svg"),
-	BRANDS_BTC("brands_btc.svg"),
-	BRANDS_CREATIVE_COMMONS_ZERO("brands_creative-commons-zero.svg"),
-	BRANDS_ELEMENTOR("brands_elementor.svg"),
-	BRANDS_YOUTUBE("brands_youtube.svg"),
-	BRANDS_ACCESSIBLE_ICON("brands_accessible-icon.svg"),
-	BRANDS_GG_CIRCLE("brands_gg-circle.svg"),
-	BRANDS_APP_STORE("brands_app-store.svg"),
-	BRANDS_CODIEPIE("brands_codiepie.svg"),
-	BRANDS_STUMBLEUPON("brands_stumbleupon.svg"),
-	BRANDS_NUTRITIONIX("brands_nutritionix.svg"),
-	BRANDS_LINKEDIN_IN("brands_linkedin-in.svg"),
-	BRANDS_JSFIDDLE("brands_jsfiddle.svg"),
-	BRANDS_YAHOO("brands_yahoo.svg"),
-	BRANDS_GRAV("brands_grav.svg"),
-	BRANDS_STICKER_MULE("brands_sticker-mule.svg"),
-	BRANDS_GOODREADS_G("brands_goodreads-g.svg"),
-	BRANDS_UBER("brands_uber.svg"),
-	BRANDS_SKETCH("brands_sketch.svg"),
-	BRANDS_CREATIVE_COMMONS_REMIX("brands_creative-commons-remix.svg"),
-	BRANDS_ITUNES_NOTE("brands_itunes-note.svg"),
-	BRANDS_GULP("brands_gulp.svg"),
-	BRANDS_KEYCDN("brands_keycdn.svg"),
-	BRANDS_DIASPORA("brands_diaspora.svg"),
-	BRANDS_REDDIT("brands_reddit.svg"),
-	BRANDS_ALIPAY("brands_alipay.svg"),
-	BRANDS_CLOUDSCALE("brands_cloudscale.svg"),
-	BRANDS_BUYSELLADS("brands_buysellads.svg"),
-	BRANDS_STEAM_SYMBOL("brands_steam-symbol.svg"),
-	BRANDS_ASYMMETRIK("brands_asymmetrik.svg"),
-	BRANDS_ANGELLIST("brands_angellist.svg"),
-	BRANDS_WPFORMS("brands_wpforms.svg"),
-	BRANDS_LINODE("brands_linode.svg"),
-	BRANDS_JS_SQUARE("brands_js-square.svg"),
-	BRANDS_AVIANEX("brands_avianex.svg"),
-	BRANDS_EVERNOTE("brands_evernote.svg"),
-	BRANDS_CODEPEN("brands_codepen.svg"),
-	BRANDS_DRIBBBLE("brands_dribbble.svg"),
-	BRANDS_CC_AMAZON_PAY("brands_cc-amazon-pay.svg"),
-	BRANDS_XBOX("brands_xbox.svg"),
-	BRANDS_TRELLO("brands_trello.svg"),
-	BRANDS_ADVERSAL("brands_adversal.svg"),
-	BRANDS_DHL("brands_dhl.svg"),
-	BRANDS_HORNBILL("brands_hornbill.svg"),
-	BRANDS_THEMECO("brands_themeco.svg"),
-	BRANDS_GOOGLE_PLUS("brands_google-plus.svg"),
-	BRANDS_CONTAO("brands_contao.svg"),
-	BRANDS_LINKEDIN("brands_linkedin.svg"),
-	BRANDS_MANDALORIAN("brands_mandalorian.svg"),
-	BRANDS_OLD_REPUBLIC("brands_old-republic.svg"),
-	BRANDS_QQ("brands_qq.svg"),
-	BRANDS_VAADIN("brands_vaadin.svg"),
-	BRANDS_UIKIT("brands_uikit.svg"),
-	BRANDS_REACT("brands_react.svg"),
-	BRANDS_CREATIVE_COMMONS_BY("brands_creative-commons-by.svg"),
-	BRANDS_OPTIN_MONSTER("brands_optin-monster.svg"),
-	BRANDS_TWITTER("brands_twitter.svg"),
-	BRANDS_LESS("brands_less.svg"),
-	BRANDS_PATREON("brands_patreon.svg"),
-	BRANDS_DISCORD("brands_discord.svg"),
-	BRANDS_HACKER_NEWS_SQUARE("brands_hacker-news-square.svg"),
-	BRANDS_OPERA("brands_opera.svg"),
-	BRANDS_GITTER("brands_gitter.svg"),
-	BRANDS_BUFFER("brands_buffer.svg"),
-	BRANDS_CSS3("brands_css3.svg"),
-	BRANDS_RENREN("brands_renren.svg"),
-	BRANDS_NS8("brands_ns8.svg"),
-	BRANDS_SISTRIX("brands_sistrix.svg"),
-	BRANDS_VUEJS("brands_vuejs.svg"),
-	BRANDS_FACEBOOK_SQUARE("brands_facebook-square.svg"),
-	BRANDS_MIXCLOUD("brands_mixcloud.svg"),
-	BRANDS_FIRSTDRAFT("brands_firstdraft.svg"),
-	BRANDS_SLACK("brands_slack.svg"),
-	BRANDS_ZHIHU("brands_zhihu.svg"),
-	BRANDS_SOUNDCLOUD("brands_soundcloud.svg"),
-	BRANDS_PRODUCT_HUNT("brands_product-hunt.svg"),
-	BRANDS_WIKIPEDIA_W("brands_wikipedia-w.svg"),
-	BRANDS_PIED_PIPER_PP("brands_pied-piper-pp.svg"),
-	BRANDS_CREATIVE_COMMONS_SAMPLING("brands_creative-commons-sampling.svg"),
-	BRANDS_HOOLI("brands_hooli.svg"),
-	BRANDS_FIRST_ORDER("brands_first-order.svg"),
-	BRANDS_GLIDE_G("brands_glide-g.svg"),
-	BRANDS_EMBER("brands_ember.svg"),
-	BRANDS_GITKRAKEN("brands_gitkraken.svg"),
-	BRANDS_STEAM_SQUARE("brands_steam-square.svg"),
-	BRANDS_SKYPE("brands_skype.svg"),
-	BRANDS_GOFORE("brands_gofore.svg"),
-	BRANDS_EBAY("brands_ebay.svg"),
-	BRANDS_CPANEL("brands_cpanel.svg"),
-	BRANDS_WORDPRESS("brands_wordpress.svg"),
-	BRANDS_KORVUE("brands_korvue.svg"),
-	BRANDS_CLOUDVERSIFY("brands_cloudversify.svg"),
-	BRANDS_GRUNT("brands_grunt.svg"),
-	BRANDS_VIADEO("brands_viadeo.svg"),
-	BRANDS_WORDPRESS_SIMPLE("brands_wordpress-simple.svg"),
-	BRANDS_BLACKBERRY("brands_blackberry.svg"),
-	BRANDS_FACEBOOK_MESSENGER("brands_facebook-messenger.svg"),
-	BRANDS_PUSHED("brands_pushed.svg"),
-	BRANDS_AMILIA("brands_amilia.svg"),
-	BRANDS_PIED_PIPER_ALT("brands_pied-piper-alt.svg"),
-	BRANDS_CLOUDSMITH("brands_cloudsmith.svg"),
-	BRANDS_CHROME("brands_chrome.svg"),
-	BRANDS_FORUMBEE("brands_forumbee.svg"),
-	BRANDS_SNAPCHAT_SQUARE("brands_snapchat-square.svg"),
-	BRANDS_NODE_JS("brands_node-js.svg"),
-	BRANDS_MAXCDN("brands_maxcdn.svg"),
-	BRANDS_APPLE("brands_apple.svg"),
-	BRANDS_NAPSTER("brands_napster.svg"),
-	BRANDS_NIMBLR("brands_nimblr.svg"),
-	BRANDS_VNV("brands_vnv.svg"),
-	BRANDS_WAZE("brands_waze.svg"),
-	BRANDS_TELEGRAM_PLANE("brands_telegram-plane.svg"),
-	BRANDS_ODNOKLASSNIKI_SQUARE("brands_odnoklassniki-square.svg"),
-	BRANDS_GOOGLE_PLUS_G("brands_google-plus-g.svg"),
-	BRANDS_PALFED("brands_palfed.svg"),
-	BRANDS_WEEBLY("brands_weebly.svg"),
-	BRANDS_AUTOPREFIXER("brands_autoprefixer.svg"),
-	BRANDS_SEARCHENGIN("brands_searchengin.svg"),
-	BRANDS_PINTEREST_SQUARE("brands_pinterest-square.svg"),
-	BRANDS_MEGAPORT("brands_megaport.svg"),
-	BRANDS_TYPO3("brands_typo3.svg"),
-	BRANDS_DEPLOYDOG("brands_deploydog.svg"),
-	BRANDS_NODE("brands_node.svg"),
-	BRANDS_CC_MASTERCARD("brands_cc-mastercard.svg"),
-	BRANDS_TWITTER_SQUARE("brands_twitter-square.svg"),
-	BRANDS_DASHCUBE("brands_dashcube.svg"),
-	BRANDS_GET_POCKET("brands_get-pocket.svg"),
-	BRANDS_UPS("brands_ups.svg"),
-	BRANDS_MEDIUM_M("brands_medium-m.svg"),
-	BRANDS_BEHANCE("brands_behance.svg"),
-	BRANDS_RESOLVING("brands_resolving.svg"),
-	BRANDS_INTERNET_EXPLORER("brands_internet-explorer.svg"),
-	BRANDS_STAYLINKED("brands_staylinked.svg"),
-	BRANDS_FIREFOX("brands_firefox.svg"),
-	BRANDS_FLICKR("brands_flickr.svg"),
-	BRANDS_ITUNES("brands_itunes.svg"),
-	SOLID_COLUMNS("solid_columns.svg"),
-	SOLID_COMMENT_DOTS("solid_comment-dots.svg"),
-	SOLID_PASSPORT("solid_passport.svg"),
-	SOLID_SOCKS("solid_socks.svg"),
-	SOLID_UNDERLINE("solid_underline.svg"),
-	SOLID_TINT_SLASH("solid_tint-slash.svg"),
-	SOLID_UNDO_ALT("solid_undo-alt.svg"),
-	SOLID_CLOUD_MEATBALL("solid_cloud-meatball.svg"),
-	SOLID_CARET_DOWN("solid_caret-down.svg"),
-	SOLID_DICE_THREE("solid_dice-three.svg"),
-	SOLID_TOGGLE_ON("solid_toggle-on.svg"),
-	SOLID_CLONE("solid_clone.svg"),
-	SOLID_SEARCH("solid_search.svg"),
-	SOLID_GRIMACE("solid_grimace.svg"),
-	SOLID_ANGLE_DOUBLE_LEFT("solid_angle-double-left.svg"),
-	SOLID_CROW("solid_crow.svg"),
-	SOLID_PALLET("solid_pallet.svg"),
-	SOLID_ERASER("solid_eraser.svg"),
-	SOLID_LIST_UL("solid_list-ul.svg"),
-	SOLID_CHART_LINE("solid_chart-line.svg"),
-	SOLID_RECEIPT("solid_receipt.svg"),
-	SOLID_BRIEFCASE_MEDICAL("solid_briefcase-medical.svg"),
-	SOLID_PAUSE_CIRCLE("solid_pause-circle.svg"),
-	SOLID_CHECK_SQUARE("solid_check-square.svg"),
-	SOLID_HAND_HOLDING_USD("solid_hand-holding-usd.svg"),
-	SOLID_CASH_REGISTER("solid_cash-register.svg"),
-	SOLID_ARROW_DOWN("solid_arrow-down.svg"),
-	SOLID_GRIN_SQUINT("solid_grin-squint.svg"),
-	SOLID_CAMPGROUND("solid_campground.svg"),
-	SOLID_AMERICAN_SIGN_LANGUAGE_INTERPRETING("solid_american-sign-language-interpreting.svg"),
-	SOLID_POO("solid_poo.svg"),
-	SOLID_SEARCH_MINUS("solid_search-minus.svg"),
-	SOLID_GHOST("solid_ghost.svg"),
-	SOLID_BUSINESS_TIME("solid_business-time.svg"),
-	SOLID_LIST("solid_list.svg"),
-	SOLID_BROADCAST_TOWER("solid_broadcast-tower.svg"),
-	SOLID_SIGN("solid_sign.svg"),
-	SOLID_LONG_ARROW_ALT_RIGHT("solid_long-arrow-alt-right.svg"),
-	SOLID_VOLUME_OFF("solid_volume-off.svg"),
-	SOLID_STREAM("solid_stream.svg"),
-	SOLID_PEN_ALT("solid_pen-alt.svg"),
-	SOLID_NEUTER("solid_neuter.svg"),
-	SOLID_FIST_RAISED("solid_fist-raised.svg"),
-	SOLID_FILE_EXCEL("solid_file-excel.svg"),
-	SOLID_PRESCRIPTION("solid_prescription.svg"),
-	SOLID_BED("solid_bed.svg"),
-	SOLID_SORT_NUMERIC_UP("solid_sort-numeric-up.svg"),
-	SOLID_DUMPSTER("solid_dumpster.svg"),
-	SOLID_FONT_AWESOME_LOGO_FULL("solid_font-awesome-logo-full.svg"),
-	SOLID_WIND("solid_wind.svg"),
-	SOLID_SKIING_NORDIC("solid_skiing-nordic.svg"),
-	SOLID_SUBSCRIPT("solid_subscript.svg"),
-	SOLID_DRUM_STEELPAN("solid_drum-steelpan.svg"),
-	SOLID_USER_COG("solid_user-cog.svg"),
-	SOLID_COG("solid_cog.svg"),
-	SOLID_PLAY_CIRCLE("solid_play-circle.svg"),
-	SOLID_LIST_ALT("solid_list-alt.svg"),
-	SOLID_MOBILE_ALT("solid_mobile-alt.svg"),
-	SOLID_PRESCRIPTION_BOTTLE_ALT("solid_prescription-bottle-alt.svg"),
-	SOLID_POLL_H("solid_poll-h.svg"),
-	SOLID_LUGGAGE_CART("solid_luggage-cart.svg"),
-	SOLID_CLINIC_MEDICAL("solid_clinic-medical.svg"),
-	SOLID_TOOLS("solid_tools.svg"),
-	SOLID_HRYVNIA("solid_hryvnia.svg"),
-	SOLID_LONG_ARROW_ALT_LEFT("solid_long-arrow-alt-left.svg"),
-	SOLID_MITTEN("solid_mitten.svg"),
-	SOLID_PEN_NIB("solid_pen-nib.svg"),
-	SOLID_HOURGLASS("solid_hourglass.svg"),
-	SOLID_ARROW_ALT_CIRCLE_LEFT("solid_arrow-alt-circle-left.svg"),
-	SOLID_GRIN_HEARTS("solid_grin-hearts.svg"),
-	SOLID_BOXES("solid_boxes.svg"),
-	SOLID_DOT_CIRCLE("solid_dot-circle.svg"),
-	SOLID_CHESS_ROOK("solid_chess-rook.svg"),
-	SOLID_DICE_ONE("solid_dice-one.svg"),
-	SOLID_REPLY("solid_reply.svg"),
-	SOLID_HAMBURGER("solid_hamburger.svg"),
-	SOLID_GRIP_LINES("solid_grip-lines.svg"),
-	SOLID_CAMERA_RETRO("solid_camera-retro.svg"),
-	SOLID_TOOLBOX("solid_toolbox.svg"),
-	SOLID_ENVELOPE_OPEN_TEXT("solid_envelope-open-text.svg"),
-	SOLID_QURAN("solid_quran.svg"),
-	SOLID_THERMOMETER_QUARTER("solid_thermometer-quarter.svg"),
-	SOLID_BEER("solid_beer.svg"),
-	SOLID_ANKH("solid_ankh.svg"),
-	SOLID_CHESS_KNIGHT("solid_chess-knight.svg"),
-	SOLID_ID_CARD_ALT("solid_id-card-alt.svg"),
-	SOLID_COMMENTS_DOLLAR("solid_comments-dollar.svg"),
-	SOLID_SPRAY_CAN("solid_spray-can.svg"),
-	SOLID_USER_SECRET("solid_user-secret.svg"),
-	SOLID_UTENSIL_SPOON("solid_utensil-spoon.svg"),
-	SOLID_STAR_HALF_ALT("solid_star-half-alt.svg"),
-	SOLID_BASKETBALL_BALL("solid_basketball-ball.svg"),
-	SOLID_UMBRELLA("solid_umbrella.svg"),
-	SOLID_USER("solid_user.svg"),
-	SOLID_BLIND("solid_blind.svg"),
-	SOLID_VOLUME_DOWN("solid_volume-down.svg"),
-	SOLID_CART_PLUS("solid_cart-plus.svg"),
-	SOLID_ID_BADGE("solid_id-badge.svg"),
-	SOLID_SMILE_WINK("solid_smile-wink.svg"),
-	SOLID_NETWORK_WIRED("solid_network-wired.svg"),
-	SOLID_CANNABIS("solid_cannabis.svg"),
-	SOLID_TAPE("solid_tape.svg"),
-	SOLID_HAND_HOLDING("solid_hand-holding.svg"),
-	SOLID_LAPTOP_CODE("solid_laptop-code.svg"),
-	SOLID_CIRCLE("solid_circle.svg"),
-	SOLID_TEMPERATURE_HIGH("solid_temperature-high.svg"),
-	SOLID_FOOTBALL_BALL("solid_football-ball.svg"),
-	SOLID_HIPPO("solid_hippo.svg"),
-	SOLID_GRIN_TONGUE_WINK("solid_grin-tongue-wink.svg"),
-	SOLID_ENVELOPE_SQUARE("solid_envelope-square.svg"),
-	SOLID_HOME("solid_home.svg"),
-	SOLID_COPYRIGHT("solid_copyright.svg"),
-	SOLID_BATTERY_HALF("solid_battery-half.svg"),
-	SOLID_MUSIC("solid_music.svg"),
-	SOLID_WAVE_SQUARE("solid_wave-square.svg"),
-	SOLID_TH_LIST("solid_th-list.svg"),
-	SOLID_CAR_CRASH("solid_car-crash.svg"),
-	SOLID_QUOTE_RIGHT("solid_quote-right.svg"),
-	SOLID_LOW_VISION("solid_low-vision.svg"),
-	SOLID_MAP_MARKED_ALT("solid_map-marked-alt.svg"),
-	SOLID_USERS_COG("solid_users-cog.svg"),
-	SOLID_TASKS("solid_tasks.svg"),
-	SOLID_IGLOO("solid_igloo.svg"),
-	SOLID_RECYCLE("solid_recycle.svg"),
-	SOLID_EJECT("solid_eject.svg"),
-	SOLID_LAUGH_WINK("solid_laugh-wink.svg"),
-	SOLID_HAND_POINT_RIGHT("solid_hand-point-right.svg"),
-	SOLID_ARCHWAY("solid_archway.svg"),
-	SOLID_CHEVRON_DOWN("solid_chevron-down.svg"),
-	SOLID_HEADING("solid_heading.svg"),
-	SOLID_STRIKETHROUGH("solid_strikethrough.svg"),
-	SOLID_FILE_WORD("solid_file-word.svg"),
-	SOLID_I_CURSOR("solid_i-cursor.svg"),
-	SOLID_HOSPITAL_ALT("solid_hospital-alt.svg"),
-	SOLID_MONEY_CHECK("solid_money-check.svg"),
-	SOLID_DOOR_CLOSED("solid_door-closed.svg"),
-	SOLID_SORT_ALPHA_UP("solid_sort-alpha-up.svg"),
-	SOLID_COMPACT_DISC("solid_compact-disc.svg"),
-	SOLID_HARD_HAT("solid_hard-hat.svg"),
-	SOLID_USER_ALT_SLASH("solid_user-alt-slash.svg"),
-	SOLID_GAS_PUMP("solid_gas-pump.svg"),
-	SOLID_SIGN_IN_ALT("solid_sign-in-alt.svg"),
-	SOLID_EXPAND_ARROWS_ALT("solid_expand-arrows-alt.svg"),
-	SOLID_THERMOMETER_THREE_QUARTERS("solid_thermometer-three-quarters.svg"),
-	SOLID_WEIGHT_HANGING("solid_weight-hanging.svg"),
-	SOLID_COUCH("solid_couch.svg"),
-	SOLID_CHURCH("solid_church.svg"),
-	SOLID_CROP("solid_crop.svg"),
-	SOLID_RESTROOM("solid_restroom.svg"),
-	SOLID_OBJECT_GROUP("solid_object-group.svg"),
-	SOLID_PEN_FANCY("solid_pen-fancy.svg"),
-	SOLID_COOKIE("solid_cookie.svg"),
-	SOLID_TAG("solid_tag.svg"),
-	SOLID_USER_TAG("solid_user-tag.svg"),
-	SOLID_SKIING("solid_skiing.svg"),
-	SOLID_FILE_EXPORT("solid_file-export.svg"),
-	SOLID_FILE_MEDICAL_ALT("solid_file-medical-alt.svg"),
-	SOLID_BRIEFCASE("solid_briefcase.svg"),
-	SOLID_DRAGON("solid_dragon.svg"),
-	SOLID_FILE_AUDIO("solid_file-audio.svg"),
-	SOLID_PEN_SQUARE("solid_pen-square.svg"),
-	SOLID_GRIN_WINK("solid_grin-wink.svg"),
-	SOLID_ARROW_CIRCLE_UP("solid_arrow-circle-up.svg"),
-	SOLID_SPLOTCH("solid_splotch.svg"),
-	SOLID_SHOWER("solid_shower.svg"),
-	SOLID_TEETH_OPEN("solid_teeth-open.svg"),
-	SOLID_PHONE_VOLUME("solid_phone-volume.svg"),
-	SOLID_EXCHANGE_ALT("solid_exchange-alt.svg"),
-	SOLID_THERMOMETER_HALF("solid_thermometer-half.svg"),
-	SOLID_POUND_SIGN("solid_pound-sign.svg"),
-	SOLID_HEADSET("solid_headset.svg"),
-	SOLID_CARROT("solid_carrot.svg"),
-	SOLID_PRESCRIPTION_BOTTLE("solid_prescription-bottle.svg"),
-	SOLID_MAP("solid_map.svg"),
-	SOLID_INBOX("solid_inbox.svg"),
-	SOLID_COMMENTS("solid_comments.svg"),
-	SOLID_ALIGN_JUSTIFY("solid_align-justify.svg"),
-	SOLID_PLUS_SQUARE("solid_plus-square.svg"),
-	SOLID_MICROPHONE("solid_microphone.svg"),
-	SOLID_DATABASE("solid_database.svg"),
-	SOLID_CALENDAR_DAY("solid_calendar-day.svg"),
-	SOLID_ANGLE_DOWN("solid_angle-down.svg"),
-	SOLID_HANDS_HELPING("solid_hands-helping.svg"),
-	SOLID_RSS_SQUARE("solid_rss-square.svg"),
-	SOLID_DICE_FIVE("solid_dice-five.svg"),
-	SOLID_SWIMMER("solid_swimmer.svg"),
-	SOLID_TRUCK_MOVING("solid_truck-moving.svg"),
-	SOLID_TRASH_RESTORE("solid_trash-restore.svg"),
-	SOLID_SATELLITE_DISH("solid_satellite-dish.svg"),
-	SOLID_TEXT_WIDTH("solid_text-width.svg"),
-	SOLID_GLOBE_ASIA("solid_globe-asia.svg"),
-	SOLID_USER_ASTRONAUT("solid_user-astronaut.svg"),
-	SOLID_FILE_INVOICE_DOLLAR("solid_file-invoice-dollar.svg"),
-	SOLID_FILE("solid_file.svg"),
-	SOLID_MEH_BLANK("solid_meh-blank.svg"),
-	SOLID_CLOUD_UPLOAD_ALT("solid_cloud-upload-alt.svg"),
-	SOLID_SIGNAL("solid_signal.svg"),
-	SOLID_BOOK_DEAD("solid_book-dead.svg"),
-	SOLID_BRAIN("solid_brain.svg"),
-	SOLID_MALE("solid_male.svg"),
-	SOLID_PAINT_BRUSH("solid_paint-brush.svg"),
-	SOLID_HELICOPTER("solid_helicopter.svg"),
-	SOLID_RULER_HORIZONTAL("solid_ruler-horizontal.svg"),
-	SOLID_PAW("solid_paw.svg"),
-	SOLID_CHESS("solid_chess.svg"),
-	SOLID_WINE_GLASS_ALT("solid_wine-glass-alt.svg"),
-	SOLID_GOLF_BALL("solid_golf-ball.svg"),
-	SOLID_ROAD("solid_road.svg"),
-	SOLID_TEXT_HEIGHT("solid_text-height.svg"),
-	SOLID_KISS_WINK_HEART("solid_kiss-wink-heart.svg"),
-	SOLID_FROWN_OPEN("solid_frown-open.svg"),
-	SOLID_BOX_OPEN("solid_box-open.svg"),
-	SOLID_TERMINAL("solid_terminal.svg"),
-	SOLID_SQUARE_ROOT_ALT("solid_square-root-alt.svg"),
-	SOLID_CITY("solid_city.svg"),
-	SOLID_COMMENT_DOLLAR("solid_comment-dollar.svg"),
-	SOLID_CHEVRON_UP("solid_chevron-up.svg"),
-	SOLID_LIRA_SIGN("solid_lira-sign.svg"),
-	SOLID_SQUARE_FULL("solid_square-full.svg"),
-	SOLID_TICKET_ALT("solid_ticket-alt.svg"),
-	SOLID_LAUGH("solid_laugh.svg"),
-	SOLID_UNLOCK_ALT("solid_unlock-alt.svg"),
-	SOLID_SAD_TEAR("solid_sad-tear.svg"),
-	SOLID_FILE_VIDEO("solid_file-video.svg"),
-	SOLID_HOUSE_DAMAGE("solid_house-damage.svg"),
-	SOLID_MORTAR_PESTLE("solid_mortar-pestle.svg"),
-	SOLID_FOLDER_OPEN("solid_folder-open.svg"),
-	SOLID_PLANE_DEPARTURE("solid_plane-departure.svg"),
-	SOLID_PAINT_ROLLER("solid_paint-roller.svg"),
-	SOLID_KEYBOARD("solid_keyboard.svg"),
-	SOLID_LESS_THAN("solid_less-than.svg"),
-	SOLID_ANGLE_UP("solid_angle-up.svg"),
-	SOLID_BATH("solid_bath.svg"),
-	SOLID_GRIN_ALT("solid_grin-alt.svg"),
-	SOLID_EXCLAMATION_TRIANGLE("solid_exclamation-triangle.svg"),
-	SOLID_QUESTION_CIRCLE("solid_question-circle.svg"),
-	SOLID_MAP_SIGNS("solid_map-signs.svg"),
-	SOLID_POO_STORM("solid_poo-storm.svg"),
-	SOLID_MAP_MARKER("solid_map-marker.svg"),
-	SOLID_QUESTION("solid_question.svg"),
-	SOLID_LOCK("solid_lock.svg"),
-	SOLID_X_RAY("solid_x-ray.svg"),
-	SOLID_FIRE("solid_fire.svg"),
-	SOLID_BAN("solid_ban.svg"),
-	SOLID_PORTRAIT("solid_portrait.svg"),
-	SOLID_SHOPPING_BAG("solid_shopping-bag.svg"),
-	SOLID_DIVIDE("solid_divide.svg"),
-	SOLID_PIGGY_BANK("solid_piggy-bank.svg"),
-	SOLID_FILE_CONTRACT("solid_file-contract.svg"),
-	SOLID_SD_CARD("solid_sd-card.svg"),
-	SOLID_REDO_ALT("solid_redo-alt.svg"),
-	SOLID_PEN("solid_pen.svg"),
-	SOLID_DRUMSTICK_BITE("solid_drumstick-bite.svg"),
-	SOLID_PLANE("solid_plane.svg"),
-	SOLID_CHEVRON_RIGHT("solid_chevron-right.svg"),
-	SOLID_REPUBLICAN("solid_republican.svg"),
-	SOLID_CLIPBOARD("solid_clipboard.svg"),
-	SOLID_MARS("solid_mars.svg"),
-	SOLID_VENUS_MARS("solid_venus-mars.svg"),
-	SOLID_TRUCK_PICKUP("solid_truck-pickup.svg"),
-	SOLID_LIFE_RING("solid_life-ring.svg"),
-	SOLID_LINK("solid_link.svg"),
-	SOLID_COMPRESS_ARROWS_ALT("solid_compress-arrows-alt.svg"),
-	SOLID_CERTIFICATE("solid_certificate.svg"),
-	SOLID_TOGGLE_OFF("solid_toggle-off.svg"),
-	SOLID_ELLIPSIS_H("solid_ellipsis-h.svg"),
-	SOLID_HOT_TUB("solid_hot-tub.svg"),
-	SOLID_KEY("solid_key.svg"),
-	SOLID_BIRTHDAY_CAKE("solid_birthday-cake.svg"),
-	SOLID_MAP_MARKED("solid_map-marked.svg"),
-	SOLID_GIFTS("solid_gifts.svg"),
-	SOLID_LEVEL_DOWN_ALT("solid_level-down-alt.svg"),
-	SOLID_MEH("solid_meh.svg"),
-	SOLID_CARET_SQUARE_LEFT("solid_caret-square-left.svg"),
-	SOLID_MEDKIT("solid_medkit.svg"),
-	SOLID_DOOR_OPEN("solid_door-open.svg"),
-	SOLID_CLOUD_SUN("solid_cloud-sun.svg"),
-	SOLID_ARROW_RIGHT("solid_arrow-right.svg"),
-	SOLID_STORE("solid_store.svg"),
-	SOLID_GREATER_THAN_EQUAL("solid_greater-than-equal.svg"),
-	SOLID_HAMSA("solid_hamsa.svg"),
-	SOLID_CALENDAR_PLUS("solid_calendar-plus.svg"),
-	SOLID_BRUSH("solid_brush.svg"),
-	SOLID_AT("solid_at.svg"),
-	SOLID_PERCENTAGE("solid_percentage.svg"),
-	SOLID_STOP_CIRCLE("solid_stop-circle.svg"),
-	SOLID_CONCIERGE_BELL("solid_concierge-bell.svg"),
-	SOLID_PHONE_SLASH("solid_phone-slash.svg"),
-	SOLID_CUBES("solid_cubes.svg"),
-	SOLID_USER_NINJA("solid_user-ninja.svg"),
-	SOLID_SHIP("solid_ship.svg"),
-	SOLID_QRCODE("solid_qrcode.svg"),
-	SOLID_NOTES_MEDICAL("solid_notes-medical.svg"),
-	SOLID_AMBULANCE("solid_ambulance.svg"),
-	SOLID_USER_CLOCK("solid_user-clock.svg"),
-	SOLID_CALENDAR_CHECK("solid_calendar-check.svg"),
-	SOLID_SKATING("solid_skating.svg"),
-	SOLID_STOPWATCH("solid_stopwatch.svg"),
-	SOLID_MINUS_SQUARE("solid_minus-square.svg"),
-	SOLID_YEN_SIGN("solid_yen-sign.svg"),
-	SOLID_CALENDAR_WEEK("solid_calendar-week.svg"),
-	SOLID_PIZZA_SLICE("solid_pizza-slice.svg"),
-	SOLID_THUMBS_DOWN("solid_thumbs-down.svg"),
-	SOLID_COMMENT_MEDICAL("solid_comment-medical.svg"),
-	SOLID_COMPRESS("solid_compress.svg"),
-	SOLID_ENVELOPE("solid_envelope.svg"),
-	SOLID_USER_MD("solid_user-md.svg"),
-	SOLID_UTENSILS("solid_utensils.svg"),
-	SOLID_PERSON_BOOTH("solid_person-booth.svg"),
-	SOLID_ARCHIVE("solid_archive.svg"),
-	SOLID_CARET_UP("solid_caret-up.svg"),
-	SOLID_HAND_POINT_LEFT("solid_hand-point-left.svg"),
-	SOLID_LOCATION_ARROW("solid_location-arrow.svg"),
-	SOLID_MAGNET("solid_magnet.svg"),
-	SOLID_SCHOOL("solid_school.svg"),
-	SOLID_DIAGNOSES("solid_diagnoses.svg"),
-	SOLID_RULER_VERTICAL("solid_ruler-vertical.svg"),
-	SOLID_DESKTOP("solid_desktop.svg"),
-	SOLID_DOWNLOAD("solid_download.svg"),
-	SOLID_HAND_LIZARD("solid_hand-lizard.svg"),
-	SOLID_BASEBALL_BALL("solid_baseball-ball.svg"),
-	SOLID_EXPAND("solid_expand.svg"),
-	SOLID_PEOPLE_CARRY("solid_people-carry.svg"),
-	SOLID_KHANDA("solid_khanda.svg"),
-	SOLID_TEETH("solid_teeth.svg"),
-	SOLID_FIGHTER_JET("solid_fighter-jet.svg"),
-	SOLID_HAND_SCISSORS("solid_hand-scissors.svg"),
-	SOLID_VIHARA("solid_vihara.svg"),
-	SOLID_BATTERY_THREE_QUARTERS("solid_battery-three-quarters.svg"),
-	SOLID_BOOK_OPEN("solid_book-open.svg"),
-	SOLID_HOURGLASS_START("solid_hourglass-start.svg"),
-	SOLID_COMMENT_SLASH("solid_comment-slash.svg"),
-	SOLID_SIGN_OUT_ALT("solid_sign-out-alt.svg"),
-	SOLID_GLASS_CHEERS("solid_glass-cheers.svg"),
-	SOLID_FILE_IMPORT("solid_file-import.svg"),
-	SOLID_TRANSGENDER_ALT("solid_transgender-alt.svg"),
-	SOLID_HAND_POINT_UP("solid_hand-point-up.svg"),
-	SOLID_SERVER("solid_server.svg"),
-	SOLID_BOLT("solid_bolt.svg"),
-	SOLID_TV("solid_tv.svg"),
-	SOLID_SMS("solid_sms.svg"),
-	SOLID_DEMOCRAT("solid_democrat.svg"),
-	SOLID_USER_PLUS("solid_user-plus.svg"),
-	SOLID_TABLET_ALT("solid_tablet-alt.svg"),
-	SOLID_MONEY_BILL_ALT("solid_money-bill-alt.svg"),
-	SOLID_COCKTAIL("solid_cocktail.svg"),
-	SOLID_CHEVRON_CIRCLE_RIGHT("solid_chevron-circle-right.svg"),
-	SOLID_STAR_AND_CRESCENT("solid_star-and-crescent.svg"),
-	SOLID_ANGLE_DOUBLE_RIGHT("solid_angle-double-right.svg"),
-	SOLID_SHAPES("solid_shapes.svg"),
-	SOLID_SOLAR_PANEL("solid_solar-panel.svg"),
-	SOLID_MOSQUE("solid_mosque.svg"),
-	SOLID_SATELLITE("solid_satellite.svg"),
-	SOLID_INDENT("solid_indent.svg"),
-	SOLID_SORT_AMOUNT_DOWN("solid_sort-amount-down.svg"),
-	SOLID_CHEVRON_CIRCLE_LEFT("solid_chevron-circle-left.svg"),
-	SOLID_AD("solid_ad.svg"),
-	SOLID_DNA("solid_dna.svg"),
-	SOLID_SLASH("solid_slash.svg"),
-	SOLID_TAXI("solid_taxi.svg"),
-	SOLID_BOOK("solid_book.svg"),
-	SOLID_HOTDOG("solid_hotdog.svg"),
-	SOLID_HOTEL("solid_hotel.svg"),
-	SOLID_OBJECT_UNGROUP("solid_object-ungroup.svg"),
-	SOLID_SKULL("solid_skull.svg"),
-	SOLID_THERMOMETER_FULL("solid_thermometer-full.svg"),
-	SOLID_PARAGRAPH("solid_paragraph.svg"),
-	SOLID_PLUG("solid_plug.svg"),
-	SOLID_THERMOMETER_EMPTY("solid_thermometer-empty.svg"),
-	SOLID_TRAIN("solid_train.svg"),
-	SOLID_H_SQUARE("solid_h-square.svg"),
-	SOLID_CHESS_BOARD("solid_chess-board.svg"),
-	SOLID_USER_MINUS("solid_user-minus.svg"),
-	SOLID_DIZZY("solid_dizzy.svg"),
-	SOLID_WALLET("solid_wallet.svg"),
-	SOLID_FILE_IMAGE("solid_file-image.svg"),
-	SOLID_BELL("solid_bell.svg"),
-	SOLID_COFFEE("solid_coffee.svg"),
-	SOLID_CODE("solid_code.svg"),
-	SOLID_DOLLY("solid_dolly.svg"),
-	SOLID_USER_LOCK("solid_user-lock.svg"),
-	SOLID_VOLLEYBALL_BALL("solid_volleyball-ball.svg"),
-	SOLID_SHIELD_ALT("solid_shield-alt.svg"),
-	SOLID_LONG_ARROW_ALT_UP("solid_long-arrow-alt-up.svg"),
-	SOLID_CLOUD_MOON_RAIN("solid_cloud-moon-rain.svg"),
-	SOLID_PROJECT_DIAGRAM("solid_project-diagram.svg"),
-	SOLID_THERMOMETER("solid_thermometer.svg"),
-	SOLID_AIR_FRESHENER("solid_air-freshener.svg"),
-	SOLID_SPIDER("solid_spider.svg"),
-	SOLID_FLAG("solid_flag.svg"),
-	SOLID_PODCAST("solid_podcast.svg"),
-	SOLID_USER_TIMES("solid_user-times.svg"),
-	SOLID_GLASS_MARTINI_ALT("solid_glass-martini-alt.svg"),
-	SOLID_HAND_PEACE("solid_hand-peace.svg"),
-	SOLID_LEVEL_UP_ALT("solid_level-up-alt.svg"),
-	SOLID_TRUCK_LOADING("solid_truck-loading.svg"),
-	SOLID_CHESS_KING("solid_chess-king.svg"),
-	SOLID_STOP("solid_stop.svg"),
-	SOLID_ARROW_CIRCLE_LEFT("solid_arrow-circle-left.svg"),
-	SOLID_NEWSPAPER("solid_newspaper.svg"),
-	SOLID_SNOWFLAKE("solid_snowflake.svg"),
-	SOLID_STEP_FORWARD("solid_step-forward.svg"),
-	SOLID_CUBE("solid_cube.svg"),
-	SOLID_BOMB("solid_bomb.svg"),
-	SOLID_ARROWS_ALT_H("solid_arrows-alt-h.svg"),
-	SOLID_FILE_MEDICAL("solid_file-medical.svg"),
-	SOLID_SHUTTLE_VAN("solid_shuttle-van.svg"),
-	SOLID_STAR_HALF("solid_star-half.svg"),
-	SOLID_PENCIL_RULER("solid_pencil-ruler.svg"),
-	SOLID_RULER("solid_ruler.svg"),
-	SOLID_FROWN("solid_frown.svg"),
-	SOLID_TRUCK_MONSTER("solid_truck-monster.svg"),
-	SOLID_GRIN_TONGUE_SQUINT("solid_grin-tongue-squint.svg"),
-	SOLID_OUTDENT("solid_outdent.svg"),
-	SOLID_CLIPBOARD_LIST("solid_clipboard-list.svg"),
-	SOLID_FAX("solid_fax.svg"),
-	SOLID_BIOHAZARD("solid_biohazard.svg"),
-	SOLID_CARET_RIGHT("solid_caret-right.svg"),
-	SOLID_USER_GRADUATE("solid_user-graduate.svg"),
-	SOLID_MAP_MARKER_ALT("solid_map-marker-alt.svg"),
-	SOLID_SMOG("solid_smog.svg"),
-	SOLID_BOLD("solid_bold.svg"),
-	SOLID_TABLETS("solid_tablets.svg"),
-	SOLID_ENVELOPE_OPEN("solid_envelope-open.svg"),
-	SOLID_TROPHY("solid_trophy.svg"),
-	SOLID_SHARE_ALT("solid_share-alt.svg"),
-	SOLID_BATTERY_FULL("solid_battery-full.svg"),
-	SOLID_EQUALS("solid_equals.svg"),
-	SOLID_PLUS("solid_plus.svg"),
-	SOLID_CHECK("solid_check.svg"),
-	SOLID_SEEDLING("solid_seedling.svg"),
-	SOLID_STAR_OF_DAVID("solid_star-of-david.svg"),
-	SOLID_SHARE_SQUARE("solid_share-square.svg"),
-	SOLID_RULER_COMBINED("solid_ruler-combined.svg"),
-	SOLID_TENGE("solid_tenge.svg"),
-	SOLID_TRADEMARK("solid_trademark.svg"),
-	SOLID_KAABA("solid_kaaba.svg"),
-	SOLID_SMOKING("solid_smoking.svg"),
-	SOLID_HOSPITAL("solid_hospital.svg"),
-	SOLID_FLASK("solid_flask.svg"),
-	SOLID_MARS_STROKE_V("solid_mars-stroke-v.svg"),
-	SOLID_HEADPHONES("solid_headphones.svg"),
-	SOLID_HORSE_HEAD("solid_horse-head.svg"),
-	SOLID_RSS("solid_rss.svg"),
-	SOLID_HORSE("solid_horse.svg"),
-	SOLID_LANDMARK("solid_landmark.svg"),
-	SOLID_MONEY_CHECK_ALT("solid_money-check-alt.svg"),
-	SOLID_WIFI("solid_wifi.svg"),
-	SOLID_RADIATION_ALT("solid_radiation-alt.svg"),
-	SOLID_FILE_ARCHIVE("solid_file-archive.svg"),
-	SOLID_CHALKBOARD_TEACHER("solid_chalkboard-teacher.svg"),
-	SOLID_ANGLE_RIGHT("solid_angle-right.svg"),
-	SOLID_ARROW_CIRCLE_RIGHT("solid_arrow-circle-right.svg"),
-	SOLID_VENUS("solid_venus.svg"),
-	SOLID_MUG_HOT("solid_mug-hot.svg"),
-	SOLID_INFO("solid_info.svg"),
-	SOLID_BULLHORN("solid_bullhorn.svg"),
-	SOLID_BREAD_SLICE("solid_bread-slice.svg"),
-	SOLID_MICROPHONE_ALT_SLASH("solid_microphone-alt-slash.svg"),
-	SOLID_DOG("solid_dog.svg"),
-	SOLID_USER_NURSE("solid_user-nurse.svg"),
-	SOLID_PALETTE("solid_palette.svg"),
-	SOLID_SHARE_ALT_SQUARE("solid_share-alt-square.svg"),
-	SOLID_CART_ARROW_DOWN("solid_cart-arrow-down.svg"),
-	SOLID_DIRECTIONS("solid_directions.svg"),
-	SOLID_OM("solid_om.svg"),
-	SOLID_HOURGLASS_HALF("solid_hourglass-half.svg"),
-	SOLID_HOLLY_BERRY("solid_holly-berry.svg"),
-	SOLID_FLAG_USA("solid_flag-usa.svg"),
-	SOLID_INFO_CIRCLE("solid_info-circle.svg"),
-	SOLID_SMOKING_BAN("solid_smoking-ban.svg"),
-	SOLID_FOLDER_PLUS("solid_folder-plus.svg"),
-	SOLID_GRIP_HORIZONTAL("solid_grip-horizontal.svg"),
-	SOLID_SPACE_SHUTTLE("solid_space-shuttle.svg"),
-	SOLID_GRIN_BEAM("solid_grin-beam.svg"),
-	SOLID_FEATHER_ALT("solid_feather-alt.svg"),
-	SOLID_RAINBOW("solid_rainbow.svg"),
-	SOLID_COOKIE_BITE("solid_cookie-bite.svg"),
-	SOLID_COPY("solid_copy.svg"),
-	SOLID_FUNNEL_DOLLAR("solid_funnel-dollar.svg"),
-	SOLID_TRAM("solid_tram.svg"),
-	SOLID_FISH("solid_fish.svg"),
-	SOLID_SIGNATURE("solid_signature.svg"),
-	SOLID_NOT_EQUAL("solid_not-equal.svg"),
-	SOLID_KISS_BEAM("solid_kiss-beam.svg"),
-	SOLID_BURN("solid_burn.svg"),
-	SOLID_GLASSES("solid_glasses.svg"),
-	SOLID_COINS("solid_coins.svg"),
-	SOLID_CLOSED_CAPTIONING("solid_closed-captioning.svg"),
-	SOLID_MONUMENT("solid_monument.svg"),
-	SOLID_HAT_WIZARD("solid_hat-wizard.svg"),
-	SOLID_ARROW_ALT_CIRCLE_RIGHT("solid_arrow-alt-circle-right.svg"),
-	SOLID_LESS_THAN_EQUAL("solid_less-than-equal.svg"),
-	SOLID_FILE_DOWNLOAD("solid_file-download.svg"),
-	SOLID_TINT("solid_tint.svg"),
-	SOLID_FAST_BACKWARD("solid_fast-backward.svg"),
-	SOLID_INDUSTRY("solid_industry.svg"),
-	SOLID_CHILD("solid_child.svg"),
-	SOLID_FIRE_EXTINGUISHER("solid_fire-extinguisher.svg"),
-	SOLID_MARKER("solid_marker.svg"),
-	SOLID_ALIGN_RIGHT("solid_align-right.svg"),
-	SOLID_IMAGE("solid_image.svg"),
-	SOLID_HAND_POINT_DOWN("solid_hand-point-down.svg"),
-	SOLID_VECTOR_SQUARE("solid_vector-square.svg"),
-	SOLID_LIGHTBULB("solid_lightbulb.svg"),
-	SOLID_ELLIPSIS_V("solid_ellipsis-v.svg"),
-	SOLID_CHECK_CIRCLE("solid_check-circle.svg"),
-	SOLID_SAVE("solid_save.svg"),
-	SOLID_SMILE("solid_smile.svg"),
-	SOLID_IMAGES("solid_images.svg"),
-	SOLID_TSHIRT("solid_tshirt.svg"),
-	SOLID_PAGER("solid_pager.svg"),
-	SOLID_GRIN_TEARS("solid_grin-tears.svg"),
-	SOLID_DONATE("solid_donate.svg"),
-	SOLID_CALENDAR_ALT("solid_calendar-alt.svg"),
-	SOLID_TH_LARGE("solid_th-large.svg"),
-	SOLID_LAUGH_BEAM("solid_laugh-beam.svg"),
-	SOLID_CODE_BRANCH("solid_code-branch.svg"),
-	SOLID_VR_CARDBOARD("solid_vr-cardboard.svg"),
-	SOLID_EYE_DROPPER("solid_eye-dropper.svg"),
-	SOLID_HAND_PAPER("solid_hand-paper.svg"),
-	SOLID_CARET_SQUARE_DOWN("solid_caret-square-down.svg"),
-	SOLID_DICE_D6("solid_dice-d6.svg"),
-	SOLID_VOLUME_MUTE("solid_volume-mute.svg"),
-	SOLID_SEARCH_PLUS("solid_search-plus.svg"),
-	SOLID_PAPERCLIP("solid_paperclip.svg"),
-	SOLID_FILE_ALT("solid_file-alt.svg"),
-	SOLID_STREET_VIEW("solid_street-view.svg"),
-	SOLID_FAST_FORWARD("solid_fast-forward.svg"),
-	SOLID_SYRINGE("solid_syringe.svg"),
-	SOLID_CAR_BATTERY("solid_car-battery.svg"),
-	SOLID_AWARD("solid_award.svg"),
-	SOLID_BABY_CARRIAGE("solid_baby-carriage.svg"),
-	SOLID_BOX("solid_box.svg"),
-	SOLID_THUMBS_UP("solid_thumbs-up.svg"),
-	SOLID_SUPERSCRIPT("solid_superscript.svg"),
-	SOLID_GLASS_MARTINI("solid_glass-martini.svg"),
-	SOLID_HIKING("solid_hiking.svg"),
-	SOLID_MASK("solid_mask.svg"),
-	SOLID_PEACE("solid_peace.svg"),
-	SOLID_PERCENT("solid_percent.svg"),
-	SOLID_SQUARE("solid_square.svg"),
-	SOLID_CROWN("solid_crown.svg"),
-	SOLID_BROOM("solid_broom.svg"),
-	SOLID_STETHOSCOPE("solid_stethoscope.svg"),
-	SOLID_EYE_SLASH("solid_eye-slash.svg"),
-	SOLID_CANDY_CANE("solid_candy-cane.svg"),
-	SOLID_PLAY("solid_play.svg"),
-	SOLID_BACKWARD("solid_backward.svg"),
-	SOLID_PAPER_PLANE("solid_paper-plane.svg"),
-	SOLID_COGS("solid_cogs.svg"),
-	SOLID_PENCIL_ALT("solid_pencil-alt.svg"),
-	SOLID_GREATER_THAN("solid_greater-than.svg"),
-	SOLID_ARROW_ALT_CIRCLE_UP("solid_arrow-alt-circle-up.svg"),
-	SOLID_DUNGEON("solid_dungeon.svg"),
-	SOLID_USER_EDIT("solid_user-edit.svg"),
-	SOLID_TABLE("solid_table.svg"),
-	SOLID_BARCODE("solid_barcode.svg"),
-	SOLID_THUMBTACK("solid_thumbtack.svg"),
-	SOLID_HOURGLASS_END("solid_hourglass-end.svg"),
-	SOLID_SCROLL("solid_scroll.svg"),
-	SOLID_FLAG_CHECKERED("solid_flag-checkered.svg"),
-	SOLID_CHALKBOARD("solid_chalkboard.svg"),
-	SOLID_RADIATION("solid_radiation.svg"),
-	SOLID_TH("solid_th.svg"),
-	SOLID_BABY("solid_baby.svg"),
-	SOLID_SHEKEL_SIGN("solid_shekel-sign.svg"),
-	SOLID_GRIN_SQUINT_TEARS("solid_grin-squint-tears.svg"),
-	SOLID_BATTERY_EMPTY("solid_battery-empty.svg"),
-	SOLID_STAR_OF_LIFE("solid_star-of-life.svg"),
-	SOLID_CAMERA("solid_camera.svg"),
-	SOLID_MAGIC("solid_magic.svg"),
-	SOLID_REDO("solid_redo.svg"),
-	SOLID_FILE_POWERPOINT("solid_file-powerpoint.svg"),
-	SOLID_FOLDER_MINUS("solid_folder-minus.svg"),
-	SOLID_OTTER("solid_otter.svg"),
-	SOLID_SYNC_ALT("solid_sync-alt.svg"),
-	SOLID_SIM_CARD("solid_sim-card.svg"),
-	SOLID_TRUCK("solid_truck.svg"),
-	SOLID_GRIN_TONGUE("solid_grin-tongue.svg"),
-	SOLID_APPLE_ALT("solid_apple-alt.svg"),
-	SOLID_GRIN_BEAM_SWEAT("solid_grin-beam-sweat.svg"),
-	SOLID_GLASS_WHISKEY("solid_glass-whiskey.svg"),
-	SOLID_OIL_CAN("solid_oil-can.svg"),
-	SOLID_BLENDER("solid_blender.svg"),
-	SOLID_WINE_GLASS("solid_wine-glass.svg"),
-	SOLID_HAND_SPOCK("solid_hand-spock.svg"),
-	SOLID_BIBLE("solid_bible.svg"),
-	SOLID_TOILET_PAPER("solid_toilet-paper.svg"),
-	SOLID_EGG("solid_egg.svg"),
-	SOLID_USER_FRIENDS("solid_user-friends.svg"),
-	SOLID_BULLSEYE("solid_bullseye.svg"),
-	SOLID_EXCLAMATION_CIRCLE("solid_exclamation-circle.svg"),
-	SOLID_BUS("solid_bus.svg"),
-	SOLID_BOOK_READER("solid_book-reader.svg"),
-	SOLID_DOLLY_FLATBED("solid_dolly-flatbed.svg"),
-	SOLID_MERCURY("solid_mercury.svg"),
-	SOLID_INFINITY("solid_infinity.svg"),
-	SOLID_CLOUD_DOWNLOAD_ALT("solid_cloud-download-alt.svg"),
-	SOLID_GEM("solid_gem.svg"),
-	SOLID_AUDIO_DESCRIPTION("solid_audio-description.svg"),
-	SOLID_SKULL_CROSSBONES("solid_skull-crossbones.svg"),
-	SOLID_FEATHER("solid_feather.svg"),
-	SOLID_TRASH("solid_trash.svg"),
-	SOLID_CHART_BAR("solid_chart-bar.svg"),
-	SOLID_FIRE_ALT("solid_fire-alt.svg"),
-	SOLID_TRANSGENDER("solid_transgender.svg"),
-	SOLID_DUMPSTER_FIRE("solid_dumpster-fire.svg"),
-	SOLID_TOILET("solid_toilet.svg"),
-	SOLID_STEP_BACKWARD("solid_step-backward.svg"),
-	SOLID_LEAF("solid_leaf.svg"),
-	SOLID_PASTE("solid_paste.svg"),
-	SOLID_WINDOW_MAXIMIZE("solid_window-maximize.svg"),
-	SOLID_GOPURAM("solid_gopuram.svg"),
-	SOLID_ADDRESS_BOOK("solid_address-book.svg"),
-	SOLID_MEMORY("solid_memory.svg"),
-	SOLID_DOLLAR_SIGN("solid_dollar-sign.svg"),
-	SOLID_JOURNAL_WHILLS("solid_journal-whills.svg"),
-	SOLID_MEH_ROLLING_EYES("solid_meh-rolling-eyes.svg"),
-	SOLID_GRADUATION_CAP("solid_graduation-cap.svg"),
-	SOLID_KIWI_BIRD("solid_kiwi-bird.svg"),
-	SOLID_VOLUME_UP("solid_volume-up.svg"),
-	SOLID_FILL_DRIP("solid_fill-drip.svg"),
-	SOLID_SLIDERS_H("solid_sliders-h.svg"),
-	SOLID_RUNNING("solid_running.svg"),
-	SOLID_HASHTAG("solid_hashtag.svg"),
-	SOLID_GUITAR("solid_guitar.svg"),
-	SOLID_BONG("solid_bong.svg"),
-	SOLID_STAR("solid_star.svg"),
-	SOLID_ARROWS_ALT_V("solid_arrows-alt-v.svg"),
-	SOLID_EURO_SIGN("solid_euro-sign.svg"),
-	SOLID_SUN("solid_sun.svg"),
-	SOLID_WRENCH("solid_wrench.svg"),
-	SOLID_ARROW_CIRCLE_DOWN("solid_arrow-circle-down.svg"),
-	SOLID_CIRCLE_NOTCH("solid_circle-notch.svg"),
-	SOLID_SHOE_PRINTS("solid_shoe-prints.svg"),
-	SOLID_EDIT("solid_edit.svg"),
-	SOLID_BACON("solid_bacon.svg"),
-	SOLID_UNLINK("solid_unlink.svg"),
-	SOLID_PLANE_ARRIVAL("solid_plane-arrival.svg"),
-	SOLID_BONE("solid_bone.svg"),
-	SOLID_BUS_ALT("solid_bus-alt.svg"),
-	SOLID_CRUTCH("solid_crutch.svg"),
-	SOLID_ANCHOR("solid_anchor.svg"),
-	SOLID_JEDI("solid_jedi.svg"),
-	SOLID_HAMMER("solid_hammer.svg"),
-	SOLID_SEARCH_LOCATION("solid_search-location.svg"),
-	SOLID_HIGHLIGHTER("solid_highlighter.svg"),
-	SOLID_ADDRESS_CARD("solid_address-card.svg"),
-	SOLID_CARET_SQUARE_RIGHT("solid_caret-square-right.svg"),
-	SOLID_WHEELCHAIR("solid_wheelchair.svg"),
-	SOLID_CHART_PIE("solid_chart-pie.svg"),
-	SOLID_LEMON("solid_lemon.svg"),
-	SOLID_PLACE_OF_WORSHIP("solid_place-of-worship.svg"),
-	SOLID_BUG("solid_bug.svg"),
-	SOLID_SMILE_BEAM("solid_smile-beam.svg"),
-	SOLID_PRAYING_HANDS("solid_praying-hands.svg"),
-	SOLID_MARS_STROKE_H("solid_mars-stroke-h.svg"),
-	SOLID_SPINNER("solid_spinner.svg"),
-	SOLID_UNLOCK("solid_unlock.svg"),
-	SOLID_ADJUST("solid_adjust.svg"),
-	SOLID_HAND_HOLDING_HEART("solid_hand-holding-heart.svg"),
-	SOLID_COMPASS("solid_compass.svg"),
-	SOLID_METEOR("solid_meteor.svg"),
-	SOLID_PLUS_CIRCLE("solid_plus-circle.svg"),
-	SOLID_SEARCH_DOLLAR("solid_search-dollar.svg"),
-	SOLID_EXTERNAL_LINK_SQUARE_ALT("solid_external-link-square-alt.svg"),
-	SOLID_TRAFFIC_LIGHT("solid_traffic-light.svg"),
-	SOLID_BICYCLE("solid_bicycle.svg"),
-	SOLID_MENORAH("solid_menorah.svg"),
-	SOLID_CLOUD_MOON("solid_cloud-moon.svg"),
-	SOLID_WAREHOUSE("solid_warehouse.svg"),
-	SOLID_CHEVRON_CIRCLE_DOWN("solid_chevron-circle-down.svg"),
-	SOLID_CREDIT_CARD("solid_credit-card.svg"),
-	SOLID_USER_CIRCLE("solid_user-circle.svg"),
-	SOLID_JOINT("solid_joint.svg"),
-	SOLID_USER_TIE("solid_user-tie.svg"),
-	SOLID_SNOWMAN("solid_snowman.svg"),
-	SOLID_CHEVRON_CIRCLE_UP("solid_chevron-circle-up.svg"),
-	SOLID_TACHOMETER_ALT("solid_tachometer-alt.svg"),
-	SOLID_VIAL("solid_vial.svg"),
-	SOLID_REPLY_ALL("solid_reply-all.svg"),
-	SOLID_SORT_ALPHA_DOWN("solid_sort-alpha-down.svg"),
-	SOLID_LANGUAGE("solid_language.svg"),
-	SOLID_CLOUD_RAIN("solid_cloud-rain.svg"),
-	SOLID_MARS_STROKE("solid_mars-stroke.svg"),
-	SOLID_VENUS_DOUBLE("solid_venus-double.svg"),
-	SOLID_TRASH_ALT("solid_trash-alt.svg"),
-	SOLID_HAYKAL("solid_haykal.svg"),
-	SOLID_WINDOW_CLOSE("solid_window-close.svg"),
-	SOLID_TIRED("solid_tired.svg"),
-	SOLID_SITEMAP("solid_sitemap.svg"),
-	SOLID_DEAF("solid_deaf.svg"),
-	SOLID_CROSSHAIRS("solid_crosshairs.svg"),
-	SOLID_POOP("solid_poop.svg"),
-	SOLID_CLOCK("solid_clock.svg"),
-	SOLID_WINDOW_MINIMIZE("solid_window-minimize.svg"),
-	SOLID_RETWEET("solid_retweet.svg"),
-	SOLID_PHONE("solid_phone.svg"),
-	SOLID_SAD_CRY("solid_sad-cry.svg"),
-	SOLID_CROP_ALT("solid_crop-alt.svg"),
-	SOLID_MAIL_BULK("solid_mail-bulk.svg"),
-	SOLID_DUMBBELL("solid_dumbbell.svg"),
-	SOLID_SYNC("solid_sync.svg"),
-	SOLID_WINE_BOTTLE("solid_wine-bottle.svg"),
-	SOLID_TRACTOR("solid_tractor.svg"),
-	SOLID_EYE("solid_eye.svg"),
-	SOLID_MOBILE("solid_mobile.svg"),
-	SOLID_UNIVERSAL_ACCESS("solid_universal-access.svg"),
-	SOLID_USER_INJURED("solid_user-injured.svg"),
-	SOLID_ANGLE_DOUBLE_UP("solid_angle-double-up.svg"),
-	SOLID_BOOK_MEDICAL("solid_book-medical.svg"),
-	SOLID_DOVE("solid_dove.svg"),
-	SOLID_CAR_SIDE("solid_car-side.svg"),
-	SOLID_GIFT("solid_gift.svg"),
-	SOLID_CAR("solid_car.svg"),
-	SOLID_REGISTERED("solid_registered.svg"),
-	SOLID_FILE_INVOICE("solid_file-invoice.svg"),
-	SOLID_LONG_ARROW_ALT_DOWN("solid_long-arrow-alt-down.svg"),
-	SOLID_DRAW_POLYGON("solid_draw-polygon.svg"),
-	SOLID_BATTERY_QUARTER("solid_battery-quarter.svg"),
-	SOLID_ATLAS("solid_atlas.svg"),
-	SOLID_TABLE_TENNIS("solid_table-tennis.svg"),
-	SOLID_LAYER_GROUP("solid_layer-group.svg"),
-	SOLID_ARROW_ALT_CIRCLE_DOWN("solid_arrow-alt-circle-down.svg"),
-	SOLID_SHARE("solid_share.svg"),
-	SOLID_TAGS("solid_tags.svg"),
-	SOLID_VIALS("solid_vials.svg"),
-	SOLID_GLOBE_EUROPE("solid_globe-europe.svg"),
-	SOLID_ARROW_UP("solid_arrow-up.svg"),
-	SOLID_BALANCE_SCALE("solid_balance-scale.svg"),
-	SOLID_GRIN("solid_grin.svg"),
-	SOLID_MICROSCOPE("solid_microscope.svg"),
-	SOLID_SUBWAY("solid_subway.svg"),
-	SOLID_MICROPHONE_ALT("solid_microphone-alt.svg"),
-	SOLID_FIRST_AID("solid_first-aid.svg"),
-	SOLID_DRUM("solid_drum.svg"),
-	SOLID_SORT("solid_sort.svg"),
-	SOLID_PROCEDURES("solid_procedures.svg"),
-	SOLID_CALENDAR_MINUS("solid_calendar-minus.svg"),
-	SOLID_ETHERNET("solid_ethernet.svg"),
-	SOLID_UNDO("solid_undo.svg"),
-	SOLID_VIDEO("solid_video.svg"),
-	SOLID_ROBOT("solid_robot.svg"),
-	SOLID_PEPPER_HOT("solid_pepper-hot.svg"),
-	SOLID_TREE("solid_tree.svg"),
-	SOLID_ID_CARD("solid_id-card.svg"),
-	SOLID_PILLS("solid_pills.svg"),
-	SOLID_PUZZLE_PIECE("solid_puzzle-piece.svg"),
-	SOLID_MAP_PIN("solid_map-pin.svg"),
-	SOLID_FILTER("solid_filter.svg"),
-	SOLID_ALLERGIES("solid_allergies.svg"),
-	SOLID_SUITCASE_ROLLING("solid_suitcase-rolling.svg"),
-	SOLID_WATER("solid_water.svg"),
-	SOLID_CLOUD_SHOWERS_HEAVY("solid_cloud-showers-heavy.svg"),
-	SOLID_CHESS_PAWN("solid_chess-pawn.svg"),
-	SOLID_UMBRELLA_BEACH("solid_umbrella-beach.svg"),
-	SOLID_CHECK_DOUBLE("solid_check-double.svg"),
-	SOLID_FILE_SIGNATURE("solid_file-signature.svg"),
-	SOLID_ITALIC("solid_italic.svg"),
-	SOLID_GLOBE_AMERICAS("solid_globe-americas.svg"),
-	SOLID_BELL_SLASH("solid_bell-slash.svg"),
-	SOLID_HANDSHAKE("solid_handshake.svg"),
-	SOLID_MONEY_BILL("solid_money-bill.svg"),
-	SOLID_MEDAL("solid_medal.svg"),
-	SOLID_MARS_DOUBLE("solid_mars-double.svg"),
-	SOLID_WON_SIGN("solid_won-sign.svg"),
-	SOLID_COMMENT("solid_comment.svg"),
-	SOLID_TORII_GATE("solid_torii-gate.svg"),
-	SOLID_VIDEO_SLASH("solid_video-slash.svg"),
-	SOLID_CALENDAR("solid_calendar.svg"),
-	SOLID_GLOBE("solid_globe.svg"),
-	SOLID_ARROW_LEFT("solid_arrow-left.svg"),
-	SOLID_ALIGN_CENTER("solid_align-center.svg"),
-	SOLID_HOSPITAL_SYMBOL("solid_hospital-symbol.svg"),
-	SOLID_CROSS("solid_cross.svg"),
-	SOLID_BLOG("solid_blog.svg"),
-	SOLID_UNIVERSITY("solid_university.svg"),
-	SOLID_ROUTE("solid_route.svg"),
-	SOLID_BOWLING_BALL("solid_bowling-ball.svg"),
-	SOLID_MONEY_BILL_WAVE_ALT("solid_money-bill-wave-alt.svg"),
-	SOLID_MINUS_CIRCLE("solid_minus-circle.svg"),
-	SOLID_GRIP_LINES_VERTICAL("solid_grip-lines-vertical.svg"),
-	SOLID_MICROCHIP("solid_microchip.svg"),
-	SOLID_FROG("solid_frog.svg"),
-	SOLID_LAPTOP("solid_laptop.svg"),
-	SOLID_POWER_OFF("solid_power-off.svg"),
-	SOLID_THEATER_MASKS("solid_theater-masks.svg"),
-	SOLID_HEARTBEAT("solid_heartbeat.svg"),
-	SOLID_CHART_AREA("solid_chart-area.svg"),
-	SOLID_SIGN_LANGUAGE("solid_sign-language.svg"),
-	SOLID_QUOTE_LEFT("solid_quote-left.svg"),
-	SOLID_FILE_PRESCRIPTION("solid_file-prescription.svg"),
-	SOLID_MOUNTAIN("solid_mountain.svg"),
-	SOLID_MICROPHONE_SLASH("solid_microphone-slash.svg"),
-	SOLID_TIMES_CIRCLE("solid_times-circle.svg"),
-	SOLID_CARET_LEFT("solid_caret-left.svg"),
-	SOLID_DICE_TWO("solid_dice-two.svg"),
-	SOLID_TOOTH("solid_tooth.svg"),
-	SOLID_CHESS_QUEEN("solid_chess-queen.svg"),
-	SOLID_CALENDAR_TIMES("solid_calendar-times.svg"),
-	SOLID_HEADPHONES_ALT("solid_headphones-alt.svg"),
-	SOLID_DIGITAL_TACHOGRAPH("solid_digital-tachograph.svg"),
-	SOLID_FILE_CODE("solid_file-code.svg"),
-	SOLID_FILE_CSV("solid_file-csv.svg"),
-	SOLID_EXTERNAL_LINK_ALT("solid_external-link-alt.svg"),
-	SOLID_HEART_BROKEN("solid_heart-broken.svg"),
-	SOLID_ANGLE_DOUBLE_DOWN("solid_angle-double-down.svg"),
-	SOLID_DICE_SIX("solid_dice-six.svg"),
-	SOLID_CUT("solid_cut.svg"),
-	SOLID_USER_ALT("solid_user-alt.svg"),
-	SOLID_CLOUD("solid_cloud.svg"),
-	SOLID_HOCKEY_PUCK("solid_hockey-puck.svg"),
-	SOLID_TTY("solid_tty.svg"),
-	SOLID_GRIP_VERTICAL("solid_grip-vertical.svg"),
-	SOLID_FUTBOL("solid_futbol.svg"),
-	SOLID_SNOWBOARDING("solid_snowboarding.svg"),
-	SOLID_CHEESE("solid_cheese.svg"),
-	SOLID_COMMENT_ALT("solid_comment-alt.svg"),
-	SOLID_DICE("solid_dice.svg"),
-	SOLID_BARS("solid_bars.svg"),
-	SOLID_BEZIER_CURVE("solid_bezier-curve.svg"),
-	SOLID_CHAIR("solid_chair.svg"),
-	SOLID_DICE_D20("solid_dice-d20.svg"),
-	SOLID_SUITCASE("solid_suitcase.svg"),
-	SOLID_LAUGH_SQUINT("solid_laugh-squint.svg"),
-	SOLID_SORT_NUMERIC_DOWN("solid_sort-numeric-down.svg"),
-	SOLID_MOTORCYCLE("solid_motorcycle.svg"),
-	SOLID_UPLOAD("solid_upload.svg"),
-	SOLID_PAUSE("solid_pause.svg"),
-	SOLID_FORWARD("solid_forward.svg"),
-	SOLID_DICE_FOUR("solid_dice-four.svg"),
-	SOLID_BOOKMARK("solid_bookmark.svg"),
-	SOLID_BRAILLE("solid_braille.svg"),
-	SOLID_FILE_UPLOAD("solid_file-upload.svg"),
-	SOLID_ROCKET("solid_rocket.svg"),
-	SOLID_ICICLES("solid_icicles.svg"),
-	SOLID_CARET_SQUARE_UP("solid_caret-square-up.svg"),
-	SOLID_BLENDER_PHONE("solid_blender-phone.svg"),
-	SOLID_ASTERISK("solid_asterisk.svg"),
-	SOLID_USER_CHECK("solid_user-check.svg"),
-	SOLID_HAND_POINTER("solid_hand-pointer.svg"),
-	SOLID_CLOUD_SUN_RAIN("solid_cloud-sun-rain.svg"),
-	SOLID_RUPEE_SIGN("solid_rupee-sign.svg"),
-	SOLID_SLEIGH("solid_sleigh.svg"),
-	SOLID_TABLET("solid_tablet.svg"),
-	SOLID_KISS("solid_kiss.svg"),
-	SOLID_LIST_OL("solid_list-ol.svg"),
-	SOLID_RANDOM("solid_random.svg"),
-	SOLID_CAR_ALT("solid_car-alt.svg"),
-	SOLID_LAPTOP_MEDICAL("solid_laptop-medical.svg"),
-	SOLID_RUBLE_SIGN("solid_ruble-sign.svg"),
-	SOLID_STORE_ALT("solid_store-alt.svg"),
-	SOLID_HAND_ROCK("solid_hand-rock.svg"),
-	SOLID_LOCK_OPEN("solid_lock-open.svg"),
-	SOLID_ATOM("solid_atom.svg"),
-	SOLID_CAT("solid_cat.svg"),
-	SOLID_YIN_YANG("solid_yin-yang.svg"),
-	SOLID_GRIN_STARS("solid_grin-stars.svg"),
-	SOLID_ICE_CREAM("solid_ice-cream.svg"),
-	SOLID_RING("solid_ring.svg"),
-	SOLID_POLL("solid_poll.svg"),
-	SOLID_GLOBE_AFRICA("solid_globe-africa.svg"),
-	SOLID_PARKING("solid_parking.svg"),
-	SOLID_SNOWPLOW("solid_snowplow.svg"),
-	SOLID_BACKSPACE("solid_backspace.svg"),
-	SOLID_ANGLE_LEFT("solid_angle-left.svg"),
-	SOLID_HDD("solid_hdd.svg"),
-	SOLID_STICKY_NOTE("solid_sticky-note.svg"),
-	SOLID_SHOPPING_CART("solid_shopping-cart.svg"),
-	SOLID_PARACHUTE_BOX("solid_parachute-box.svg"),
-	SOLID_SPA("solid_spa.svg"),
-	SOLID_SORT_DOWN("solid_sort-down.svg"),
-	SOLID_CALCULATOR("solid_calculator.svg"),
-	SOLID_WINDOW_RESTORE("solid_window-restore.svg"),
-	SOLID_USER_SLASH("solid_user-slash.svg"),
-	SOLID_VOTE_YEA("solid_vote-yea.svg"),
-	SOLID_SHIPPING_FAST("solid_shipping-fast.svg"),
-	SOLID_SCREWDRIVER("solid_screwdriver.svg"),
-	SOLID_FEMALE("solid_female.svg"),
-	SOLID_MONEY_BILL_WAVE("solid_money-bill-wave.svg"),
-	SOLID_HAND_MIDDLE_FINGER("solid_hand-middle-finger.svg"),
-	SOLID_CHESS_BISHOP("solid_chess-bishop.svg"),
-	SOLID_SHOPPING_BASKET("solid_shopping-basket.svg"),
-	SOLID_DHARMACHAKRA("solid_dharmachakra.svg"),
-	SOLID_CHARGING_STATION("solid_charging-station.svg"),
-	SOLID_BUILDING("solid_building.svg"),
-	SOLID_BINOCULARS("solid_binoculars.svg"),
-	SOLID_ANGRY("solid_angry.svg"),
-	SOLID_GENDERLESS("solid_genderless.svg"),
-	SOLID_QUIDDITCH("solid_quidditch.svg"),
-	SOLID_HISTORY("solid_history.svg"),
-	SOLID_GAVEL("solid_gavel.svg"),
-	SOLID_TORAH("solid_torah.svg"),
-	SOLID_FOLDER("solid_folder.svg"),
-	SOLID_ARROWS_ALT("solid_arrows-alt.svg"),
-	SOLID_DRAFTING_COMPASS("solid_drafting-compass.svg"),
-	SOLID_ASSISTIVE_LISTENING_SYSTEMS("solid_assistive-listening-systems.svg"),
-	SOLID_USERS("solid_users.svg"),
-	SOLID_HANDS("solid_hands.svg"),
-	SOLID_FINGERPRINT("solid_fingerprint.svg"),
-	SOLID_FILL("solid_fill.svg"),
-	SOLID_HANUKIAH("solid_hanukiah.svg"),
-	SOLID_SYNAGOGUE("solid_synagogue.svg"),
-	SOLID_FILE_PDF("solid_file-pdf.svg"),
-	SOLID_FLUSHED("solid_flushed.svg"),
-	SOLID_GAMEPAD("solid_gamepad.svg"),
-	SOLID_WALKING("solid_walking.svg"),
-	SOLID_CLIPBOARD_CHECK("solid_clipboard-check.svg"),
-	SOLID_MINUS("solid_minus.svg"),
-	SOLID_PHONE_SQUARE("solid_phone-square.svg"),
-	SOLID_TIMES("solid_times.svg"),
-	SOLID_CHEVRON_LEFT("solid_chevron-left.svg"),
-	SOLID_FILM("solid_film.svg"),
-	SOLID_PRINT("solid_print.svg"),
-	SOLID_MOON("solid_moon.svg"),
-	SOLID_STROOPWAFEL("solid_stroopwafel.svg"),
-	SOLID_PRAY("solid_pray.svg"),
-	SOLID_EXCLAMATION("solid_exclamation.svg"),
-	SOLID_WEIGHT("solid_weight.svg"),
-	SOLID_BAND_AID("solid_band-aid.svg"),
-	SOLID_SORT_AMOUNT_UP("solid_sort-amount-up.svg"),
-	SOLID_CAPSULES("solid_capsules.svg"),
-	SOLID_SURPRISE("solid_surprise.svg"),
-	SOLID_TRASH_RESTORE_ALT("solid_trash-restore-alt.svg"),
-	SOLID_USER_SHIELD("solid_user-shield.svg"),
-	SOLID_MOUSE_POINTER("solid_mouse-pointer.svg"),
-	SOLID_RIBBON("solid_ribbon.svg"),
-	SOLID_SWATCHBOOK("solid_swatchbook.svg"),
-	SOLID_SWIMMING_POOL("solid_swimming-pool.svg"),
-	SOLID_STAMP("solid_stamp.svg"),
-	SOLID_SORT_UP("solid_sort-up.svg"),
-	SOLID_ALIGN_LEFT("solid_align-left.svg"),
-	SOLID_TEMPERATURE_LOW("solid_temperature-low.svg"),
-	SOLID_PASTAFARIANISM("solid_pastafarianism.svg"),
-	SOLID_HEART("solid_heart.svg"),
-	SOLID_FONT("solid_font.svg"),
-	REGULAR_COMMENT_DOTS("regular_comment-dots.svg"),
-	REGULAR_CLONE("regular_clone.svg"),
-	REGULAR_GRIMACE("regular_grimace.svg"),
-	REGULAR_PAUSE_CIRCLE("regular_pause-circle.svg"),
-	REGULAR_CHECK_SQUARE("regular_check-square.svg"),
-	REGULAR_GRIN_SQUINT("regular_grin-squint.svg"),
-	REGULAR_FILE_EXCEL("regular_file-excel.svg"),
-	REGULAR_FONT_AWESOME_LOGO_FULL("regular_font-awesome-logo-full.svg"),
-	REGULAR_PLAY_CIRCLE("regular_play-circle.svg"),
-	REGULAR_LIST_ALT("regular_list-alt.svg"),
-	REGULAR_HOURGLASS("regular_hourglass.svg"),
-	REGULAR_ARROW_ALT_CIRCLE_LEFT("regular_arrow-alt-circle-left.svg"),
-	REGULAR_GRIN_HEARTS("regular_grin-hearts.svg"),
-	REGULAR_DOT_CIRCLE("regular_dot-circle.svg"),
-	REGULAR_USER("regular_user.svg"),
-	REGULAR_ID_BADGE("regular_id-badge.svg"),
-	REGULAR_SMILE_WINK("regular_smile-wink.svg"),
-	REGULAR_CIRCLE("regular_circle.svg"),
-	REGULAR_GRIN_TONGUE_WINK("regular_grin-tongue-wink.svg"),
-	REGULAR_COPYRIGHT("regular_copyright.svg"),
-	REGULAR_LAUGH_WINK("regular_laugh-wink.svg"),
-	REGULAR_HAND_POINT_RIGHT("regular_hand-point-right.svg"),
-	REGULAR_FILE_WORD("regular_file-word.svg"),
-	REGULAR_OBJECT_GROUP("regular_object-group.svg"),
-	REGULAR_FILE_AUDIO("regular_file-audio.svg"),
-	REGULAR_GRIN_WINK("regular_grin-wink.svg"),
-	REGULAR_MAP("regular_map.svg"),
-	REGULAR_COMMENTS("regular_comments.svg"),
-	REGULAR_PLUS_SQUARE("regular_plus-square.svg"),
-	REGULAR_FILE("regular_file.svg"),
-	REGULAR_MEH_BLANK("regular_meh-blank.svg"),
-	REGULAR_KISS_WINK_HEART("regular_kiss-wink-heart.svg"),
-	REGULAR_FROWN_OPEN("regular_frown-open.svg"),
-	REGULAR_LAUGH("regular_laugh.svg"),
-	REGULAR_SAD_TEAR("regular_sad-tear.svg"),
-	REGULAR_FILE_VIDEO("regular_file-video.svg"),
-	REGULAR_FOLDER_OPEN("regular_folder-open.svg"),
-	REGULAR_KEYBOARD("regular_keyboard.svg"),
-	REGULAR_GRIN_ALT("regular_grin-alt.svg"),
-	REGULAR_QUESTION_CIRCLE("regular_question-circle.svg"),
-	REGULAR_CLIPBOARD("regular_clipboard.svg"),
-	REGULAR_LIFE_RING("regular_life-ring.svg"),
-	REGULAR_MEH("regular_meh.svg"),
-	REGULAR_CARET_SQUARE_LEFT("regular_caret-square-left.svg"),
-	REGULAR_CALENDAR_PLUS("regular_calendar-plus.svg"),
-	REGULAR_STOP_CIRCLE("regular_stop-circle.svg"),
-	REGULAR_CALENDAR_CHECK("regular_calendar-check.svg"),
-	REGULAR_MINUS_SQUARE("regular_minus-square.svg"),
-	REGULAR_THUMBS_DOWN("regular_thumbs-down.svg"),
-	REGULAR_ENVELOPE("regular_envelope.svg"),
-	REGULAR_HAND_POINT_LEFT("regular_hand-point-left.svg"),
-	REGULAR_HAND_LIZARD("regular_hand-lizard.svg"),
-	REGULAR_HAND_SCISSORS("regular_hand-scissors.svg"),
-	REGULAR_HAND_POINT_UP("regular_hand-point-up.svg"),
-	REGULAR_MONEY_BILL_ALT("regular_money-bill-alt.svg"),
-	REGULAR_OBJECT_UNGROUP("regular_object-ungroup.svg"),
-	REGULAR_DIZZY("regular_dizzy.svg"),
-	REGULAR_FILE_IMAGE("regular_file-image.svg"),
-	REGULAR_BELL("regular_bell.svg"),
-	REGULAR_FLAG("regular_flag.svg"),
-	REGULAR_HAND_PEACE("regular_hand-peace.svg"),
-	REGULAR_NEWSPAPER("regular_newspaper.svg"),
-	REGULAR_SNOWFLAKE("regular_snowflake.svg"),
-	REGULAR_STAR_HALF("regular_star-half.svg"),
-	REGULAR_FROWN("regular_frown.svg"),
-	REGULAR_GRIN_TONGUE_SQUINT("regular_grin-tongue-squint.svg"),
-	REGULAR_ENVELOPE_OPEN("regular_envelope-open.svg"),
-	REGULAR_SHARE_SQUARE("regular_share-square.svg"),
-	REGULAR_HOSPITAL("regular_hospital.svg"),
-	REGULAR_FILE_ARCHIVE("regular_file-archive.svg"),
-	REGULAR_GRIN_BEAM("regular_grin-beam.svg"),
-	REGULAR_COPY("regular_copy.svg"),
-	REGULAR_KISS_BEAM("regular_kiss-beam.svg"),
-	REGULAR_CLOSED_CAPTIONING("regular_closed-captioning.svg"),
-	REGULAR_ARROW_ALT_CIRCLE_RIGHT("regular_arrow-alt-circle-right.svg"),
-	REGULAR_IMAGE("regular_image.svg"),
-	REGULAR_HAND_POINT_DOWN("regular_hand-point-down.svg"),
-	REGULAR_LIGHTBULB("regular_lightbulb.svg"),
-	REGULAR_CHECK_CIRCLE("regular_check-circle.svg"),
-	REGULAR_SAVE("regular_save.svg"),
-	REGULAR_SMILE("regular_smile.svg"),
-	REGULAR_IMAGES("regular_images.svg"),
-	REGULAR_GRIN_TEARS("regular_grin-tears.svg"),
-	REGULAR_CALENDAR_ALT("regular_calendar-alt.svg"),
-	REGULAR_LAUGH_BEAM("regular_laugh-beam.svg"),
-	REGULAR_HAND_PAPER("regular_hand-paper.svg"),
-	REGULAR_CARET_SQUARE_DOWN("regular_caret-square-down.svg"),
-	REGULAR_FILE_ALT("regular_file-alt.svg"),
-	REGULAR_THUMBS_UP("regular_thumbs-up.svg"),
-	REGULAR_SQUARE("regular_square.svg"),
-	REGULAR_EYE_SLASH("regular_eye-slash.svg"),
-	REGULAR_PAPER_PLANE("regular_paper-plane.svg"),
-	REGULAR_ARROW_ALT_CIRCLE_UP("regular_arrow-alt-circle-up.svg"),
-	REGULAR_GRIN_SQUINT_TEARS("regular_grin-squint-tears.svg"),
-	REGULAR_FILE_POWERPOINT("regular_file-powerpoint.svg"),
-	REGULAR_GRIN_TONGUE("regular_grin-tongue.svg"),
-	REGULAR_GRIN_BEAM_SWEAT("regular_grin-beam-sweat.svg"),
-	REGULAR_HAND_SPOCK("regular_hand-spock.svg"),
-	REGULAR_GEM("regular_gem.svg"),
-	REGULAR_CHART_BAR("regular_chart-bar.svg"),
-	REGULAR_WINDOW_MAXIMIZE("regular_window-maximize.svg"),
-	REGULAR_ADDRESS_BOOK("regular_address-book.svg"),
-	REGULAR_MEH_ROLLING_EYES("regular_meh-rolling-eyes.svg"),
-	REGULAR_STAR("regular_star.svg"),
-	REGULAR_SUN("regular_sun.svg"),
-	REGULAR_EDIT("regular_edit.svg"),
-	REGULAR_ADDRESS_CARD("regular_address-card.svg"),
-	REGULAR_CARET_SQUARE_RIGHT("regular_caret-square-right.svg"),
-	REGULAR_LEMON("regular_lemon.svg"),
-	REGULAR_SMILE_BEAM("regular_smile-beam.svg"),
-	REGULAR_COMPASS("regular_compass.svg"),
-	REGULAR_CREDIT_CARD("regular_credit-card.svg"),
-	REGULAR_USER_CIRCLE("regular_user-circle.svg"),
-	REGULAR_TRASH_ALT("regular_trash-alt.svg"),
-	REGULAR_WINDOW_CLOSE("regular_window-close.svg"),
-	REGULAR_TIRED("regular_tired.svg"),
-	REGULAR_CLOCK("regular_clock.svg"),
-	REGULAR_WINDOW_MINIMIZE("regular_window-minimize.svg"),
-	REGULAR_SAD_CRY("regular_sad-cry.svg"),
-	REGULAR_EYE("regular_eye.svg"),
-	REGULAR_REGISTERED("regular_registered.svg"),
-	REGULAR_ARROW_ALT_CIRCLE_DOWN("regular_arrow-alt-circle-down.svg"),
-	REGULAR_GRIN("regular_grin.svg"),
-	REGULAR_CALENDAR_MINUS("regular_calendar-minus.svg"),
-	REGULAR_ID_CARD("regular_id-card.svg"),
-	REGULAR_BELL_SLASH("regular_bell-slash.svg"),
-	REGULAR_HANDSHAKE("regular_handshake.svg"),
-	REGULAR_COMMENT("regular_comment.svg"),
-	REGULAR_CALENDAR("regular_calendar.svg"),
-	REGULAR_TIMES_CIRCLE("regular_times-circle.svg"),
-	REGULAR_CALENDAR_TIMES("regular_calendar-times.svg"),
-	REGULAR_FILE_CODE("regular_file-code.svg"),
-	REGULAR_FUTBOL("regular_futbol.svg"),
-	REGULAR_COMMENT_ALT("regular_comment-alt.svg"),
-	REGULAR_LAUGH_SQUINT("regular_laugh-squint.svg"),
-	REGULAR_BOOKMARK("regular_bookmark.svg"),
-	REGULAR_CARET_SQUARE_UP("regular_caret-square-up.svg"),
-	REGULAR_HAND_POINTER("regular_hand-pointer.svg"),
-	REGULAR_KISS("regular_kiss.svg"),
-	REGULAR_HAND_ROCK("regular_hand-rock.svg"),
-	REGULAR_GRIN_STARS("regular_grin-stars.svg"),
-	REGULAR_HDD("regular_hdd.svg"),
-	REGULAR_STICKY_NOTE("regular_sticky-note.svg"),
-	REGULAR_WINDOW_RESTORE("regular_window-restore.svg"),
-	REGULAR_BUILDING("regular_building.svg"),
-	REGULAR_ANGRY("regular_angry.svg"),
-	REGULAR_FOLDER("regular_folder.svg"),
-	REGULAR_FILE_PDF("regular_file-pdf.svg"),
-	REGULAR_FLUSHED("regular_flushed.svg"),
-	REGULAR_MOON("regular_moon.svg"),
-	REGULAR_SURPRISE("regular_surprise.svg"),
-	REGULAR_HEART("regular_heart.svg"),
-	;
+@IconLibrary(
+		name = "fontawesome",
+		encoder = FontAwesomeIconEncoder.class,
+		decoder = FontAwesomeIconDecoder.class,
+		loader = FontAwesomeLoader.class,
+		defaultStyleSupplier = FontAwesomeDefaultStyleSupplier.class
+)
+public class FontAwesomeIcon implements Icon<FontAwesomeIcon, FontAwesomeIconStyle> {
 
-	private String iconName;
+	private static final Map<String, FontAwesomeIcon> ICONS_BY_ICON_NAME = new HashMap<>();
 
-	FontAwesomeIcon(String iconName) {
-		this.iconName = iconName;
+	public static final FontAwesomeIcon BRANDS_VIADEO_SQUARE = createInternal("brands_viadeo-square");
+	public static final FontAwesomeIcon BRANDS_SUPPLE = createInternal("brands_supple");
+	public static final FontAwesomeIcon BRANDS_BOOTSTRAP = createInternal("brands_bootstrap");
+	public static final FontAwesomeIcon BRANDS_WEIXIN = createInternal("brands_weixin");
+	public static final FontAwesomeIcon BRANDS_CONNECTDEVELOP = createInternal("brands_connectdevelop");
+	public static final FontAwesomeIcon BRANDS_MEDIUM = createInternal("brands_medium");
+	public static final FontAwesomeIcon BRANDS_IOXHOST = createInternal("brands_ioxhost");
+	public static final FontAwesomeIcon BRANDS_SNAPCHAT_GHOST = createInternal("brands_snapchat-ghost");
+	public static final FontAwesomeIcon BRANDS_FONTICONS = createInternal("brands_fonticons");
+	public static final FontAwesomeIcon BRANDS_FIGMA = createInternal("brands_figma");
+	public static final FontAwesomeIcon BRANDS_REDDIT_ALIEN = createInternal("brands_reddit-alien");
+	public static final FontAwesomeIcon BRANDS_ANGRYCREATIVE = createInternal("brands_angrycreative");
+	public static final FontAwesomeIcon BRANDS_IMDB = createInternal("brands_imdb");
+	public static final FontAwesomeIcon BRANDS_STEAM = createInternal("brands_steam");
+	public static final FontAwesomeIcon BRANDS_D_AND_D_BEYOND = createInternal("brands_d-and-d-beyond");
+	public static final FontAwesomeIcon BRANDS_FONT_AWESOME_LOGO_FULL = createInternal("brands_font-awesome-logo-full");
+	public static final FontAwesomeIcon BRANDS_TUMBLR = createInternal("brands_tumblr");
+	public static final FontAwesomeIcon BRANDS_TRIPADVISOR = createInternal("brands_tripadvisor");
+	public static final FontAwesomeIcon BRANDS_PENNY_ARCADE = createInternal("brands_penny-arcade");
+	public static final FontAwesomeIcon BRANDS_BANDCAMP = createInternal("brands_bandcamp");
+	public static final FontAwesomeIcon BRANDS_RED_RIVER = createInternal("brands_red-river");
+	public static final FontAwesomeIcon BRANDS_STRAVA = createInternal("brands_strava");
+	public static final FontAwesomeIcon BRANDS_DROPBOX = createInternal("brands_dropbox");
+	public static final FontAwesomeIcon BRANDS_MICROSOFT = createInternal("brands_microsoft");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_ND = createInternal("brands_creative-commons-nd");
+	public static final FontAwesomeIcon BRANDS_DYALOG = createInternal("brands_dyalog");
+	public static final FontAwesomeIcon BRANDS_SQUARESPACE = createInternal("brands_squarespace");
+	public static final FontAwesomeIcon BRANDS_GOOGLE_PLUS_SQUARE = createInternal("brands_google-plus-square");
+	public static final FontAwesomeIcon BRANDS_WHATSAPP_SQUARE = createInternal("brands_whatsapp-square");
+	public static final FontAwesomeIcon BRANDS_ACCUSOFT = createInternal("brands_accusoft");
+	public static final FontAwesomeIcon BRANDS_LASTFM = createInternal("brands_lastfm");
+	public static final FontAwesomeIcon BRANDS_PHOENIX_SQUADRON = createInternal("brands_phoenix-squadron");
+	public static final FontAwesomeIcon BRANDS_YELP = createInternal("brands_yelp");
+	public static final FontAwesomeIcon BRANDS_DEVIANTART = createInternal("brands_deviantart");
+	public static final FontAwesomeIcon BRANDS_AIRBNB = createInternal("brands_airbnb");
+	public static final FontAwesomeIcon BRANDS_USPS = createInternal("brands_usps");
+	public static final FontAwesomeIcon BRANDS_ENVIRA = createInternal("brands_envira");
+	public static final FontAwesomeIcon BRANDS_FULCRUM = createInternal("brands_fulcrum");
+	public static final FontAwesomeIcon BRANDS_LINUX = createInternal("brands_linux");
+	public static final FontAwesomeIcon BRANDS_FOURSQUARE = createInternal("brands_foursquare");
+	public static final FontAwesomeIcon BRANDS_DRUPAL = createInternal("brands_drupal");
+	public static final FontAwesomeIcon BRANDS_CC_STRIPE = createInternal("brands_cc-stripe");
+	public static final FontAwesomeIcon BRANDS_DEV = createInternal("brands_dev");
+	public static final FontAwesomeIcon BRANDS_SPEAKAP = createInternal("brands_speakap");
+	public static final FontAwesomeIcon BRANDS_ANDROID = createInternal("brands_android");
+	public static final FontAwesomeIcon BRANDS_ADOBE = createInternal("brands_adobe");
+	public static final FontAwesomeIcon BRANDS_GIT_SQUARE = createInternal("brands_git-square");
+	public static final FontAwesomeIcon BRANDS_ETHEREUM = createInternal("brands_ethereum");
+	public static final FontAwesomeIcon BRANDS_SHIRTSINBULK = createInternal("brands_shirtsinbulk");
+	public static final FontAwesomeIcon BRANDS_BLACK_TIE = createInternal("brands_black-tie");
+	public static final FontAwesomeIcon BRANDS_ODNOKLASSNIKI = createInternal("brands_odnoklassniki");
+	public static final FontAwesomeIcon BRANDS_FONTICONS_FI = createInternal("brands_fonticons-fi");
+	public static final FontAwesomeIcon BRANDS_CC_AMEX = createInternal("brands_cc-amex");
+	public static final FontAwesomeIcon BRANDS_JS = createInternal("brands_js");
+	public static final FontAwesomeIcon BRANDS_GALACTIC_SENATE = createInternal("brands_galactic-senate");
+	public static final FontAwesomeIcon BRANDS_REACTEUROPE = createInternal("brands_reacteurope");
+	public static final FontAwesomeIcon BRANDS_OPENID = createInternal("brands_openid");
+	public static final FontAwesomeIcon BRANDS_GITLAB = createInternal("brands_gitlab");
+	public static final FontAwesomeIcon BRANDS_SOURCETREE = createInternal("brands_sourcetree");
+	public static final FontAwesomeIcon BRANDS_GG = createInternal("brands_gg");
+	public static final FontAwesomeIcon BRANDS_JOGET = createInternal("brands_joget");
+	public static final FontAwesomeIcon BRANDS_WEIBO = createInternal("brands_weibo");
+	public static final FontAwesomeIcon BRANDS_AWS = createInternal("brands_aws");
+	public static final FontAwesomeIcon BRANDS_SASS = createInternal("brands_sass");
+	public static final FontAwesomeIcon BRANDS_CC_PAYPAL = createInternal("brands_cc-paypal");
+	public static final FontAwesomeIcon BRANDS_SUPERPOWERS = createInternal("brands_superpowers");
+	public static final FontAwesomeIcon BRANDS_SELLCAST = createInternal("brands_sellcast");
+	public static final FontAwesomeIcon BRANDS_JAVA = createInternal("brands_java");
+	public static final FontAwesomeIcon BRANDS_TENCENT_WEIBO = createInternal("brands_tencent-weibo");
+	public static final FontAwesomeIcon BRANDS_TRADE_FEDERATION = createInternal("brands_trade-federation");
+	public static final FontAwesomeIcon BRANDS_VIBER = createInternal("brands_viber");
+	public static final FontAwesomeIcon BRANDS_ELLO = createInternal("brands_ello");
+	public static final FontAwesomeIcon BRANDS_WIX = createInternal("brands_wix");
+	public static final FontAwesomeIcon BRANDS_MIZUNI = createInternal("brands_mizuni");
+	public static final FontAwesomeIcon BRANDS_LEANPUB = createInternal("brands_leanpub");
+	public static final FontAwesomeIcon BRANDS_BITBUCKET = createInternal("brands_bitbucket");
+	public static final FontAwesomeIcon BRANDS_PAGELINES = createInternal("brands_pagelines");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS = createInternal("brands_creative-commons");
+	public static final FontAwesomeIcon BRANDS_GITHUB = createInternal("brands_github");
+	public static final FontAwesomeIcon BRANDS_VIACOIN = createInternal("brands_viacoin");
+	public static final FontAwesomeIcon BRANDS_FREEBSD = createInternal("brands_freebsd");
+	public static final FontAwesomeIcon BRANDS_REBEL = createInternal("brands_rebel");
+	public static final FontAwesomeIcon BRANDS_FEDEX = createInternal("brands_fedex");
+	public static final FontAwesomeIcon BRANDS_USB = createInternal("brands_usb");
+	public static final FontAwesomeIcon BRANDS_EMPIRE = createInternal("brands_empire");
+	public static final FontAwesomeIcon BRANDS_SIMPLYBUILT = createInternal("brands_simplybuilt");
+	public static final FontAwesomeIcon BRANDS_GOOGLE_DRIVE = createInternal("brands_google-drive");
+	public static final FontAwesomeIcon BRANDS_ETSY = createInternal("brands_etsy");
+	public static final FontAwesomeIcon BRANDS_BIMOBJECT = createInternal("brands_bimobject");
+	public static final FontAwesomeIcon BRANDS_APP_STORE_IOS = createInternal("brands_app-store-ios");
+	public static final FontAwesomeIcon BRANDS_GRIPFIRE = createInternal("brands_gripfire");
+	public static final FontAwesomeIcon BRANDS_500PX = createInternal("brands_500px");
+	public static final FontAwesomeIcon BRANDS_SPEAKER_DECK = createInternal("brands_speaker-deck");
+	public static final FontAwesomeIcon BRANDS_DESKPRO = createInternal("brands_deskpro");
+	public static final FontAwesomeIcon BRANDS_CRITICAL_ROLE = createInternal("brands_critical-role");
+	public static final FontAwesomeIcon BRANDS_VIMEO_V = createInternal("brands_vimeo-v");
+	public static final FontAwesomeIcon BRANDS_STRIPE_S = createInternal("brands_stripe-s");
+	public static final FontAwesomeIcon BRANDS_KEYBASE = createInternal("brands_keybase");
+	public static final FontAwesomeIcon BRANDS_YANDEX_INTERNATIONAL = createInternal("brands_yandex-international");
+	public static final FontAwesomeIcon BRANDS_JOOMLA = createInternal("brands_joomla");
+	public static final FontAwesomeIcon BRANDS_GOOGLE_PLAY = createInternal("brands_google-play");
+	public static final FontAwesomeIcon BRANDS_UNIREGISTRY = createInternal("brands_uniregistry");
+	public static final FontAwesomeIcon BRANDS_D_AND_D = createInternal("brands_d-and-d");
+	public static final FontAwesomeIcon BRANDS_KAGGLE = createInternal("brands_kaggle");
+	public static final FontAwesomeIcon BRANDS_HUBSPOT = createInternal("brands_hubspot");
+	public static final FontAwesomeIcon BRANDS_CONFLUENCE = createInternal("brands_confluence");
+	public static final FontAwesomeIcon BRANDS_YOUTUBE_SQUARE = createInternal("brands_youtube-square");
+	public static final FontAwesomeIcon BRANDS_SERVICESTACK = createInternal("brands_servicestack");
+	public static final FontAwesomeIcon BRANDS_REDDIT_SQUARE = createInternal("brands_reddit-square");
+	public static final FontAwesomeIcon BRANDS_NPM = createInternal("brands_npm");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_NC = createInternal("brands_creative-commons-nc");
+	public static final FontAwesomeIcon BRANDS_GALACTIC_REPUBLIC = createInternal("brands_galactic-republic");
+	public static final FontAwesomeIcon BRANDS_RASPBERRY_PI = createInternal("brands_raspberry-pi");
+	public static final FontAwesomeIcon BRANDS_TUMBLR_SQUARE = createInternal("brands_tumblr-square");
+	public static final FontAwesomeIcon BRANDS_MASTODON = createInternal("brands_mastodon");
+	public static final FontAwesomeIcon BRANDS_ANGULAR = createInternal("brands_angular");
+	public static final FontAwesomeIcon BRANDS_UNTAPPD = createInternal("brands_untappd");
+	public static final FontAwesomeIcon BRANDS_APPER = createInternal("brands_apper");
+	public static final FontAwesomeIcon BRANDS_BEHANCE_SQUARE = createInternal("brands_behance-square");
+	public static final FontAwesomeIcon BRANDS_VK = createInternal("brands_vk");
+	public static final FontAwesomeIcon BRANDS_VIMEO = createInternal("brands_vimeo");
+	public static final FontAwesomeIcon BRANDS_DISCOURSE = createInternal("brands_discourse");
+	public static final FontAwesomeIcon BRANDS_HOTJAR = createInternal("brands_hotjar");
+	public static final FontAwesomeIcon BRANDS_SYMFONY = createInternal("brands_symfony");
+	public static final FontAwesomeIcon BRANDS_SLACK_HASH = createInternal("brands_slack-hash");
+	public static final FontAwesomeIcon BRANDS_SKYATLAS = createInternal("brands_skyatlas");
+	public static final FontAwesomeIcon BRANDS_HACKER_NEWS = createInternal("brands_hacker-news");
+	public static final FontAwesomeIcon BRANDS_INSTAGRAM = createInternal("brands_instagram");
+	public static final FontAwesomeIcon BRANDS_Y_COMBINATOR = createInternal("brands_y-combinator");
+	public static final FontAwesomeIcon BRANDS_MENDELEY = createInternal("brands_mendeley");
+	public static final FontAwesomeIcon BRANDS_FORT_AWESOME_ALT = createInternal("brands_fort-awesome-alt");
+	public static final FontAwesomeIcon BRANDS_R_PROJECT = createInternal("brands_r-project");
+	public static final FontAwesomeIcon BRANDS_EDGE = createInternal("brands_edge");
+	public static final FontAwesomeIcon BRANDS_YAMMER = createInternal("brands_yammer");
+	public static final FontAwesomeIcon BRANDS_FLY = createInternal("brands_fly");
+	public static final FontAwesomeIcon BRANDS_SAFARI = createInternal("brands_safari");
+	public static final FontAwesomeIcon BRANDS_PIED_PIPER_HAT = createInternal("brands_pied-piper-hat");
+	public static final FontAwesomeIcon BRANDS_AUDIBLE = createInternal("brands_audible");
+	public static final FontAwesomeIcon BRANDS_YOAST = createInternal("brands_yoast");
+	public static final FontAwesomeIcon BRANDS_FORT_AWESOME = createInternal("brands_fort-awesome");
+	public static final FontAwesomeIcon BRANDS_PYTHON = createInternal("brands_python");
+	public static final FontAwesomeIcon BRANDS_CC_APPLE_PAY = createInternal("brands_cc-apple-pay");
+	public static final FontAwesomeIcon BRANDS_DOCKER = createInternal("brands_docker");
+	public static final FontAwesomeIcon BRANDS_GIT = createInternal("brands_git");
+	public static final FontAwesomeIcon BRANDS_BLOGGER = createInternal("brands_blogger");
+	public static final FontAwesomeIcon BRANDS_ITCH_IO = createInternal("brands_itch-io");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_NC_EU = createInternal("brands_creative-commons-nc-eu");
+	public static final FontAwesomeIcon BRANDS_SCHLIX = createInternal("brands_schlix");
+	public static final FontAwesomeIcon BRANDS_MAILCHIMP = createInternal("brands_mailchimp");
+	public static final FontAwesomeIcon BRANDS_NEOS = createInternal("brands_neos");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_PD = createInternal("brands_creative-commons-pd");
+	public static final FontAwesomeIcon BRANDS_PINTEREST_P = createInternal("brands_pinterest-p");
+	public static final FontAwesomeIcon BRANDS_DIGG = createInternal("brands_digg");
+	public static final FontAwesomeIcon BRANDS_ACQUISITIONS_INCORPORATED = createInternal("brands_acquisitions-incorporated");
+	public static final FontAwesomeIcon BRANDS_BITCOIN = createInternal("brands_bitcoin");
+	public static final FontAwesomeIcon BRANDS_WHMCS = createInternal("brands_whmcs");
+	public static final FontAwesomeIcon BRANDS_DELICIOUS = createInternal("brands_delicious");
+	public static final FontAwesomeIcon BRANDS_HACKERRANK = createInternal("brands_hackerrank");
+	public static final FontAwesomeIcon BRANDS_VIMEO_SQUARE = createInternal("brands_vimeo-square");
+	public static final FontAwesomeIcon BRANDS_TELEGRAM = createInternal("brands_telegram");
+	public static final FontAwesomeIcon BRANDS_CC_DISCOVER = createInternal("brands_cc-discover");
+	public static final FontAwesomeIcon BRANDS_CENTERCODE = createInternal("brands_centercode");
+	public static final FontAwesomeIcon BRANDS_ERLANG = createInternal("brands_erlang");
+	public static final FontAwesomeIcon BRANDS_MEDRT = createInternal("brands_medrt");
+	public static final FontAwesomeIcon BRANDS_SALESFORCE = createInternal("brands_salesforce");
+	public static final FontAwesomeIcon BRANDS_MEETUP = createInternal("brands_meetup");
+	public static final FontAwesomeIcon BRANDS_WIZARDS_OF_THE_COAST = createInternal("brands_wizards-of-the-coast");
+	public static final FontAwesomeIcon BRANDS_MARKDOWN = createInternal("brands_markdown");
+	public static final FontAwesomeIcon BRANDS_GOODREADS = createInternal("brands_goodreads");
+	public static final FontAwesomeIcon BRANDS_DRIBBBLE_SQUARE = createInternal("brands_dribbble-square");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_SAMPLING_PLUS = createInternal("brands_creative-commons-sampling-plus");
+	public static final FontAwesomeIcon BRANDS_INVISION = createInternal("brands_invision");
+	public static final FontAwesomeIcon BRANDS_MIX = createInternal("brands_mix");
+	public static final FontAwesomeIcon BRANDS_GRATIPAY = createInternal("brands_gratipay");
+	public static final FontAwesomeIcon BRANDS_MAGENTO = createInternal("brands_magento");
+	public static final FontAwesomeIcon BRANDS_BLUETOOTH = createInternal("brands_bluetooth");
+	public static final FontAwesomeIcon BRANDS_HOUZZ = createInternal("brands_houzz");
+	public static final FontAwesomeIcon BRANDS_EXPEDITEDSSL = createInternal("brands_expeditedssl");
+	public static final FontAwesomeIcon BRANDS_THE_RED_YETI = createInternal("brands_the-red-yeti");
+	public static final FontAwesomeIcon BRANDS_CANADIAN_MAPLE_LEAF = createInternal("brands_canadian-maple-leaf");
+	public static final FontAwesomeIcon BRANDS_SITH = createInternal("brands_sith");
+	public static final FontAwesomeIcon BRANDS_ALGOLIA = createInternal("brands_algolia");
+	public static final FontAwesomeIcon BRANDS_USSUNNAH = createInternal("brands_ussunnah");
+	public static final FontAwesomeIcon BRANDS_SELLSY = createInternal("brands_sellsy");
+	public static final FontAwesomeIcon BRANDS_JIRA = createInternal("brands_jira");
+	public static final FontAwesomeIcon BRANDS_SPOTIFY = createInternal("brands_spotify");
+	public static final FontAwesomeIcon BRANDS_INTERCOM = createInternal("brands_intercom");
+	public static final FontAwesomeIcon BRANDS_WOLF_PACK_BATTALION = createInternal("brands_wolf-pack-battalion");
+	public static final FontAwesomeIcon BRANDS_FLIPBOARD = createInternal("brands_flipboard");
+	public static final FontAwesomeIcon BRANDS_GOOGLE_WALLET = createInternal("brands_google-wallet");
+	public static final FontAwesomeIcon BRANDS_SHOPWARE = createInternal("brands_shopware");
+	public static final FontAwesomeIcon BRANDS_PHOENIX_FRAMEWORK = createInternal("brands_phoenix-framework");
+	public static final FontAwesomeIcon BRANDS_KICKSTARTER_K = createInternal("brands_kickstarter-k");
+	public static final FontAwesomeIcon BRANDS_CC_JCB = createInternal("brands_cc-jcb");
+	public static final FontAwesomeIcon BRANDS_RESEARCHGATE = createInternal("brands_researchgate");
+	public static final FontAwesomeIcon BRANDS_LYFT = createInternal("brands_lyft");
+	public static final FontAwesomeIcon BRANDS_WPRESSR = createInternal("brands_wpressr");
+	public static final FontAwesomeIcon BRANDS_LASTFM_SQUARE = createInternal("brands_lastfm-square");
+	public static final FontAwesomeIcon BRANDS_PERISCOPE = createInternal("brands_periscope");
+	public static final FontAwesomeIcon BRANDS_MODX = createInternal("brands_modx");
+	public static final FontAwesomeIcon BRANDS_KICKSTARTER = createInternal("brands_kickstarter");
+	public static final FontAwesomeIcon BRANDS_SLIDESHARE = createInternal("brands_slideshare");
+	public static final FontAwesomeIcon BRANDS_SNAPCHAT = createInternal("brands_snapchat");
+	public static final FontAwesomeIcon BRANDS_FONT_AWESOME = createInternal("brands_font-awesome");
+	public static final FontAwesomeIcon BRANDS_README = createInternal("brands_readme");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_NC_JP = createInternal("brands_creative-commons-nc-jp");
+	public static final FontAwesomeIcon BRANDS_THEMEISLE = createInternal("brands_themeisle");
+	public static final FontAwesomeIcon BRANDS_HTML5 = createInternal("brands_html5");
+	public static final FontAwesomeIcon BRANDS_REPLYD = createInternal("brands_replyd");
+	public static final FontAwesomeIcon BRANDS_CUTTLEFISH = createInternal("brands_cuttlefish");
+	public static final FontAwesomeIcon BRANDS_ROCKRMS = createInternal("brands_rockrms");
+	public static final FontAwesomeIcon BRANDS_RAVELRY = createInternal("brands_ravelry");
+	public static final FontAwesomeIcon BRANDS_QUORA = createInternal("brands_quora");
+	public static final FontAwesomeIcon BRANDS_FONT_AWESOME_ALT = createInternal("brands_font-awesome-alt");
+	public static final FontAwesomeIcon BRANDS_MONERO = createInternal("brands_monero");
+	public static final FontAwesomeIcon BRANDS_HIRE_A_HELPER = createInternal("brands_hire-a-helper");
+	public static final FontAwesomeIcon BRANDS_GITHUB_ALT = createInternal("brands_github-alt");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_SHARE = createInternal("brands_creative-commons-share");
+	public static final FontAwesomeIcon BRANDS_YARN = createInternal("brands_yarn");
+	public static final FontAwesomeIcon BRANDS_CC_VISA = createInternal("brands_cc-visa");
+	public static final FontAwesomeIcon BRANDS_DOCHUB = createInternal("brands_dochub");
+	public static final FontAwesomeIcon BRANDS_GITHUB_SQUARE = createInternal("brands_github-square");
+	public static final FontAwesomeIcon BRANDS_LARAVEL = createInternal("brands_laravel");
+	public static final FontAwesomeIcon BRANDS_DIGITAL_OCEAN = createInternal("brands_digital-ocean");
+	public static final FontAwesomeIcon BRANDS_XING_SQUARE = createInternal("brands_xing-square");
+	public static final FontAwesomeIcon BRANDS_EARLYBIRDS = createInternal("brands_earlybirds");
+	public static final FontAwesomeIcon BRANDS_CENTOS = createInternal("brands_centos");
+	public static final FontAwesomeIcon BRANDS_BLUETOOTH_B = createInternal("brands_bluetooth-b");
+	public static final FontAwesomeIcon BRANDS_TEAMSPEAK = createInternal("brands_teamspeak");
+	public static final FontAwesomeIcon BRANDS_WPEXPLORER = createInternal("brands_wpexplorer");
+	public static final FontAwesomeIcon BRANDS_FIRST_ORDER_ALT = createInternal("brands_first-order-alt");
+	public static final FontAwesomeIcon BRANDS_UBUNTU = createInternal("brands_ubuntu");
+	public static final FontAwesomeIcon BRANDS_OPENCART = createInternal("brands_opencart");
+	public static final FontAwesomeIcon BRANDS_PIED_PIPER = createInternal("brands_pied-piper");
+	public static final FontAwesomeIcon BRANDS_PAYPAL = createInternal("brands_paypal");
+	public static final FontAwesomeIcon BRANDS_SUSE = createInternal("brands_suse");
+	public static final FontAwesomeIcon BRANDS_WPBEGINNER = createInternal("brands_wpbeginner");
+	public static final FontAwesomeIcon BRANDS_BLOGGER_B = createInternal("brands_blogger-b");
+	public static final FontAwesomeIcon BRANDS_ROCKETCHAT = createInternal("brands_rocketchat");
+	public static final FontAwesomeIcon BRANDS_DRAFT2DIGITAL = createInternal("brands_draft2digital");
+	public static final FontAwesomeIcon BRANDS_PLAYSTATION = createInternal("brands_playstation");
+	public static final FontAwesomeIcon BRANDS_FACEBOOK = createInternal("brands_facebook");
+	public static final FontAwesomeIcon BRANDS_AMAZON_PAY = createInternal("brands_amazon-pay");
+	public static final FontAwesomeIcon BRANDS_NINTENDO_SWITCH = createInternal("brands_nintendo-switch");
+	public static final FontAwesomeIcon BRANDS_AMAZON = createInternal("brands_amazon");
+	public static final FontAwesomeIcon BRANDS_QUINSCAPE = createInternal("brands_quinscape");
+	public static final FontAwesomeIcon BRANDS_FREE_CODE_CAMP = createInternal("brands_free-code-camp");
+	public static final FontAwesomeIcon BRANDS_VINE = createInternal("brands_vine");
+	public static final FontAwesomeIcon BRANDS_PINTEREST = createInternal("brands_pinterest");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_SA = createInternal("brands_creative-commons-sa");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_PD_ALT = createInternal("brands_creative-commons-pd-alt");
+	public static final FontAwesomeIcon BRANDS_STACK_OVERFLOW = createInternal("brands_stack-overflow");
+	public static final FontAwesomeIcon BRANDS_PAGE4 = createInternal("brands_page4");
+	public static final FontAwesomeIcon BRANDS_OSI = createInternal("brands_osi");
+	public static final FontAwesomeIcon BRANDS_YANDEX = createInternal("brands_yandex");
+	public static final FontAwesomeIcon BRANDS_WHATSAPP = createInternal("brands_whatsapp");
+	public static final FontAwesomeIcon BRANDS_GOOGLE = createInternal("brands_google");
+	public static final FontAwesomeIcon BRANDS_CHROMECAST = createInternal("brands_chromecast");
+	public static final FontAwesomeIcon BRANDS_LINE = createInternal("brands_line");
+	public static final FontAwesomeIcon BRANDS_BATTLE_NET = createInternal("brands_battle-net");
+	public static final FontAwesomeIcon BRANDS_AFFILIATETHEME = createInternal("brands_affiliatetheme");
+	public static final FontAwesomeIcon BRANDS_ATLASSIAN = createInternal("brands_atlassian");
+	public static final FontAwesomeIcon BRANDS_AVIATO = createInternal("brands_aviato");
+	public static final FontAwesomeIcon BRANDS_BITY = createInternal("brands_bity");
+	public static final FontAwesomeIcon BRANDS_PHP = createInternal("brands_php");
+	public static final FontAwesomeIcon BRANDS_STUMBLEUPON_CIRCLE = createInternal("brands_stumbleupon-circle");
+	public static final FontAwesomeIcon BRANDS_STRIPE = createInternal("brands_stripe");
+	public static final FontAwesomeIcon BRANDS_JEDI_ORDER = createInternal("brands_jedi-order");
+	public static final FontAwesomeIcon BRANDS_THINK_PEAKS = createInternal("brands_think-peaks");
+	public static final FontAwesomeIcon BRANDS_BUROMOBELEXPERTE = createInternal("brands_buromobelexperte");
+	public static final FontAwesomeIcon BRANDS_PHABRICATOR = createInternal("brands_phabricator");
+	public static final FontAwesomeIcon BRANDS_APPLE_PAY = createInternal("brands_apple-pay");
+	public static final FontAwesomeIcon BRANDS_ARTSTATION = createInternal("brands_artstation");
+	public static final FontAwesomeIcon BRANDS_FONT_AWESOME_FLAG = createInternal("brands_font-awesome-flag");
+	public static final FontAwesomeIcon BRANDS_SCRIBD = createInternal("brands_scribd");
+	public static final FontAwesomeIcon BRANDS_STACK_EXCHANGE = createInternal("brands_stack-exchange");
+	public static final FontAwesomeIcon BRANDS_FEDORA = createInternal("brands_fedora");
+	public static final FontAwesomeIcon BRANDS_JENKINS = createInternal("brands_jenkins");
+	public static final FontAwesomeIcon BRANDS_STUDIOVINARI = createInternal("brands_studiovinari");
+	public static final FontAwesomeIcon BRANDS_GLIDE = createInternal("brands_glide");
+	public static final FontAwesomeIcon BRANDS_ADN = createInternal("brands_adn");
+	public static final FontAwesomeIcon BRANDS_CSS3_ALT = createInternal("brands_css3-alt");
+	public static final FontAwesomeIcon BRANDS_XING = createInternal("brands_xing");
+	public static final FontAwesomeIcon BRANDS_MEDAPPS = createInternal("brands_medapps");
+	public static final FontAwesomeIcon BRANDS_REDHAT = createInternal("brands_redhat");
+	public static final FontAwesomeIcon BRANDS_FANTASY_FLIGHT_GAMES = createInternal("brands_fantasy-flight-games");
+	public static final FontAwesomeIcon BRANDS_FACEBOOK_F = createInternal("brands_facebook-f");
+	public static final FontAwesomeIcon BRANDS_HIPS = createInternal("brands_hips");
+	public static final FontAwesomeIcon BRANDS_TWITCH = createInternal("brands_twitch");
+	public static final FontAwesomeIcon BRANDS_CC_DINERS_CLUB = createInternal("brands_cc-diners-club");
+	public static final FontAwesomeIcon BRANDS_WINDOWS = createInternal("brands_windows");
+	public static final FontAwesomeIcon BRANDS_REV = createInternal("brands_rev");
+	public static final FontAwesomeIcon BRANDS_BTC = createInternal("brands_btc");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_ZERO = createInternal("brands_creative-commons-zero");
+	public static final FontAwesomeIcon BRANDS_ELEMENTOR = createInternal("brands_elementor");
+	public static final FontAwesomeIcon BRANDS_YOUTUBE = createInternal("brands_youtube");
+	public static final FontAwesomeIcon BRANDS_ACCESSIBLE_ICON = createInternal("brands_accessible-icon");
+	public static final FontAwesomeIcon BRANDS_GG_CIRCLE = createInternal("brands_gg-circle");
+	public static final FontAwesomeIcon BRANDS_APP_STORE = createInternal("brands_app-store");
+	public static final FontAwesomeIcon BRANDS_CODIEPIE = createInternal("brands_codiepie");
+	public static final FontAwesomeIcon BRANDS_STUMBLEUPON = createInternal("brands_stumbleupon");
+	public static final FontAwesomeIcon BRANDS_NUTRITIONIX = createInternal("brands_nutritionix");
+	public static final FontAwesomeIcon BRANDS_LINKEDIN_IN = createInternal("brands_linkedin-in");
+	public static final FontAwesomeIcon BRANDS_JSFIDDLE = createInternal("brands_jsfiddle");
+	public static final FontAwesomeIcon BRANDS_YAHOO = createInternal("brands_yahoo");
+	public static final FontAwesomeIcon BRANDS_GRAV = createInternal("brands_grav");
+	public static final FontAwesomeIcon BRANDS_STICKER_MULE = createInternal("brands_sticker-mule");
+	public static final FontAwesomeIcon BRANDS_GOODREADS_G = createInternal("brands_goodreads-g");
+	public static final FontAwesomeIcon BRANDS_UBER = createInternal("brands_uber");
+	public static final FontAwesomeIcon BRANDS_SKETCH = createInternal("brands_sketch");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_REMIX = createInternal("brands_creative-commons-remix");
+	public static final FontAwesomeIcon BRANDS_ITUNES_NOTE = createInternal("brands_itunes-note");
+	public static final FontAwesomeIcon BRANDS_GULP = createInternal("brands_gulp");
+	public static final FontAwesomeIcon BRANDS_KEYCDN = createInternal("brands_keycdn");
+	public static final FontAwesomeIcon BRANDS_DIASPORA = createInternal("brands_diaspora");
+	public static final FontAwesomeIcon BRANDS_REDDIT = createInternal("brands_reddit");
+	public static final FontAwesomeIcon BRANDS_ALIPAY = createInternal("brands_alipay");
+	public static final FontAwesomeIcon BRANDS_CLOUDSCALE = createInternal("brands_cloudscale");
+	public static final FontAwesomeIcon BRANDS_BUYSELLADS = createInternal("brands_buysellads");
+	public static final FontAwesomeIcon BRANDS_STEAM_SYMBOL = createInternal("brands_steam-symbol");
+	public static final FontAwesomeIcon BRANDS_ASYMMETRIK = createInternal("brands_asymmetrik");
+	public static final FontAwesomeIcon BRANDS_ANGELLIST = createInternal("brands_angellist");
+	public static final FontAwesomeIcon BRANDS_WPFORMS = createInternal("brands_wpforms");
+	public static final FontAwesomeIcon BRANDS_LINODE = createInternal("brands_linode");
+	public static final FontAwesomeIcon BRANDS_JS_SQUARE = createInternal("brands_js-square");
+	public static final FontAwesomeIcon BRANDS_AVIANEX = createInternal("brands_avianex");
+	public static final FontAwesomeIcon BRANDS_EVERNOTE = createInternal("brands_evernote");
+	public static final FontAwesomeIcon BRANDS_CODEPEN = createInternal("brands_codepen");
+	public static final FontAwesomeIcon BRANDS_DRIBBBLE = createInternal("brands_dribbble");
+	public static final FontAwesomeIcon BRANDS_CC_AMAZON_PAY = createInternal("brands_cc-amazon-pay");
+	public static final FontAwesomeIcon BRANDS_XBOX = createInternal("brands_xbox");
+	public static final FontAwesomeIcon BRANDS_TRELLO = createInternal("brands_trello");
+	public static final FontAwesomeIcon BRANDS_ADVERSAL = createInternal("brands_adversal");
+	public static final FontAwesomeIcon BRANDS_DHL = createInternal("brands_dhl");
+	public static final FontAwesomeIcon BRANDS_HORNBILL = createInternal("brands_hornbill");
+	public static final FontAwesomeIcon BRANDS_THEMECO = createInternal("brands_themeco");
+	public static final FontAwesomeIcon BRANDS_GOOGLE_PLUS = createInternal("brands_google-plus");
+	public static final FontAwesomeIcon BRANDS_CONTAO = createInternal("brands_contao");
+	public static final FontAwesomeIcon BRANDS_LINKEDIN = createInternal("brands_linkedin");
+	public static final FontAwesomeIcon BRANDS_MANDALORIAN = createInternal("brands_mandalorian");
+	public static final FontAwesomeIcon BRANDS_OLD_REPUBLIC = createInternal("brands_old-republic");
+	public static final FontAwesomeIcon BRANDS_QQ = createInternal("brands_qq");
+	public static final FontAwesomeIcon BRANDS_VAADIN = createInternal("brands_vaadin");
+	public static final FontAwesomeIcon BRANDS_UIKIT = createInternal("brands_uikit");
+	public static final FontAwesomeIcon BRANDS_REACT = createInternal("brands_react");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_BY = createInternal("brands_creative-commons-by");
+	public static final FontAwesomeIcon BRANDS_OPTIN_MONSTER = createInternal("brands_optin-monster");
+	public static final FontAwesomeIcon BRANDS_TWITTER = createInternal("brands_twitter");
+	public static final FontAwesomeIcon BRANDS_LESS = createInternal("brands_less");
+	public static final FontAwesomeIcon BRANDS_PATREON = createInternal("brands_patreon");
+	public static final FontAwesomeIcon BRANDS_DISCORD = createInternal("brands_discord");
+	public static final FontAwesomeIcon BRANDS_HACKER_NEWS_SQUARE = createInternal("brands_hacker-news-square");
+	public static final FontAwesomeIcon BRANDS_OPERA = createInternal("brands_opera");
+	public static final FontAwesomeIcon BRANDS_GITTER = createInternal("brands_gitter");
+	public static final FontAwesomeIcon BRANDS_BUFFER = createInternal("brands_buffer");
+	public static final FontAwesomeIcon BRANDS_CSS3 = createInternal("brands_css3");
+	public static final FontAwesomeIcon BRANDS_RENREN = createInternal("brands_renren");
+	public static final FontAwesomeIcon BRANDS_NS8 = createInternal("brands_ns8");
+	public static final FontAwesomeIcon BRANDS_SISTRIX = createInternal("brands_sistrix");
+	public static final FontAwesomeIcon BRANDS_VUEJS = createInternal("brands_vuejs");
+	public static final FontAwesomeIcon BRANDS_FACEBOOK_SQUARE = createInternal("brands_facebook-square");
+	public static final FontAwesomeIcon BRANDS_MIXCLOUD = createInternal("brands_mixcloud");
+	public static final FontAwesomeIcon BRANDS_FIRSTDRAFT = createInternal("brands_firstdraft");
+	public static final FontAwesomeIcon BRANDS_SLACK = createInternal("brands_slack");
+	public static final FontAwesomeIcon BRANDS_ZHIHU = createInternal("brands_zhihu");
+	public static final FontAwesomeIcon BRANDS_SOUNDCLOUD = createInternal("brands_soundcloud");
+	public static final FontAwesomeIcon BRANDS_PRODUCT_HUNT = createInternal("brands_product-hunt");
+	public static final FontAwesomeIcon BRANDS_WIKIPEDIA_W = createInternal("brands_wikipedia-w");
+	public static final FontAwesomeIcon BRANDS_PIED_PIPER_PP = createInternal("brands_pied-piper-pp");
+	public static final FontAwesomeIcon BRANDS_CREATIVE_COMMONS_SAMPLING = createInternal("brands_creative-commons-sampling");
+	public static final FontAwesomeIcon BRANDS_HOOLI = createInternal("brands_hooli");
+	public static final FontAwesomeIcon BRANDS_FIRST_ORDER = createInternal("brands_first-order");
+	public static final FontAwesomeIcon BRANDS_GLIDE_G = createInternal("brands_glide-g");
+	public static final FontAwesomeIcon BRANDS_EMBER = createInternal("brands_ember");
+	public static final FontAwesomeIcon BRANDS_GITKRAKEN = createInternal("brands_gitkraken");
+	public static final FontAwesomeIcon BRANDS_STEAM_SQUARE = createInternal("brands_steam-square");
+	public static final FontAwesomeIcon BRANDS_SKYPE = createInternal("brands_skype");
+	public static final FontAwesomeIcon BRANDS_GOFORE = createInternal("brands_gofore");
+	public static final FontAwesomeIcon BRANDS_EBAY = createInternal("brands_ebay");
+	public static final FontAwesomeIcon BRANDS_CPANEL = createInternal("brands_cpanel");
+	public static final FontAwesomeIcon BRANDS_WORDPRESS = createInternal("brands_wordpress");
+	public static final FontAwesomeIcon BRANDS_KORVUE = createInternal("brands_korvue");
+	public static final FontAwesomeIcon BRANDS_CLOUDVERSIFY = createInternal("brands_cloudversify");
+	public static final FontAwesomeIcon BRANDS_GRUNT = createInternal("brands_grunt");
+	public static final FontAwesomeIcon BRANDS_VIADEO = createInternal("brands_viadeo");
+	public static final FontAwesomeIcon BRANDS_WORDPRESS_SIMPLE = createInternal("brands_wordpress-simple");
+	public static final FontAwesomeIcon BRANDS_BLACKBERRY = createInternal("brands_blackberry");
+	public static final FontAwesomeIcon BRANDS_FACEBOOK_MESSENGER = createInternal("brands_facebook-messenger");
+	public static final FontAwesomeIcon BRANDS_PUSHED = createInternal("brands_pushed");
+	public static final FontAwesomeIcon BRANDS_AMILIA = createInternal("brands_amilia");
+	public static final FontAwesomeIcon BRANDS_PIED_PIPER_ALT = createInternal("brands_pied-piper-alt");
+	public static final FontAwesomeIcon BRANDS_CLOUDSMITH = createInternal("brands_cloudsmith");
+	public static final FontAwesomeIcon BRANDS_CHROME = createInternal("brands_chrome");
+	public static final FontAwesomeIcon BRANDS_FORUMBEE = createInternal("brands_forumbee");
+	public static final FontAwesomeIcon BRANDS_SNAPCHAT_SQUARE = createInternal("brands_snapchat-square");
+	public static final FontAwesomeIcon BRANDS_NODE_JS = createInternal("brands_node-js");
+	public static final FontAwesomeIcon BRANDS_MAXCDN = createInternal("brands_maxcdn");
+	public static final FontAwesomeIcon BRANDS_APPLE = createInternal("brands_apple");
+	public static final FontAwesomeIcon BRANDS_NAPSTER = createInternal("brands_napster");
+	public static final FontAwesomeIcon BRANDS_NIMBLR = createInternal("brands_nimblr");
+	public static final FontAwesomeIcon BRANDS_VNV = createInternal("brands_vnv");
+	public static final FontAwesomeIcon BRANDS_WAZE = createInternal("brands_waze");
+	public static final FontAwesomeIcon BRANDS_TELEGRAM_PLANE = createInternal("brands_telegram-plane");
+	public static final FontAwesomeIcon BRANDS_ODNOKLASSNIKI_SQUARE = createInternal("brands_odnoklassniki-square");
+	public static final FontAwesomeIcon BRANDS_GOOGLE_PLUS_G = createInternal("brands_google-plus-g");
+	public static final FontAwesomeIcon BRANDS_PALFED = createInternal("brands_palfed");
+	public static final FontAwesomeIcon BRANDS_WEEBLY = createInternal("brands_weebly");
+	public static final FontAwesomeIcon BRANDS_AUTOPREFIXER = createInternal("brands_autoprefixer");
+	public static final FontAwesomeIcon BRANDS_SEARCHENGIN = createInternal("brands_searchengin");
+	public static final FontAwesomeIcon BRANDS_PINTEREST_SQUARE = createInternal("brands_pinterest-square");
+	public static final FontAwesomeIcon BRANDS_MEGAPORT = createInternal("brands_megaport");
+	public static final FontAwesomeIcon BRANDS_TYPO3 = createInternal("brands_typo3");
+	public static final FontAwesomeIcon BRANDS_DEPLOYDOG = createInternal("brands_deploydog");
+	public static final FontAwesomeIcon BRANDS_NODE = createInternal("brands_node");
+	public static final FontAwesomeIcon BRANDS_CC_MASTERCARD = createInternal("brands_cc-mastercard");
+	public static final FontAwesomeIcon BRANDS_TWITTER_SQUARE = createInternal("brands_twitter-square");
+	public static final FontAwesomeIcon BRANDS_DASHCUBE = createInternal("brands_dashcube");
+	public static final FontAwesomeIcon BRANDS_GET_POCKET = createInternal("brands_get-pocket");
+	public static final FontAwesomeIcon BRANDS_UPS = createInternal("brands_ups");
+	public static final FontAwesomeIcon BRANDS_MEDIUM_M = createInternal("brands_medium-m");
+	public static final FontAwesomeIcon BRANDS_BEHANCE = createInternal("brands_behance");
+	public static final FontAwesomeIcon BRANDS_RESOLVING = createInternal("brands_resolving");
+	public static final FontAwesomeIcon BRANDS_INTERNET_EXPLORER = createInternal("brands_internet-explorer");
+	public static final FontAwesomeIcon BRANDS_STAYLINKED = createInternal("brands_staylinked");
+	public static final FontAwesomeIcon BRANDS_FIREFOX = createInternal("brands_firefox");
+	public static final FontAwesomeIcon BRANDS_FLICKR = createInternal("brands_flickr");
+	public static final FontAwesomeIcon BRANDS_ITUNES = createInternal("brands_itunes");
+	public static final FontAwesomeIcon SOLID_COLUMNS = createInternal("solid_columns");
+	public static final FontAwesomeIcon SOLID_COMMENT_DOTS = createInternal("solid_comment-dots");
+	public static final FontAwesomeIcon SOLID_PASSPORT = createInternal("solid_passport");
+	public static final FontAwesomeIcon SOLID_SOCKS = createInternal("solid_socks");
+	public static final FontAwesomeIcon SOLID_UNDERLINE = createInternal("solid_underline");
+	public static final FontAwesomeIcon SOLID_TINT_SLASH = createInternal("solid_tint-slash");
+	public static final FontAwesomeIcon SOLID_UNDO_ALT = createInternal("solid_undo-alt");
+	public static final FontAwesomeIcon SOLID_CLOUD_MEATBALL = createInternal("solid_cloud-meatball");
+	public static final FontAwesomeIcon SOLID_CARET_DOWN = createInternal("solid_caret-down");
+	public static final FontAwesomeIcon SOLID_DICE_THREE = createInternal("solid_dice-three");
+	public static final FontAwesomeIcon SOLID_TOGGLE_ON = createInternal("solid_toggle-on");
+	public static final FontAwesomeIcon SOLID_CLONE = createInternal("solid_clone");
+	public static final FontAwesomeIcon SOLID_SEARCH = createInternal("solid_search");
+	public static final FontAwesomeIcon SOLID_GRIMACE = createInternal("solid_grimace");
+	public static final FontAwesomeIcon SOLID_ANGLE_DOUBLE_LEFT = createInternal("solid_angle-double-left");
+	public static final FontAwesomeIcon SOLID_CROW = createInternal("solid_crow");
+	public static final FontAwesomeIcon SOLID_PALLET = createInternal("solid_pallet");
+	public static final FontAwesomeIcon SOLID_ERASER = createInternal("solid_eraser");
+	public static final FontAwesomeIcon SOLID_LIST_UL = createInternal("solid_list-ul");
+	public static final FontAwesomeIcon SOLID_CHART_LINE = createInternal("solid_chart-line");
+	public static final FontAwesomeIcon SOLID_RECEIPT = createInternal("solid_receipt");
+	public static final FontAwesomeIcon SOLID_BRIEFCASE_MEDICAL = createInternal("solid_briefcase-medical");
+	public static final FontAwesomeIcon SOLID_PAUSE_CIRCLE = createInternal("solid_pause-circle");
+	public static final FontAwesomeIcon SOLID_CHECK_SQUARE = createInternal("solid_check-square");
+	public static final FontAwesomeIcon SOLID_HAND_HOLDING_USD = createInternal("solid_hand-holding-usd");
+	public static final FontAwesomeIcon SOLID_CASH_REGISTER = createInternal("solid_cash-register");
+	public static final FontAwesomeIcon SOLID_ARROW_DOWN = createInternal("solid_arrow-down");
+	public static final FontAwesomeIcon SOLID_GRIN_SQUINT = createInternal("solid_grin-squint");
+	public static final FontAwesomeIcon SOLID_CAMPGROUND = createInternal("solid_campground");
+	public static final FontAwesomeIcon SOLID_AMERICAN_SIGN_LANGUAGE_INTERPRETING = createInternal("solid_american-sign-language-interpreting");
+	public static final FontAwesomeIcon SOLID_POO = createInternal("solid_poo");
+	public static final FontAwesomeIcon SOLID_SEARCH_MINUS = createInternal("solid_search-minus");
+	public static final FontAwesomeIcon SOLID_GHOST = createInternal("solid_ghost");
+	public static final FontAwesomeIcon SOLID_BUSINESS_TIME = createInternal("solid_business-time");
+	public static final FontAwesomeIcon SOLID_LIST = createInternal("solid_list");
+	public static final FontAwesomeIcon SOLID_BROADCAST_TOWER = createInternal("solid_broadcast-tower");
+	public static final FontAwesomeIcon SOLID_SIGN = createInternal("solid_sign");
+	public static final FontAwesomeIcon SOLID_LONG_ARROW_ALT_RIGHT = createInternal("solid_long-arrow-alt-right");
+	public static final FontAwesomeIcon SOLID_VOLUME_OFF = createInternal("solid_volume-off");
+	public static final FontAwesomeIcon SOLID_STREAM = createInternal("solid_stream");
+	public static final FontAwesomeIcon SOLID_PEN_ALT = createInternal("solid_pen-alt");
+	public static final FontAwesomeIcon SOLID_NEUTER = createInternal("solid_neuter");
+	public static final FontAwesomeIcon SOLID_FIST_RAISED = createInternal("solid_fist-raised");
+	public static final FontAwesomeIcon SOLID_FILE_EXCEL = createInternal("solid_file-excel");
+	public static final FontAwesomeIcon SOLID_PRESCRIPTION = createInternal("solid_prescription");
+	public static final FontAwesomeIcon SOLID_BED = createInternal("solid_bed");
+	public static final FontAwesomeIcon SOLID_SORT_NUMERIC_UP = createInternal("solid_sort-numeric-up");
+	public static final FontAwesomeIcon SOLID_DUMPSTER = createInternal("solid_dumpster");
+	public static final FontAwesomeIcon SOLID_FONT_AWESOME_LOGO_FULL = createInternal("solid_font-awesome-logo-full");
+	public static final FontAwesomeIcon SOLID_WIND = createInternal("solid_wind");
+	public static final FontAwesomeIcon SOLID_SKIING_NORDIC = createInternal("solid_skiing-nordic");
+	public static final FontAwesomeIcon SOLID_SUBSCRIPT = createInternal("solid_subscript");
+	public static final FontAwesomeIcon SOLID_DRUM_STEELPAN = createInternal("solid_drum-steelpan");
+	public static final FontAwesomeIcon SOLID_USER_COG = createInternal("solid_user-cog");
+	public static final FontAwesomeIcon SOLID_COG = createInternal("solid_cog");
+	public static final FontAwesomeIcon SOLID_PLAY_CIRCLE = createInternal("solid_play-circle");
+	public static final FontAwesomeIcon SOLID_LIST_ALT = createInternal("solid_list-alt");
+	public static final FontAwesomeIcon SOLID_MOBILE_ALT = createInternal("solid_mobile-alt");
+	public static final FontAwesomeIcon SOLID_PRESCRIPTION_BOTTLE_ALT = createInternal("solid_prescription-bottle-alt");
+	public static final FontAwesomeIcon SOLID_POLL_H = createInternal("solid_poll-h");
+	public static final FontAwesomeIcon SOLID_LUGGAGE_CART = createInternal("solid_luggage-cart");
+	public static final FontAwesomeIcon SOLID_CLINIC_MEDICAL = createInternal("solid_clinic-medical");
+	public static final FontAwesomeIcon SOLID_TOOLS = createInternal("solid_tools");
+	public static final FontAwesomeIcon SOLID_HRYVNIA = createInternal("solid_hryvnia");
+	public static final FontAwesomeIcon SOLID_LONG_ARROW_ALT_LEFT = createInternal("solid_long-arrow-alt-left");
+	public static final FontAwesomeIcon SOLID_MITTEN = createInternal("solid_mitten");
+	public static final FontAwesomeIcon SOLID_PEN_NIB = createInternal("solid_pen-nib");
+	public static final FontAwesomeIcon SOLID_HOURGLASS = createInternal("solid_hourglass");
+	public static final FontAwesomeIcon SOLID_ARROW_ALT_CIRCLE_LEFT = createInternal("solid_arrow-alt-circle-left");
+	public static final FontAwesomeIcon SOLID_GRIN_HEARTS = createInternal("solid_grin-hearts");
+	public static final FontAwesomeIcon SOLID_BOXES = createInternal("solid_boxes");
+	public static final FontAwesomeIcon SOLID_DOT_CIRCLE = createInternal("solid_dot-circle");
+	public static final FontAwesomeIcon SOLID_CHESS_ROOK = createInternal("solid_chess-rook");
+	public static final FontAwesomeIcon SOLID_DICE_ONE = createInternal("solid_dice-one");
+	public static final FontAwesomeIcon SOLID_REPLY = createInternal("solid_reply");
+	public static final FontAwesomeIcon SOLID_HAMBURGER = createInternal("solid_hamburger");
+	public static final FontAwesomeIcon SOLID_GRIP_LINES = createInternal("solid_grip-lines");
+	public static final FontAwesomeIcon SOLID_CAMERA_RETRO = createInternal("solid_camera-retro");
+	public static final FontAwesomeIcon SOLID_TOOLBOX = createInternal("solid_toolbox");
+	public static final FontAwesomeIcon SOLID_ENVELOPE_OPEN_TEXT = createInternal("solid_envelope-open-text");
+	public static final FontAwesomeIcon SOLID_QURAN = createInternal("solid_quran");
+	public static final FontAwesomeIcon SOLID_THERMOMETER_QUARTER = createInternal("solid_thermometer-quarter");
+	public static final FontAwesomeIcon SOLID_BEER = createInternal("solid_beer");
+	public static final FontAwesomeIcon SOLID_ANKH = createInternal("solid_ankh");
+	public static final FontAwesomeIcon SOLID_CHESS_KNIGHT = createInternal("solid_chess-knight");
+	public static final FontAwesomeIcon SOLID_ID_CARD_ALT = createInternal("solid_id-card-alt");
+	public static final FontAwesomeIcon SOLID_COMMENTS_DOLLAR = createInternal("solid_comments-dollar");
+	public static final FontAwesomeIcon SOLID_SPRAY_CAN = createInternal("solid_spray-can");
+	public static final FontAwesomeIcon SOLID_USER_SECRET = createInternal("solid_user-secret");
+	public static final FontAwesomeIcon SOLID_UTENSIL_SPOON = createInternal("solid_utensil-spoon");
+	public static final FontAwesomeIcon SOLID_STAR_HALF_ALT = createInternal("solid_star-half-alt");
+	public static final FontAwesomeIcon SOLID_BASKETBALL_BALL = createInternal("solid_basketball-ball");
+	public static final FontAwesomeIcon SOLID_UMBRELLA = createInternal("solid_umbrella");
+	public static final FontAwesomeIcon SOLID_USER = createInternal("solid_user");
+	public static final FontAwesomeIcon SOLID_BLIND = createInternal("solid_blind");
+	public static final FontAwesomeIcon SOLID_VOLUME_DOWN = createInternal("solid_volume-down");
+	public static final FontAwesomeIcon SOLID_CART_PLUS = createInternal("solid_cart-plus");
+	public static final FontAwesomeIcon SOLID_ID_BADGE = createInternal("solid_id-badge");
+	public static final FontAwesomeIcon SOLID_SMILE_WINK = createInternal("solid_smile-wink");
+	public static final FontAwesomeIcon SOLID_NETWORK_WIRED = createInternal("solid_network-wired");
+	public static final FontAwesomeIcon SOLID_CANNABIS = createInternal("solid_cannabis");
+	public static final FontAwesomeIcon SOLID_TAPE = createInternal("solid_tape");
+	public static final FontAwesomeIcon SOLID_HAND_HOLDING = createInternal("solid_hand-holding");
+	public static final FontAwesomeIcon SOLID_LAPTOP_CODE = createInternal("solid_laptop-code");
+	public static final FontAwesomeIcon SOLID_CIRCLE = createInternal("solid_circle");
+	public static final FontAwesomeIcon SOLID_TEMPERATURE_HIGH = createInternal("solid_temperature-high");
+	public static final FontAwesomeIcon SOLID_FOOTBALL_BALL = createInternal("solid_football-ball");
+	public static final FontAwesomeIcon SOLID_HIPPO = createInternal("solid_hippo");
+	public static final FontAwesomeIcon SOLID_GRIN_TONGUE_WINK = createInternal("solid_grin-tongue-wink");
+	public static final FontAwesomeIcon SOLID_ENVELOPE_SQUARE = createInternal("solid_envelope-square");
+	public static final FontAwesomeIcon SOLID_HOME = createInternal("solid_home");
+	public static final FontAwesomeIcon SOLID_COPYRIGHT = createInternal("solid_copyright");
+	public static final FontAwesomeIcon SOLID_BATTERY_HALF = createInternal("solid_battery-half");
+	public static final FontAwesomeIcon SOLID_MUSIC = createInternal("solid_music");
+	public static final FontAwesomeIcon SOLID_WAVE_SQUARE = createInternal("solid_wave-square");
+	public static final FontAwesomeIcon SOLID_TH_LIST = createInternal("solid_th-list");
+	public static final FontAwesomeIcon SOLID_CAR_CRASH = createInternal("solid_car-crash");
+	public static final FontAwesomeIcon SOLID_QUOTE_RIGHT = createInternal("solid_quote-right");
+	public static final FontAwesomeIcon SOLID_LOW_VISION = createInternal("solid_low-vision");
+	public static final FontAwesomeIcon SOLID_MAP_MARKED_ALT = createInternal("solid_map-marked-alt");
+	public static final FontAwesomeIcon SOLID_USERS_COG = createInternal("solid_users-cog");
+	public static final FontAwesomeIcon SOLID_TASKS = createInternal("solid_tasks");
+	public static final FontAwesomeIcon SOLID_IGLOO = createInternal("solid_igloo");
+	public static final FontAwesomeIcon SOLID_RECYCLE = createInternal("solid_recycle");
+	public static final FontAwesomeIcon SOLID_EJECT = createInternal("solid_eject");
+	public static final FontAwesomeIcon SOLID_LAUGH_WINK = createInternal("solid_laugh-wink");
+	public static final FontAwesomeIcon SOLID_HAND_POINT_RIGHT = createInternal("solid_hand-point-right");
+	public static final FontAwesomeIcon SOLID_ARCHWAY = createInternal("solid_archway");
+	public static final FontAwesomeIcon SOLID_CHEVRON_DOWN = createInternal("solid_chevron-down");
+	public static final FontAwesomeIcon SOLID_HEADING = createInternal("solid_heading");
+	public static final FontAwesomeIcon SOLID_STRIKETHROUGH = createInternal("solid_strikethrough");
+	public static final FontAwesomeIcon SOLID_FILE_WORD = createInternal("solid_file-word");
+	public static final FontAwesomeIcon SOLID_I_CURSOR = createInternal("solid_i-cursor");
+	public static final FontAwesomeIcon SOLID_HOSPITAL_ALT = createInternal("solid_hospital-alt");
+	public static final FontAwesomeIcon SOLID_MONEY_CHECK = createInternal("solid_money-check");
+	public static final FontAwesomeIcon SOLID_DOOR_CLOSED = createInternal("solid_door-closed");
+	public static final FontAwesomeIcon SOLID_SORT_ALPHA_UP = createInternal("solid_sort-alpha-up");
+	public static final FontAwesomeIcon SOLID_COMPACT_DISC = createInternal("solid_compact-disc");
+	public static final FontAwesomeIcon SOLID_HARD_HAT = createInternal("solid_hard-hat");
+	public static final FontAwesomeIcon SOLID_USER_ALT_SLASH = createInternal("solid_user-alt-slash");
+	public static final FontAwesomeIcon SOLID_GAS_PUMP = createInternal("solid_gas-pump");
+	public static final FontAwesomeIcon SOLID_SIGN_IN_ALT = createInternal("solid_sign-in-alt");
+	public static final FontAwesomeIcon SOLID_EXPAND_ARROWS_ALT = createInternal("solid_expand-arrows-alt");
+	public static final FontAwesomeIcon SOLID_THERMOMETER_THREE_QUARTERS = createInternal("solid_thermometer-three-quarters");
+	public static final FontAwesomeIcon SOLID_WEIGHT_HANGING = createInternal("solid_weight-hanging");
+	public static final FontAwesomeIcon SOLID_COUCH = createInternal("solid_couch");
+	public static final FontAwesomeIcon SOLID_CHURCH = createInternal("solid_church");
+	public static final FontAwesomeIcon SOLID_CROP = createInternal("solid_crop");
+	public static final FontAwesomeIcon SOLID_RESTROOM = createInternal("solid_restroom");
+	public static final FontAwesomeIcon SOLID_OBJECT_GROUP = createInternal("solid_object-group");
+	public static final FontAwesomeIcon SOLID_PEN_FANCY = createInternal("solid_pen-fancy");
+	public static final FontAwesomeIcon SOLID_COOKIE = createInternal("solid_cookie");
+	public static final FontAwesomeIcon SOLID_TAG = createInternal("solid_tag");
+	public static final FontAwesomeIcon SOLID_USER_TAG = createInternal("solid_user-tag");
+	public static final FontAwesomeIcon SOLID_SKIING = createInternal("solid_skiing");
+	public static final FontAwesomeIcon SOLID_FILE_EXPORT = createInternal("solid_file-export");
+	public static final FontAwesomeIcon SOLID_FILE_MEDICAL_ALT = createInternal("solid_file-medical-alt");
+	public static final FontAwesomeIcon SOLID_BRIEFCASE = createInternal("solid_briefcase");
+	public static final FontAwesomeIcon SOLID_DRAGON = createInternal("solid_dragon");
+	public static final FontAwesomeIcon SOLID_FILE_AUDIO = createInternal("solid_file-audio");
+	public static final FontAwesomeIcon SOLID_PEN_SQUARE = createInternal("solid_pen-square");
+	public static final FontAwesomeIcon SOLID_GRIN_WINK = createInternal("solid_grin-wink");
+	public static final FontAwesomeIcon SOLID_ARROW_CIRCLE_UP = createInternal("solid_arrow-circle-up");
+	public static final FontAwesomeIcon SOLID_SPLOTCH = createInternal("solid_splotch");
+	public static final FontAwesomeIcon SOLID_SHOWER = createInternal("solid_shower");
+	public static final FontAwesomeIcon SOLID_TEETH_OPEN = createInternal("solid_teeth-open");
+	public static final FontAwesomeIcon SOLID_PHONE_VOLUME = createInternal("solid_phone-volume");
+	public static final FontAwesomeIcon SOLID_EXCHANGE_ALT = createInternal("solid_exchange-alt");
+	public static final FontAwesomeIcon SOLID_THERMOMETER_HALF = createInternal("solid_thermometer-half");
+	public static final FontAwesomeIcon SOLID_POUND_SIGN = createInternal("solid_pound-sign");
+	public static final FontAwesomeIcon SOLID_HEADSET = createInternal("solid_headset");
+	public static final FontAwesomeIcon SOLID_CARROT = createInternal("solid_carrot");
+	public static final FontAwesomeIcon SOLID_PRESCRIPTION_BOTTLE = createInternal("solid_prescription-bottle");
+	public static final FontAwesomeIcon SOLID_MAP = createInternal("solid_map");
+	public static final FontAwesomeIcon SOLID_INBOX = createInternal("solid_inbox");
+	public static final FontAwesomeIcon SOLID_COMMENTS = createInternal("solid_comments");
+	public static final FontAwesomeIcon SOLID_ALIGN_JUSTIFY = createInternal("solid_align-justify");
+	public static final FontAwesomeIcon SOLID_PLUS_SQUARE = createInternal("solid_plus-square");
+	public static final FontAwesomeIcon SOLID_MICROPHONE = createInternal("solid_microphone");
+	public static final FontAwesomeIcon SOLID_DATABASE = createInternal("solid_database");
+	public static final FontAwesomeIcon SOLID_CALENDAR_DAY = createInternal("solid_calendar-day");
+	public static final FontAwesomeIcon SOLID_ANGLE_DOWN = createInternal("solid_angle-down");
+	public static final FontAwesomeIcon SOLID_HANDS_HELPING = createInternal("solid_hands-helping");
+	public static final FontAwesomeIcon SOLID_RSS_SQUARE = createInternal("solid_rss-square");
+	public static final FontAwesomeIcon SOLID_DICE_FIVE = createInternal("solid_dice-five");
+	public static final FontAwesomeIcon SOLID_SWIMMER = createInternal("solid_swimmer");
+	public static final FontAwesomeIcon SOLID_TRUCK_MOVING = createInternal("solid_truck-moving");
+	public static final FontAwesomeIcon SOLID_TRASH_RESTORE = createInternal("solid_trash-restore");
+	public static final FontAwesomeIcon SOLID_SATELLITE_DISH = createInternal("solid_satellite-dish");
+	public static final FontAwesomeIcon SOLID_TEXT_WIDTH = createInternal("solid_text-width");
+	public static final FontAwesomeIcon SOLID_GLOBE_ASIA = createInternal("solid_globe-asia");
+	public static final FontAwesomeIcon SOLID_USER_ASTRONAUT = createInternal("solid_user-astronaut");
+	public static final FontAwesomeIcon SOLID_FILE_INVOICE_DOLLAR = createInternal("solid_file-invoice-dollar");
+	public static final FontAwesomeIcon SOLID_FILE = createInternal("solid_file");
+	public static final FontAwesomeIcon SOLID_MEH_BLANK = createInternal("solid_meh-blank");
+	public static final FontAwesomeIcon SOLID_CLOUD_UPLOAD_ALT = createInternal("solid_cloud-upload-alt");
+	public static final FontAwesomeIcon SOLID_SIGNAL = createInternal("solid_signal");
+	public static final FontAwesomeIcon SOLID_BOOK_DEAD = createInternal("solid_book-dead");
+	public static final FontAwesomeIcon SOLID_BRAIN = createInternal("solid_brain");
+	public static final FontAwesomeIcon SOLID_MALE = createInternal("solid_male");
+	public static final FontAwesomeIcon SOLID_PAINT_BRUSH = createInternal("solid_paint-brush");
+	public static final FontAwesomeIcon SOLID_HELICOPTER = createInternal("solid_helicopter");
+	public static final FontAwesomeIcon SOLID_RULER_HORIZONTAL = createInternal("solid_ruler-horizontal");
+	public static final FontAwesomeIcon SOLID_PAW = createInternal("solid_paw");
+	public static final FontAwesomeIcon SOLID_CHESS = createInternal("solid_chess");
+	public static final FontAwesomeIcon SOLID_WINE_GLASS_ALT = createInternal("solid_wine-glass-alt");
+	public static final FontAwesomeIcon SOLID_GOLF_BALL = createInternal("solid_golf-ball");
+	public static final FontAwesomeIcon SOLID_ROAD = createInternal("solid_road");
+	public static final FontAwesomeIcon SOLID_TEXT_HEIGHT = createInternal("solid_text-height");
+	public static final FontAwesomeIcon SOLID_KISS_WINK_HEART = createInternal("solid_kiss-wink-heart");
+	public static final FontAwesomeIcon SOLID_FROWN_OPEN = createInternal("solid_frown-open");
+	public static final FontAwesomeIcon SOLID_BOX_OPEN = createInternal("solid_box-open");
+	public static final FontAwesomeIcon SOLID_TERMINAL = createInternal("solid_terminal");
+	public static final FontAwesomeIcon SOLID_SQUARE_ROOT_ALT = createInternal("solid_square-root-alt");
+	public static final FontAwesomeIcon SOLID_CITY = createInternal("solid_city");
+	public static final FontAwesomeIcon SOLID_COMMENT_DOLLAR = createInternal("solid_comment-dollar");
+	public static final FontAwesomeIcon SOLID_CHEVRON_UP = createInternal("solid_chevron-up");
+	public static final FontAwesomeIcon SOLID_LIRA_SIGN = createInternal("solid_lira-sign");
+	public static final FontAwesomeIcon SOLID_SQUARE_FULL = createInternal("solid_square-full");
+	public static final FontAwesomeIcon SOLID_TICKET_ALT = createInternal("solid_ticket-alt");
+	public static final FontAwesomeIcon SOLID_LAUGH = createInternal("solid_laugh");
+	public static final FontAwesomeIcon SOLID_UNLOCK_ALT = createInternal("solid_unlock-alt");
+	public static final FontAwesomeIcon SOLID_SAD_TEAR = createInternal("solid_sad-tear");
+	public static final FontAwesomeIcon SOLID_FILE_VIDEO = createInternal("solid_file-video");
+	public static final FontAwesomeIcon SOLID_HOUSE_DAMAGE = createInternal("solid_house-damage");
+	public static final FontAwesomeIcon SOLID_MORTAR_PESTLE = createInternal("solid_mortar-pestle");
+	public static final FontAwesomeIcon SOLID_FOLDER_OPEN = createInternal("solid_folder-open");
+	public static final FontAwesomeIcon SOLID_PLANE_DEPARTURE = createInternal("solid_plane-departure");
+	public static final FontAwesomeIcon SOLID_PAINT_ROLLER = createInternal("solid_paint-roller");
+	public static final FontAwesomeIcon SOLID_KEYBOARD = createInternal("solid_keyboard");
+	public static final FontAwesomeIcon SOLID_LESS_THAN = createInternal("solid_less-than");
+	public static final FontAwesomeIcon SOLID_ANGLE_UP = createInternal("solid_angle-up");
+	public static final FontAwesomeIcon SOLID_BATH = createInternal("solid_bath");
+	public static final FontAwesomeIcon SOLID_GRIN_ALT = createInternal("solid_grin-alt");
+	public static final FontAwesomeIcon SOLID_EXCLAMATION_TRIANGLE = createInternal("solid_exclamation-triangle");
+	public static final FontAwesomeIcon SOLID_QUESTION_CIRCLE = createInternal("solid_question-circle");
+	public static final FontAwesomeIcon SOLID_MAP_SIGNS = createInternal("solid_map-signs");
+	public static final FontAwesomeIcon SOLID_POO_STORM = createInternal("solid_poo-storm");
+	public static final FontAwesomeIcon SOLID_MAP_MARKER = createInternal("solid_map-marker");
+	public static final FontAwesomeIcon SOLID_QUESTION = createInternal("solid_question");
+	public static final FontAwesomeIcon SOLID_LOCK = createInternal("solid_lock");
+	public static final FontAwesomeIcon SOLID_X_RAY = createInternal("solid_x-ray");
+	public static final FontAwesomeIcon SOLID_FIRE = createInternal("solid_fire");
+	public static final FontAwesomeIcon SOLID_BAN = createInternal("solid_ban");
+	public static final FontAwesomeIcon SOLID_PORTRAIT = createInternal("solid_portrait");
+	public static final FontAwesomeIcon SOLID_SHOPPING_BAG = createInternal("solid_shopping-bag");
+	public static final FontAwesomeIcon SOLID_DIVIDE = createInternal("solid_divide");
+	public static final FontAwesomeIcon SOLID_PIGGY_BANK = createInternal("solid_piggy-bank");
+	public static final FontAwesomeIcon SOLID_FILE_CONTRACT = createInternal("solid_file-contract");
+	public static final FontAwesomeIcon SOLID_SD_CARD = createInternal("solid_sd-card");
+	public static final FontAwesomeIcon SOLID_REDO_ALT = createInternal("solid_redo-alt");
+	public static final FontAwesomeIcon SOLID_PEN = createInternal("solid_pen");
+	public static final FontAwesomeIcon SOLID_DRUMSTICK_BITE = createInternal("solid_drumstick-bite");
+	public static final FontAwesomeIcon SOLID_PLANE = createInternal("solid_plane");
+	public static final FontAwesomeIcon SOLID_CHEVRON_RIGHT = createInternal("solid_chevron-right");
+	public static final FontAwesomeIcon SOLID_REPUBLICAN = createInternal("solid_republican");
+	public static final FontAwesomeIcon SOLID_CLIPBOARD = createInternal("solid_clipboard");
+	public static final FontAwesomeIcon SOLID_MARS = createInternal("solid_mars");
+	public static final FontAwesomeIcon SOLID_VENUS_MARS = createInternal("solid_venus-mars");
+	public static final FontAwesomeIcon SOLID_TRUCK_PICKUP = createInternal("solid_truck-pickup");
+	public static final FontAwesomeIcon SOLID_LIFE_RING = createInternal("solid_life-ring");
+	public static final FontAwesomeIcon SOLID_LINK = createInternal("solid_link");
+	public static final FontAwesomeIcon SOLID_COMPRESS_ARROWS_ALT = createInternal("solid_compress-arrows-alt");
+	public static final FontAwesomeIcon SOLID_CERTIFICATE = createInternal("solid_certificate");
+	public static final FontAwesomeIcon SOLID_TOGGLE_OFF = createInternal("solid_toggle-off");
+	public static final FontAwesomeIcon SOLID_ELLIPSIS_H = createInternal("solid_ellipsis-h");
+	public static final FontAwesomeIcon SOLID_HOT_TUB = createInternal("solid_hot-tub");
+	public static final FontAwesomeIcon SOLID_KEY = createInternal("solid_key");
+	public static final FontAwesomeIcon SOLID_BIRTHDAY_CAKE = createInternal("solid_birthday-cake");
+	public static final FontAwesomeIcon SOLID_MAP_MARKED = createInternal("solid_map-marked");
+	public static final FontAwesomeIcon SOLID_GIFTS = createInternal("solid_gifts");
+	public static final FontAwesomeIcon SOLID_LEVEL_DOWN_ALT = createInternal("solid_level-down-alt");
+	public static final FontAwesomeIcon SOLID_MEH = createInternal("solid_meh");
+	public static final FontAwesomeIcon SOLID_CARET_SQUARE_LEFT = createInternal("solid_caret-square-left");
+	public static final FontAwesomeIcon SOLID_MEDKIT = createInternal("solid_medkit");
+	public static final FontAwesomeIcon SOLID_DOOR_OPEN = createInternal("solid_door-open");
+	public static final FontAwesomeIcon SOLID_CLOUD_SUN = createInternal("solid_cloud-sun");
+	public static final FontAwesomeIcon SOLID_ARROW_RIGHT = createInternal("solid_arrow-right");
+	public static final FontAwesomeIcon SOLID_STORE = createInternal("solid_store");
+	public static final FontAwesomeIcon SOLID_GREATER_THAN_EQUAL = createInternal("solid_greater-than-equal");
+	public static final FontAwesomeIcon SOLID_HAMSA = createInternal("solid_hamsa");
+	public static final FontAwesomeIcon SOLID_CALENDAR_PLUS = createInternal("solid_calendar-plus");
+	public static final FontAwesomeIcon SOLID_BRUSH = createInternal("solid_brush");
+	public static final FontAwesomeIcon SOLID_AT = createInternal("solid_at");
+	public static final FontAwesomeIcon SOLID_PERCENTAGE = createInternal("solid_percentage");
+	public static final FontAwesomeIcon SOLID_STOP_CIRCLE = createInternal("solid_stop-circle");
+	public static final FontAwesomeIcon SOLID_CONCIERGE_BELL = createInternal("solid_concierge-bell");
+	public static final FontAwesomeIcon SOLID_PHONE_SLASH = createInternal("solid_phone-slash");
+	public static final FontAwesomeIcon SOLID_CUBES = createInternal("solid_cubes");
+	public static final FontAwesomeIcon SOLID_USER_NINJA = createInternal("solid_user-ninja");
+	public static final FontAwesomeIcon SOLID_SHIP = createInternal("solid_ship");
+	public static final FontAwesomeIcon SOLID_QRCODE = createInternal("solid_qrcode");
+	public static final FontAwesomeIcon SOLID_NOTES_MEDICAL = createInternal("solid_notes-medical");
+	public static final FontAwesomeIcon SOLID_AMBULANCE = createInternal("solid_ambulance");
+	public static final FontAwesomeIcon SOLID_USER_CLOCK = createInternal("solid_user-clock");
+	public static final FontAwesomeIcon SOLID_CALENDAR_CHECK = createInternal("solid_calendar-check");
+	public static final FontAwesomeIcon SOLID_SKATING = createInternal("solid_skating");
+	public static final FontAwesomeIcon SOLID_STOPWATCH = createInternal("solid_stopwatch");
+	public static final FontAwesomeIcon SOLID_MINUS_SQUARE = createInternal("solid_minus-square");
+	public static final FontAwesomeIcon SOLID_YEN_SIGN = createInternal("solid_yen-sign");
+	public static final FontAwesomeIcon SOLID_CALENDAR_WEEK = createInternal("solid_calendar-week");
+	public static final FontAwesomeIcon SOLID_PIZZA_SLICE = createInternal("solid_pizza-slice");
+	public static final FontAwesomeIcon SOLID_THUMBS_DOWN = createInternal("solid_thumbs-down");
+	public static final FontAwesomeIcon SOLID_COMMENT_MEDICAL = createInternal("solid_comment-medical");
+	public static final FontAwesomeIcon SOLID_COMPRESS = createInternal("solid_compress");
+	public static final FontAwesomeIcon SOLID_ENVELOPE = createInternal("solid_envelope");
+	public static final FontAwesomeIcon SOLID_USER_MD = createInternal("solid_user-md");
+	public static final FontAwesomeIcon SOLID_UTENSILS = createInternal("solid_utensils");
+	public static final FontAwesomeIcon SOLID_PERSON_BOOTH = createInternal("solid_person-booth");
+	public static final FontAwesomeIcon SOLID_ARCHIVE = createInternal("solid_archive");
+	public static final FontAwesomeIcon SOLID_CARET_UP = createInternal("solid_caret-up");
+	public static final FontAwesomeIcon SOLID_HAND_POINT_LEFT = createInternal("solid_hand-point-left");
+	public static final FontAwesomeIcon SOLID_LOCATION_ARROW = createInternal("solid_location-arrow");
+	public static final FontAwesomeIcon SOLID_MAGNET = createInternal("solid_magnet");
+	public static final FontAwesomeIcon SOLID_SCHOOL = createInternal("solid_school");
+	public static final FontAwesomeIcon SOLID_DIAGNOSES = createInternal("solid_diagnoses");
+	public static final FontAwesomeIcon SOLID_RULER_VERTICAL = createInternal("solid_ruler-vertical");
+	public static final FontAwesomeIcon SOLID_DESKTOP = createInternal("solid_desktop");
+	public static final FontAwesomeIcon SOLID_DOWNLOAD = createInternal("solid_download");
+	public static final FontAwesomeIcon SOLID_HAND_LIZARD = createInternal("solid_hand-lizard");
+	public static final FontAwesomeIcon SOLID_BASEBALL_BALL = createInternal("solid_baseball-ball");
+	public static final FontAwesomeIcon SOLID_EXPAND = createInternal("solid_expand");
+	public static final FontAwesomeIcon SOLID_PEOPLE_CARRY = createInternal("solid_people-carry");
+	public static final FontAwesomeIcon SOLID_KHANDA = createInternal("solid_khanda");
+	public static final FontAwesomeIcon SOLID_TEETH = createInternal("solid_teeth");
+	public static final FontAwesomeIcon SOLID_FIGHTER_JET = createInternal("solid_fighter-jet");
+	public static final FontAwesomeIcon SOLID_HAND_SCISSORS = createInternal("solid_hand-scissors");
+	public static final FontAwesomeIcon SOLID_VIHARA = createInternal("solid_vihara");
+	public static final FontAwesomeIcon SOLID_BATTERY_THREE_QUARTERS = createInternal("solid_battery-three-quarters");
+	public static final FontAwesomeIcon SOLID_BOOK_OPEN = createInternal("solid_book-open");
+	public static final FontAwesomeIcon SOLID_HOURGLASS_START = createInternal("solid_hourglass-start");
+	public static final FontAwesomeIcon SOLID_COMMENT_SLASH = createInternal("solid_comment-slash");
+	public static final FontAwesomeIcon SOLID_SIGN_OUT_ALT = createInternal("solid_sign-out-alt");
+	public static final FontAwesomeIcon SOLID_GLASS_CHEERS = createInternal("solid_glass-cheers");
+	public static final FontAwesomeIcon SOLID_FILE_IMPORT = createInternal("solid_file-import");
+	public static final FontAwesomeIcon SOLID_TRANSGENDER_ALT = createInternal("solid_transgender-alt");
+	public static final FontAwesomeIcon SOLID_HAND_POINT_UP = createInternal("solid_hand-point-up");
+	public static final FontAwesomeIcon SOLID_SERVER = createInternal("solid_server");
+	public static final FontAwesomeIcon SOLID_BOLT = createInternal("solid_bolt");
+	public static final FontAwesomeIcon SOLID_TV = createInternal("solid_tv");
+	public static final FontAwesomeIcon SOLID_SMS = createInternal("solid_sms");
+	public static final FontAwesomeIcon SOLID_DEMOCRAT = createInternal("solid_democrat");
+	public static final FontAwesomeIcon SOLID_USER_PLUS = createInternal("solid_user-plus");
+	public static final FontAwesomeIcon SOLID_TABLET_ALT = createInternal("solid_tablet-alt");
+	public static final FontAwesomeIcon SOLID_MONEY_BILL_ALT = createInternal("solid_money-bill-alt");
+	public static final FontAwesomeIcon SOLID_COCKTAIL = createInternal("solid_cocktail");
+	public static final FontAwesomeIcon SOLID_CHEVRON_CIRCLE_RIGHT = createInternal("solid_chevron-circle-right");
+	public static final FontAwesomeIcon SOLID_STAR_AND_CRESCENT = createInternal("solid_star-and-crescent");
+	public static final FontAwesomeIcon SOLID_ANGLE_DOUBLE_RIGHT = createInternal("solid_angle-double-right");
+	public static final FontAwesomeIcon SOLID_SHAPES = createInternal("solid_shapes");
+	public static final FontAwesomeIcon SOLID_SOLAR_PANEL = createInternal("solid_solar-panel");
+	public static final FontAwesomeIcon SOLID_MOSQUE = createInternal("solid_mosque");
+	public static final FontAwesomeIcon SOLID_SATELLITE = createInternal("solid_satellite");
+	public static final FontAwesomeIcon SOLID_INDENT = createInternal("solid_indent");
+	public static final FontAwesomeIcon SOLID_SORT_AMOUNT_DOWN = createInternal("solid_sort-amount-down");
+	public static final FontAwesomeIcon SOLID_CHEVRON_CIRCLE_LEFT = createInternal("solid_chevron-circle-left");
+	public static final FontAwesomeIcon SOLID_AD = createInternal("solid_ad");
+	public static final FontAwesomeIcon SOLID_DNA = createInternal("solid_dna");
+	public static final FontAwesomeIcon SOLID_SLASH = createInternal("solid_slash");
+	public static final FontAwesomeIcon SOLID_TAXI = createInternal("solid_taxi");
+	public static final FontAwesomeIcon SOLID_BOOK = createInternal("solid_book");
+	public static final FontAwesomeIcon SOLID_HOTDOG = createInternal("solid_hotdog");
+	public static final FontAwesomeIcon SOLID_HOTEL = createInternal("solid_hotel");
+	public static final FontAwesomeIcon SOLID_OBJECT_UNGROUP = createInternal("solid_object-ungroup");
+	public static final FontAwesomeIcon SOLID_SKULL = createInternal("solid_skull");
+	public static final FontAwesomeIcon SOLID_THERMOMETER_FULL = createInternal("solid_thermometer-full");
+	public static final FontAwesomeIcon SOLID_PARAGRAPH = createInternal("solid_paragraph");
+	public static final FontAwesomeIcon SOLID_PLUG = createInternal("solid_plug");
+	public static final FontAwesomeIcon SOLID_THERMOMETER_EMPTY = createInternal("solid_thermometer-empty");
+	public static final FontAwesomeIcon SOLID_TRAIN = createInternal("solid_train");
+	public static final FontAwesomeIcon SOLID_H_SQUARE = createInternal("solid_h-square");
+	public static final FontAwesomeIcon SOLID_CHESS_BOARD = createInternal("solid_chess-board");
+	public static final FontAwesomeIcon SOLID_USER_MINUS = createInternal("solid_user-minus");
+	public static final FontAwesomeIcon SOLID_DIZZY = createInternal("solid_dizzy");
+	public static final FontAwesomeIcon SOLID_WALLET = createInternal("solid_wallet");
+	public static final FontAwesomeIcon SOLID_FILE_IMAGE = createInternal("solid_file-image");
+	public static final FontAwesomeIcon SOLID_BELL = createInternal("solid_bell");
+	public static final FontAwesomeIcon SOLID_COFFEE = createInternal("solid_coffee");
+	public static final FontAwesomeIcon SOLID_CODE = createInternal("solid_code");
+	public static final FontAwesomeIcon SOLID_DOLLY = createInternal("solid_dolly");
+	public static final FontAwesomeIcon SOLID_USER_LOCK = createInternal("solid_user-lock");
+	public static final FontAwesomeIcon SOLID_VOLLEYBALL_BALL = createInternal("solid_volleyball-ball");
+	public static final FontAwesomeIcon SOLID_SHIELD_ALT = createInternal("solid_shield-alt");
+	public static final FontAwesomeIcon SOLID_LONG_ARROW_ALT_UP = createInternal("solid_long-arrow-alt-up");
+	public static final FontAwesomeIcon SOLID_CLOUD_MOON_RAIN = createInternal("solid_cloud-moon-rain");
+	public static final FontAwesomeIcon SOLID_PROJECT_DIAGRAM = createInternal("solid_project-diagram");
+	public static final FontAwesomeIcon SOLID_THERMOMETER = createInternal("solid_thermometer");
+	public static final FontAwesomeIcon SOLID_AIR_FRESHENER = createInternal("solid_air-freshener");
+	public static final FontAwesomeIcon SOLID_SPIDER = createInternal("solid_spider");
+	public static final FontAwesomeIcon SOLID_FLAG = createInternal("solid_flag");
+	public static final FontAwesomeIcon SOLID_PODCAST = createInternal("solid_podcast");
+	public static final FontAwesomeIcon SOLID_USER_TIMES = createInternal("solid_user-times");
+	public static final FontAwesomeIcon SOLID_GLASS_MARTINI_ALT = createInternal("solid_glass-martini-alt");
+	public static final FontAwesomeIcon SOLID_HAND_PEACE = createInternal("solid_hand-peace");
+	public static final FontAwesomeIcon SOLID_LEVEL_UP_ALT = createInternal("solid_level-up-alt");
+	public static final FontAwesomeIcon SOLID_TRUCK_LOADING = createInternal("solid_truck-loading");
+	public static final FontAwesomeIcon SOLID_CHESS_KING = createInternal("solid_chess-king");
+	public static final FontAwesomeIcon SOLID_STOP = createInternal("solid_stop");
+	public static final FontAwesomeIcon SOLID_ARROW_CIRCLE_LEFT = createInternal("solid_arrow-circle-left");
+	public static final FontAwesomeIcon SOLID_NEWSPAPER = createInternal("solid_newspaper");
+	public static final FontAwesomeIcon SOLID_SNOWFLAKE = createInternal("solid_snowflake");
+	public static final FontAwesomeIcon SOLID_STEP_FORWARD = createInternal("solid_step-forward");
+	public static final FontAwesomeIcon SOLID_CUBE = createInternal("solid_cube");
+	public static final FontAwesomeIcon SOLID_BOMB = createInternal("solid_bomb");
+	public static final FontAwesomeIcon SOLID_ARROWS_ALT_H = createInternal("solid_arrows-alt-h");
+	public static final FontAwesomeIcon SOLID_FILE_MEDICAL = createInternal("solid_file-medical");
+	public static final FontAwesomeIcon SOLID_SHUTTLE_VAN = createInternal("solid_shuttle-van");
+	public static final FontAwesomeIcon SOLID_STAR_HALF = createInternal("solid_star-half");
+	public static final FontAwesomeIcon SOLID_PENCIL_RULER = createInternal("solid_pencil-ruler");
+	public static final FontAwesomeIcon SOLID_RULER = createInternal("solid_ruler");
+	public static final FontAwesomeIcon SOLID_FROWN = createInternal("solid_frown");
+	public static final FontAwesomeIcon SOLID_TRUCK_MONSTER = createInternal("solid_truck-monster");
+	public static final FontAwesomeIcon SOLID_GRIN_TONGUE_SQUINT = createInternal("solid_grin-tongue-squint");
+	public static final FontAwesomeIcon SOLID_OUTDENT = createInternal("solid_outdent");
+	public static final FontAwesomeIcon SOLID_CLIPBOARD_LIST = createInternal("solid_clipboard-list");
+	public static final FontAwesomeIcon SOLID_FAX = createInternal("solid_fax");
+	public static final FontAwesomeIcon SOLID_BIOHAZARD = createInternal("solid_biohazard");
+	public static final FontAwesomeIcon SOLID_CARET_RIGHT = createInternal("solid_caret-right");
+	public static final FontAwesomeIcon SOLID_USER_GRADUATE = createInternal("solid_user-graduate");
+	public static final FontAwesomeIcon SOLID_MAP_MARKER_ALT = createInternal("solid_map-marker-alt");
+	public static final FontAwesomeIcon SOLID_SMOG = createInternal("solid_smog");
+	public static final FontAwesomeIcon SOLID_BOLD = createInternal("solid_bold");
+	public static final FontAwesomeIcon SOLID_TABLETS = createInternal("solid_tablets");
+	public static final FontAwesomeIcon SOLID_ENVELOPE_OPEN = createInternal("solid_envelope-open");
+	public static final FontAwesomeIcon SOLID_TROPHY = createInternal("solid_trophy");
+	public static final FontAwesomeIcon SOLID_SHARE_ALT = createInternal("solid_share-alt");
+	public static final FontAwesomeIcon SOLID_BATTERY_FULL = createInternal("solid_battery-full");
+	public static final FontAwesomeIcon SOLID_EQUALS = createInternal("solid_equals");
+	public static final FontAwesomeIcon SOLID_PLUS = createInternal("solid_plus");
+	public static final FontAwesomeIcon SOLID_CHECK = createInternal("solid_check");
+	public static final FontAwesomeIcon SOLID_SEEDLING = createInternal("solid_seedling");
+	public static final FontAwesomeIcon SOLID_STAR_OF_DAVID = createInternal("solid_star-of-david");
+	public static final FontAwesomeIcon SOLID_SHARE_SQUARE = createInternal("solid_share-square");
+	public static final FontAwesomeIcon SOLID_RULER_COMBINED = createInternal("solid_ruler-combined");
+	public static final FontAwesomeIcon SOLID_TENGE = createInternal("solid_tenge");
+	public static final FontAwesomeIcon SOLID_TRADEMARK = createInternal("solid_trademark");
+	public static final FontAwesomeIcon SOLID_KAABA = createInternal("solid_kaaba");
+	public static final FontAwesomeIcon SOLID_SMOKING = createInternal("solid_smoking");
+	public static final FontAwesomeIcon SOLID_HOSPITAL = createInternal("solid_hospital");
+	public static final FontAwesomeIcon SOLID_FLASK = createInternal("solid_flask");
+	public static final FontAwesomeIcon SOLID_MARS_STROKE_V = createInternal("solid_mars-stroke-v");
+	public static final FontAwesomeIcon SOLID_HEADPHONES = createInternal("solid_headphones");
+	public static final FontAwesomeIcon SOLID_HORSE_HEAD = createInternal("solid_horse-head");
+	public static final FontAwesomeIcon SOLID_RSS = createInternal("solid_rss");
+	public static final FontAwesomeIcon SOLID_HORSE = createInternal("solid_horse");
+	public static final FontAwesomeIcon SOLID_LANDMARK = createInternal("solid_landmark");
+	public static final FontAwesomeIcon SOLID_MONEY_CHECK_ALT = createInternal("solid_money-check-alt");
+	public static final FontAwesomeIcon SOLID_WIFI = createInternal("solid_wifi");
+	public static final FontAwesomeIcon SOLID_RADIATION_ALT = createInternal("solid_radiation-alt");
+	public static final FontAwesomeIcon SOLID_FILE_ARCHIVE = createInternal("solid_file-archive");
+	public static final FontAwesomeIcon SOLID_CHALKBOARD_TEACHER = createInternal("solid_chalkboard-teacher");
+	public static final FontAwesomeIcon SOLID_ANGLE_RIGHT = createInternal("solid_angle-right");
+	public static final FontAwesomeIcon SOLID_ARROW_CIRCLE_RIGHT = createInternal("solid_arrow-circle-right");
+	public static final FontAwesomeIcon SOLID_VENUS = createInternal("solid_venus");
+	public static final FontAwesomeIcon SOLID_MUG_HOT = createInternal("solid_mug-hot");
+	public static final FontAwesomeIcon SOLID_INFO = createInternal("solid_info");
+	public static final FontAwesomeIcon SOLID_BULLHORN = createInternal("solid_bullhorn");
+	public static final FontAwesomeIcon SOLID_BREAD_SLICE = createInternal("solid_bread-slice");
+	public static final FontAwesomeIcon SOLID_MICROPHONE_ALT_SLASH = createInternal("solid_microphone-alt-slash");
+	public static final FontAwesomeIcon SOLID_DOG = createInternal("solid_dog");
+	public static final FontAwesomeIcon SOLID_USER_NURSE = createInternal("solid_user-nurse");
+	public static final FontAwesomeIcon SOLID_PALETTE = createInternal("solid_palette");
+	public static final FontAwesomeIcon SOLID_SHARE_ALT_SQUARE = createInternal("solid_share-alt-square");
+	public static final FontAwesomeIcon SOLID_CART_ARROW_DOWN = createInternal("solid_cart-arrow-down");
+	public static final FontAwesomeIcon SOLID_DIRECTIONS = createInternal("solid_directions");
+	public static final FontAwesomeIcon SOLID_OM = createInternal("solid_om");
+	public static final FontAwesomeIcon SOLID_HOURGLASS_HALF = createInternal("solid_hourglass-half");
+	public static final FontAwesomeIcon SOLID_HOLLY_BERRY = createInternal("solid_holly-berry");
+	public static final FontAwesomeIcon SOLID_FLAG_USA = createInternal("solid_flag-usa");
+	public static final FontAwesomeIcon SOLID_INFO_CIRCLE = createInternal("solid_info-circle");
+	public static final FontAwesomeIcon SOLID_SMOKING_BAN = createInternal("solid_smoking-ban");
+	public static final FontAwesomeIcon SOLID_FOLDER_PLUS = createInternal("solid_folder-plus");
+	public static final FontAwesomeIcon SOLID_GRIP_HORIZONTAL = createInternal("solid_grip-horizontal");
+	public static final FontAwesomeIcon SOLID_SPACE_SHUTTLE = createInternal("solid_space-shuttle");
+	public static final FontAwesomeIcon SOLID_GRIN_BEAM = createInternal("solid_grin-beam");
+	public static final FontAwesomeIcon SOLID_FEATHER_ALT = createInternal("solid_feather-alt");
+	public static final FontAwesomeIcon SOLID_RAINBOW = createInternal("solid_rainbow");
+	public static final FontAwesomeIcon SOLID_COOKIE_BITE = createInternal("solid_cookie-bite");
+	public static final FontAwesomeIcon SOLID_COPY = createInternal("solid_copy");
+	public static final FontAwesomeIcon SOLID_FUNNEL_DOLLAR = createInternal("solid_funnel-dollar");
+	public static final FontAwesomeIcon SOLID_TRAM = createInternal("solid_tram");
+	public static final FontAwesomeIcon SOLID_FISH = createInternal("solid_fish");
+	public static final FontAwesomeIcon SOLID_SIGNATURE = createInternal("solid_signature");
+	public static final FontAwesomeIcon SOLID_NOT_EQUAL = createInternal("solid_not-equal");
+	public static final FontAwesomeIcon SOLID_KISS_BEAM = createInternal("solid_kiss-beam");
+	public static final FontAwesomeIcon SOLID_BURN = createInternal("solid_burn");
+	public static final FontAwesomeIcon SOLID_GLASSES = createInternal("solid_glasses");
+	public static final FontAwesomeIcon SOLID_COINS = createInternal("solid_coins");
+	public static final FontAwesomeIcon SOLID_CLOSED_CAPTIONING = createInternal("solid_closed-captioning");
+	public static final FontAwesomeIcon SOLID_MONUMENT = createInternal("solid_monument");
+	public static final FontAwesomeIcon SOLID_HAT_WIZARD = createInternal("solid_hat-wizard");
+	public static final FontAwesomeIcon SOLID_ARROW_ALT_CIRCLE_RIGHT = createInternal("solid_arrow-alt-circle-right");
+	public static final FontAwesomeIcon SOLID_LESS_THAN_EQUAL = createInternal("solid_less-than-equal");
+	public static final FontAwesomeIcon SOLID_FILE_DOWNLOAD = createInternal("solid_file-download");
+	public static final FontAwesomeIcon SOLID_TINT = createInternal("solid_tint");
+	public static final FontAwesomeIcon SOLID_FAST_BACKWARD = createInternal("solid_fast-backward");
+	public static final FontAwesomeIcon SOLID_INDUSTRY = createInternal("solid_industry");
+	public static final FontAwesomeIcon SOLID_CHILD = createInternal("solid_child");
+	public static final FontAwesomeIcon SOLID_FIRE_EXTINGUISHER = createInternal("solid_fire-extinguisher");
+	public static final FontAwesomeIcon SOLID_MARKER = createInternal("solid_marker");
+	public static final FontAwesomeIcon SOLID_ALIGN_RIGHT = createInternal("solid_align-right");
+	public static final FontAwesomeIcon SOLID_IMAGE = createInternal("solid_image");
+	public static final FontAwesomeIcon SOLID_HAND_POINT_DOWN = createInternal("solid_hand-point-down");
+	public static final FontAwesomeIcon SOLID_VECTOR_SQUARE = createInternal("solid_vector-square");
+	public static final FontAwesomeIcon SOLID_LIGHTBULB = createInternal("solid_lightbulb");
+	public static final FontAwesomeIcon SOLID_ELLIPSIS_V = createInternal("solid_ellipsis-v");
+	public static final FontAwesomeIcon SOLID_CHECK_CIRCLE = createInternal("solid_check-circle");
+	public static final FontAwesomeIcon SOLID_SAVE = createInternal("solid_save");
+	public static final FontAwesomeIcon SOLID_SMILE = createInternal("solid_smile");
+	public static final FontAwesomeIcon SOLID_IMAGES = createInternal("solid_images");
+	public static final FontAwesomeIcon SOLID_TSHIRT = createInternal("solid_tshirt");
+	public static final FontAwesomeIcon SOLID_PAGER = createInternal("solid_pager");
+	public static final FontAwesomeIcon SOLID_GRIN_TEARS = createInternal("solid_grin-tears");
+	public static final FontAwesomeIcon SOLID_DONATE = createInternal("solid_donate");
+	public static final FontAwesomeIcon SOLID_CALENDAR_ALT = createInternal("solid_calendar-alt");
+	public static final FontAwesomeIcon SOLID_TH_LARGE = createInternal("solid_th-large");
+	public static final FontAwesomeIcon SOLID_LAUGH_BEAM = createInternal("solid_laugh-beam");
+	public static final FontAwesomeIcon SOLID_CODE_BRANCH = createInternal("solid_code-branch");
+	public static final FontAwesomeIcon SOLID_VR_CARDBOARD = createInternal("solid_vr-cardboard");
+	public static final FontAwesomeIcon SOLID_EYE_DROPPER = createInternal("solid_eye-dropper");
+	public static final FontAwesomeIcon SOLID_HAND_PAPER = createInternal("solid_hand-paper");
+	public static final FontAwesomeIcon SOLID_CARET_SQUARE_DOWN = createInternal("solid_caret-square-down");
+	public static final FontAwesomeIcon SOLID_DICE_D6 = createInternal("solid_dice-d6");
+	public static final FontAwesomeIcon SOLID_VOLUME_MUTE = createInternal("solid_volume-mute");
+	public static final FontAwesomeIcon SOLID_SEARCH_PLUS = createInternal("solid_search-plus");
+	public static final FontAwesomeIcon SOLID_PAPERCLIP = createInternal("solid_paperclip");
+	public static final FontAwesomeIcon SOLID_FILE_ALT = createInternal("solid_file-alt");
+	public static final FontAwesomeIcon SOLID_STREET_VIEW = createInternal("solid_street-view");
+	public static final FontAwesomeIcon SOLID_FAST_FORWARD = createInternal("solid_fast-forward");
+	public static final FontAwesomeIcon SOLID_SYRINGE = createInternal("solid_syringe");
+	public static final FontAwesomeIcon SOLID_CAR_BATTERY = createInternal("solid_car-battery");
+	public static final FontAwesomeIcon SOLID_AWARD = createInternal("solid_award");
+	public static final FontAwesomeIcon SOLID_BABY_CARRIAGE = createInternal("solid_baby-carriage");
+	public static final FontAwesomeIcon SOLID_BOX = createInternal("solid_box");
+	public static final FontAwesomeIcon SOLID_THUMBS_UP = createInternal("solid_thumbs-up");
+	public static final FontAwesomeIcon SOLID_SUPERSCRIPT = createInternal("solid_superscript");
+	public static final FontAwesomeIcon SOLID_GLASS_MARTINI = createInternal("solid_glass-martini");
+	public static final FontAwesomeIcon SOLID_HIKING = createInternal("solid_hiking");
+	public static final FontAwesomeIcon SOLID_MASK = createInternal("solid_mask");
+	public static final FontAwesomeIcon SOLID_PEACE = createInternal("solid_peace");
+	public static final FontAwesomeIcon SOLID_PERCENT = createInternal("solid_percent");
+	public static final FontAwesomeIcon SOLID_SQUARE = createInternal("solid_square");
+	public static final FontAwesomeIcon SOLID_CROWN = createInternal("solid_crown");
+	public static final FontAwesomeIcon SOLID_BROOM = createInternal("solid_broom");
+	public static final FontAwesomeIcon SOLID_STETHOSCOPE = createInternal("solid_stethoscope");
+	public static final FontAwesomeIcon SOLID_EYE_SLASH = createInternal("solid_eye-slash");
+	public static final FontAwesomeIcon SOLID_CANDY_CANE = createInternal("solid_candy-cane");
+	public static final FontAwesomeIcon SOLID_PLAY = createInternal("solid_play");
+	public static final FontAwesomeIcon SOLID_BACKWARD = createInternal("solid_backward");
+	public static final FontAwesomeIcon SOLID_PAPER_PLANE = createInternal("solid_paper-plane");
+	public static final FontAwesomeIcon SOLID_COGS = createInternal("solid_cogs");
+	public static final FontAwesomeIcon SOLID_PENCIL_ALT = createInternal("solid_pencil-alt");
+	public static final FontAwesomeIcon SOLID_GREATER_THAN = createInternal("solid_greater-than");
+	public static final FontAwesomeIcon SOLID_ARROW_ALT_CIRCLE_UP = createInternal("solid_arrow-alt-circle-up");
+	public static final FontAwesomeIcon SOLID_DUNGEON = createInternal("solid_dungeon");
+	public static final FontAwesomeIcon SOLID_USER_EDIT = createInternal("solid_user-edit");
+	public static final FontAwesomeIcon SOLID_TABLE = createInternal("solid_table");
+	public static final FontAwesomeIcon SOLID_BARCODE = createInternal("solid_barcode");
+	public static final FontAwesomeIcon SOLID_THUMBTACK = createInternal("solid_thumbtack");
+	public static final FontAwesomeIcon SOLID_HOURGLASS_END = createInternal("solid_hourglass-end");
+	public static final FontAwesomeIcon SOLID_SCROLL = createInternal("solid_scroll");
+	public static final FontAwesomeIcon SOLID_FLAG_CHECKERED = createInternal("solid_flag-checkered");
+	public static final FontAwesomeIcon SOLID_CHALKBOARD = createInternal("solid_chalkboard");
+	public static final FontAwesomeIcon SOLID_RADIATION = createInternal("solid_radiation");
+	public static final FontAwesomeIcon SOLID_TH = createInternal("solid_th");
+	public static final FontAwesomeIcon SOLID_BABY = createInternal("solid_baby");
+	public static final FontAwesomeIcon SOLID_SHEKEL_SIGN = createInternal("solid_shekel-sign");
+	public static final FontAwesomeIcon SOLID_GRIN_SQUINT_TEARS = createInternal("solid_grin-squint-tears");
+	public static final FontAwesomeIcon SOLID_BATTERY_EMPTY = createInternal("solid_battery-empty");
+	public static final FontAwesomeIcon SOLID_STAR_OF_LIFE = createInternal("solid_star-of-life");
+	public static final FontAwesomeIcon SOLID_CAMERA = createInternal("solid_camera");
+	public static final FontAwesomeIcon SOLID_MAGIC = createInternal("solid_magic");
+	public static final FontAwesomeIcon SOLID_REDO = createInternal("solid_redo");
+	public static final FontAwesomeIcon SOLID_FILE_POWERPOINT = createInternal("solid_file-powerpoint");
+	public static final FontAwesomeIcon SOLID_FOLDER_MINUS = createInternal("solid_folder-minus");
+	public static final FontAwesomeIcon SOLID_OTTER = createInternal("solid_otter");
+	public static final FontAwesomeIcon SOLID_SYNC_ALT = createInternal("solid_sync-alt");
+	public static final FontAwesomeIcon SOLID_SIM_CARD = createInternal("solid_sim-card");
+	public static final FontAwesomeIcon SOLID_TRUCK = createInternal("solid_truck");
+	public static final FontAwesomeIcon SOLID_GRIN_TONGUE = createInternal("solid_grin-tongue");
+	public static final FontAwesomeIcon SOLID_APPLE_ALT = createInternal("solid_apple-alt");
+	public static final FontAwesomeIcon SOLID_GRIN_BEAM_SWEAT = createInternal("solid_grin-beam-sweat");
+	public static final FontAwesomeIcon SOLID_GLASS_WHISKEY = createInternal("solid_glass-whiskey");
+	public static final FontAwesomeIcon SOLID_OIL_CAN = createInternal("solid_oil-can");
+	public static final FontAwesomeIcon SOLID_BLENDER = createInternal("solid_blender");
+	public static final FontAwesomeIcon SOLID_WINE_GLASS = createInternal("solid_wine-glass");
+	public static final FontAwesomeIcon SOLID_HAND_SPOCK = createInternal("solid_hand-spock");
+	public static final FontAwesomeIcon SOLID_BIBLE = createInternal("solid_bible");
+	public static final FontAwesomeIcon SOLID_TOILET_PAPER = createInternal("solid_toilet-paper");
+	public static final FontAwesomeIcon SOLID_EGG = createInternal("solid_egg");
+	public static final FontAwesomeIcon SOLID_USER_FRIENDS = createInternal("solid_user-friends");
+	public static final FontAwesomeIcon SOLID_BULLSEYE = createInternal("solid_bullseye");
+	public static final FontAwesomeIcon SOLID_EXCLAMATION_CIRCLE = createInternal("solid_exclamation-circle");
+	public static final FontAwesomeIcon SOLID_BUS = createInternal("solid_bus");
+	public static final FontAwesomeIcon SOLID_BOOK_READER = createInternal("solid_book-reader");
+	public static final FontAwesomeIcon SOLID_DOLLY_FLATBED = createInternal("solid_dolly-flatbed");
+	public static final FontAwesomeIcon SOLID_MERCURY = createInternal("solid_mercury");
+	public static final FontAwesomeIcon SOLID_INFINITY = createInternal("solid_infinity");
+	public static final FontAwesomeIcon SOLID_CLOUD_DOWNLOAD_ALT = createInternal("solid_cloud-download-alt");
+	public static final FontAwesomeIcon SOLID_GEM = createInternal("solid_gem");
+	public static final FontAwesomeIcon SOLID_AUDIO_DESCRIPTION = createInternal("solid_audio-description");
+	public static final FontAwesomeIcon SOLID_SKULL_CROSSBONES = createInternal("solid_skull-crossbones");
+	public static final FontAwesomeIcon SOLID_FEATHER = createInternal("solid_feather");
+	public static final FontAwesomeIcon SOLID_TRASH = createInternal("solid_trash");
+	public static final FontAwesomeIcon SOLID_CHART_BAR = createInternal("solid_chart-bar");
+	public static final FontAwesomeIcon SOLID_FIRE_ALT = createInternal("solid_fire-alt");
+	public static final FontAwesomeIcon SOLID_TRANSGENDER = createInternal("solid_transgender");
+	public static final FontAwesomeIcon SOLID_DUMPSTER_FIRE = createInternal("solid_dumpster-fire");
+	public static final FontAwesomeIcon SOLID_TOILET = createInternal("solid_toilet");
+	public static final FontAwesomeIcon SOLID_STEP_BACKWARD = createInternal("solid_step-backward");
+	public static final FontAwesomeIcon SOLID_LEAF = createInternal("solid_leaf");
+	public static final FontAwesomeIcon SOLID_PASTE = createInternal("solid_paste");
+	public static final FontAwesomeIcon SOLID_WINDOW_MAXIMIZE = createInternal("solid_window-maximize");
+	public static final FontAwesomeIcon SOLID_GOPURAM = createInternal("solid_gopuram");
+	public static final FontAwesomeIcon SOLID_ADDRESS_BOOK = createInternal("solid_address-book");
+	public static final FontAwesomeIcon SOLID_MEMORY = createInternal("solid_memory");
+	public static final FontAwesomeIcon SOLID_DOLLAR_SIGN = createInternal("solid_dollar-sign");
+	public static final FontAwesomeIcon SOLID_JOURNAL_WHILLS = createInternal("solid_journal-whills");
+	public static final FontAwesomeIcon SOLID_MEH_ROLLING_EYES = createInternal("solid_meh-rolling-eyes");
+	public static final FontAwesomeIcon SOLID_GRADUATION_CAP = createInternal("solid_graduation-cap");
+	public static final FontAwesomeIcon SOLID_KIWI_BIRD = createInternal("solid_kiwi-bird");
+	public static final FontAwesomeIcon SOLID_VOLUME_UP = createInternal("solid_volume-up");
+	public static final FontAwesomeIcon SOLID_FILL_DRIP = createInternal("solid_fill-drip");
+	public static final FontAwesomeIcon SOLID_SLIDERS_H = createInternal("solid_sliders-h");
+	public static final FontAwesomeIcon SOLID_RUNNING = createInternal("solid_running");
+	public static final FontAwesomeIcon SOLID_HASHTAG = createInternal("solid_hashtag");
+	public static final FontAwesomeIcon SOLID_GUITAR = createInternal("solid_guitar");
+	public static final FontAwesomeIcon SOLID_BONG = createInternal("solid_bong");
+	public static final FontAwesomeIcon SOLID_STAR = createInternal("solid_star");
+	public static final FontAwesomeIcon SOLID_ARROWS_ALT_V = createInternal("solid_arrows-alt-v");
+	public static final FontAwesomeIcon SOLID_EURO_SIGN = createInternal("solid_euro-sign");
+	public static final FontAwesomeIcon SOLID_SUN = createInternal("solid_sun");
+	public static final FontAwesomeIcon SOLID_WRENCH = createInternal("solid_wrench");
+	public static final FontAwesomeIcon SOLID_ARROW_CIRCLE_DOWN = createInternal("solid_arrow-circle-down");
+	public static final FontAwesomeIcon SOLID_CIRCLE_NOTCH = createInternal("solid_circle-notch");
+	public static final FontAwesomeIcon SOLID_SHOE_PRINTS = createInternal("solid_shoe-prints");
+	public static final FontAwesomeIcon SOLID_EDIT = createInternal("solid_edit");
+	public static final FontAwesomeIcon SOLID_BACON = createInternal("solid_bacon");
+	public static final FontAwesomeIcon SOLID_UNLINK = createInternal("solid_unlink");
+	public static final FontAwesomeIcon SOLID_PLANE_ARRIVAL = createInternal("solid_plane-arrival");
+	public static final FontAwesomeIcon SOLID_BONE = createInternal("solid_bone");
+	public static final FontAwesomeIcon SOLID_BUS_ALT = createInternal("solid_bus-alt");
+	public static final FontAwesomeIcon SOLID_CRUTCH = createInternal("solid_crutch");
+	public static final FontAwesomeIcon SOLID_ANCHOR = createInternal("solid_anchor");
+	public static final FontAwesomeIcon SOLID_JEDI = createInternal("solid_jedi");
+	public static final FontAwesomeIcon SOLID_HAMMER = createInternal("solid_hammer");
+	public static final FontAwesomeIcon SOLID_SEARCH_LOCATION = createInternal("solid_search-location");
+	public static final FontAwesomeIcon SOLID_HIGHLIGHTER = createInternal("solid_highlighter");
+	public static final FontAwesomeIcon SOLID_ADDRESS_CARD = createInternal("solid_address-card");
+	public static final FontAwesomeIcon SOLID_CARET_SQUARE_RIGHT = createInternal("solid_caret-square-right");
+	public static final FontAwesomeIcon SOLID_WHEELCHAIR = createInternal("solid_wheelchair");
+	public static final FontAwesomeIcon SOLID_CHART_PIE = createInternal("solid_chart-pie");
+	public static final FontAwesomeIcon SOLID_LEMON = createInternal("solid_lemon");
+	public static final FontAwesomeIcon SOLID_PLACE_OF_WORSHIP = createInternal("solid_place-of-worship");
+	public static final FontAwesomeIcon SOLID_BUG = createInternal("solid_bug");
+	public static final FontAwesomeIcon SOLID_SMILE_BEAM = createInternal("solid_smile-beam");
+	public static final FontAwesomeIcon SOLID_PRAYING_HANDS = createInternal("solid_praying-hands");
+	public static final FontAwesomeIcon SOLID_MARS_STROKE_H = createInternal("solid_mars-stroke-h");
+	public static final FontAwesomeIcon SOLID_SPINNER = createInternal("solid_spinner");
+	public static final FontAwesomeIcon SOLID_UNLOCK = createInternal("solid_unlock");
+	public static final FontAwesomeIcon SOLID_ADJUST = createInternal("solid_adjust");
+	public static final FontAwesomeIcon SOLID_HAND_HOLDING_HEART = createInternal("solid_hand-holding-heart");
+	public static final FontAwesomeIcon SOLID_COMPASS = createInternal("solid_compass");
+	public static final FontAwesomeIcon SOLID_METEOR = createInternal("solid_meteor");
+	public static final FontAwesomeIcon SOLID_PLUS_CIRCLE = createInternal("solid_plus-circle");
+	public static final FontAwesomeIcon SOLID_SEARCH_DOLLAR = createInternal("solid_search-dollar");
+	public static final FontAwesomeIcon SOLID_EXTERNAL_LINK_SQUARE_ALT = createInternal("solid_external-link-square-alt");
+	public static final FontAwesomeIcon SOLID_TRAFFIC_LIGHT = createInternal("solid_traffic-light");
+	public static final FontAwesomeIcon SOLID_BICYCLE = createInternal("solid_bicycle");
+	public static final FontAwesomeIcon SOLID_MENORAH = createInternal("solid_menorah");
+	public static final FontAwesomeIcon SOLID_CLOUD_MOON = createInternal("solid_cloud-moon");
+	public static final FontAwesomeIcon SOLID_WAREHOUSE = createInternal("solid_warehouse");
+	public static final FontAwesomeIcon SOLID_CHEVRON_CIRCLE_DOWN = createInternal("solid_chevron-circle-down");
+	public static final FontAwesomeIcon SOLID_CREDIT_CARD = createInternal("solid_credit-card");
+	public static final FontAwesomeIcon SOLID_USER_CIRCLE = createInternal("solid_user-circle");
+	public static final FontAwesomeIcon SOLID_JOINT = createInternal("solid_joint");
+	public static final FontAwesomeIcon SOLID_USER_TIE = createInternal("solid_user-tie");
+	public static final FontAwesomeIcon SOLID_SNOWMAN = createInternal("solid_snowman");
+	public static final FontAwesomeIcon SOLID_CHEVRON_CIRCLE_UP = createInternal("solid_chevron-circle-up");
+	public static final FontAwesomeIcon SOLID_TACHOMETER_ALT = createInternal("solid_tachometer-alt");
+	public static final FontAwesomeIcon SOLID_VIAL = createInternal("solid_vial");
+	public static final FontAwesomeIcon SOLID_REPLY_ALL = createInternal("solid_reply-all");
+	public static final FontAwesomeIcon SOLID_SORT_ALPHA_DOWN = createInternal("solid_sort-alpha-down");
+	public static final FontAwesomeIcon SOLID_LANGUAGE = createInternal("solid_language");
+	public static final FontAwesomeIcon SOLID_CLOUD_RAIN = createInternal("solid_cloud-rain");
+	public static final FontAwesomeIcon SOLID_MARS_STROKE = createInternal("solid_mars-stroke");
+	public static final FontAwesomeIcon SOLID_VENUS_DOUBLE = createInternal("solid_venus-double");
+	public static final FontAwesomeIcon SOLID_TRASH_ALT = createInternal("solid_trash-alt");
+	public static final FontAwesomeIcon SOLID_HAYKAL = createInternal("solid_haykal");
+	public static final FontAwesomeIcon SOLID_WINDOW_CLOSE = createInternal("solid_window-close");
+	public static final FontAwesomeIcon SOLID_TIRED = createInternal("solid_tired");
+	public static final FontAwesomeIcon SOLID_SITEMAP = createInternal("solid_sitemap");
+	public static final FontAwesomeIcon SOLID_DEAF = createInternal("solid_deaf");
+	public static final FontAwesomeIcon SOLID_CROSSHAIRS = createInternal("solid_crosshairs");
+	public static final FontAwesomeIcon SOLID_POOP = createInternal("solid_poop");
+	public static final FontAwesomeIcon SOLID_CLOCK = createInternal("solid_clock");
+	public static final FontAwesomeIcon SOLID_WINDOW_MINIMIZE = createInternal("solid_window-minimize");
+	public static final FontAwesomeIcon SOLID_RETWEET = createInternal("solid_retweet");
+	public static final FontAwesomeIcon SOLID_PHONE = createInternal("solid_phone");
+	public static final FontAwesomeIcon SOLID_SAD_CRY = createInternal("solid_sad-cry");
+	public static final FontAwesomeIcon SOLID_CROP_ALT = createInternal("solid_crop-alt");
+	public static final FontAwesomeIcon SOLID_MAIL_BULK = createInternal("solid_mail-bulk");
+	public static final FontAwesomeIcon SOLID_DUMBBELL = createInternal("solid_dumbbell");
+	public static final FontAwesomeIcon SOLID_SYNC = createInternal("solid_sync");
+	public static final FontAwesomeIcon SOLID_WINE_BOTTLE = createInternal("solid_wine-bottle");
+	public static final FontAwesomeIcon SOLID_TRACTOR = createInternal("solid_tractor");
+	public static final FontAwesomeIcon SOLID_EYE = createInternal("solid_eye");
+	public static final FontAwesomeIcon SOLID_MOBILE = createInternal("solid_mobile");
+	public static final FontAwesomeIcon SOLID_UNIVERSAL_ACCESS = createInternal("solid_universal-access");
+	public static final FontAwesomeIcon SOLID_USER_INJURED = createInternal("solid_user-injured");
+	public static final FontAwesomeIcon SOLID_ANGLE_DOUBLE_UP = createInternal("solid_angle-double-up");
+	public static final FontAwesomeIcon SOLID_BOOK_MEDICAL = createInternal("solid_book-medical");
+	public static final FontAwesomeIcon SOLID_DOVE = createInternal("solid_dove");
+	public static final FontAwesomeIcon SOLID_CAR_SIDE = createInternal("solid_car-side");
+	public static final FontAwesomeIcon SOLID_GIFT = createInternal("solid_gift");
+	public static final FontAwesomeIcon SOLID_CAR = createInternal("solid_car");
+	public static final FontAwesomeIcon SOLID_REGISTERED = createInternal("solid_registered");
+	public static final FontAwesomeIcon SOLID_FILE_INVOICE = createInternal("solid_file-invoice");
+	public static final FontAwesomeIcon SOLID_LONG_ARROW_ALT_DOWN = createInternal("solid_long-arrow-alt-down");
+	public static final FontAwesomeIcon SOLID_DRAW_POLYGON = createInternal("solid_draw-polygon");
+	public static final FontAwesomeIcon SOLID_BATTERY_QUARTER = createInternal("solid_battery-quarter");
+	public static final FontAwesomeIcon SOLID_ATLAS = createInternal("solid_atlas");
+	public static final FontAwesomeIcon SOLID_TABLE_TENNIS = createInternal("solid_table-tennis");
+	public static final FontAwesomeIcon SOLID_LAYER_GROUP = createInternal("solid_layer-group");
+	public static final FontAwesomeIcon SOLID_ARROW_ALT_CIRCLE_DOWN = createInternal("solid_arrow-alt-circle-down");
+	public static final FontAwesomeIcon SOLID_SHARE = createInternal("solid_share");
+	public static final FontAwesomeIcon SOLID_TAGS = createInternal("solid_tags");
+	public static final FontAwesomeIcon SOLID_VIALS = createInternal("solid_vials");
+	public static final FontAwesomeIcon SOLID_GLOBE_EUROPE = createInternal("solid_globe-europe");
+	public static final FontAwesomeIcon SOLID_ARROW_UP = createInternal("solid_arrow-up");
+	public static final FontAwesomeIcon SOLID_BALANCE_SCALE = createInternal("solid_balance-scale");
+	public static final FontAwesomeIcon SOLID_GRIN = createInternal("solid_grin");
+	public static final FontAwesomeIcon SOLID_MICROSCOPE = createInternal("solid_microscope");
+	public static final FontAwesomeIcon SOLID_SUBWAY = createInternal("solid_subway");
+	public static final FontAwesomeIcon SOLID_MICROPHONE_ALT = createInternal("solid_microphone-alt");
+	public static final FontAwesomeIcon SOLID_FIRST_AID = createInternal("solid_first-aid");
+	public static final FontAwesomeIcon SOLID_DRUM = createInternal("solid_drum");
+	public static final FontAwesomeIcon SOLID_SORT = createInternal("solid_sort");
+	public static final FontAwesomeIcon SOLID_PROCEDURES = createInternal("solid_procedures");
+	public static final FontAwesomeIcon SOLID_CALENDAR_MINUS = createInternal("solid_calendar-minus");
+	public static final FontAwesomeIcon SOLID_ETHERNET = createInternal("solid_ethernet");
+	public static final FontAwesomeIcon SOLID_UNDO = createInternal("solid_undo");
+	public static final FontAwesomeIcon SOLID_VIDEO = createInternal("solid_video");
+	public static final FontAwesomeIcon SOLID_ROBOT = createInternal("solid_robot");
+	public static final FontAwesomeIcon SOLID_PEPPER_HOT = createInternal("solid_pepper-hot");
+	public static final FontAwesomeIcon SOLID_TREE = createInternal("solid_tree");
+	public static final FontAwesomeIcon SOLID_ID_CARD = createInternal("solid_id-card");
+	public static final FontAwesomeIcon SOLID_PILLS = createInternal("solid_pills");
+	public static final FontAwesomeIcon SOLID_PUZZLE_PIECE = createInternal("solid_puzzle-piece");
+	public static final FontAwesomeIcon SOLID_MAP_PIN = createInternal("solid_map-pin");
+	public static final FontAwesomeIcon SOLID_FILTER = createInternal("solid_filter");
+	public static final FontAwesomeIcon SOLID_ALLERGIES = createInternal("solid_allergies");
+	public static final FontAwesomeIcon SOLID_SUITCASE_ROLLING = createInternal("solid_suitcase-rolling");
+	public static final FontAwesomeIcon SOLID_WATER = createInternal("solid_water");
+	public static final FontAwesomeIcon SOLID_CLOUD_SHOWERS_HEAVY = createInternal("solid_cloud-showers-heavy");
+	public static final FontAwesomeIcon SOLID_CHESS_PAWN = createInternal("solid_chess-pawn");
+	public static final FontAwesomeIcon SOLID_UMBRELLA_BEACH = createInternal("solid_umbrella-beach");
+	public static final FontAwesomeIcon SOLID_CHECK_DOUBLE = createInternal("solid_check-double");
+	public static final FontAwesomeIcon SOLID_FILE_SIGNATURE = createInternal("solid_file-signature");
+	public static final FontAwesomeIcon SOLID_ITALIC = createInternal("solid_italic");
+	public static final FontAwesomeIcon SOLID_GLOBE_AMERICAS = createInternal("solid_globe-americas");
+	public static final FontAwesomeIcon SOLID_BELL_SLASH = createInternal("solid_bell-slash");
+	public static final FontAwesomeIcon SOLID_HANDSHAKE = createInternal("solid_handshake");
+	public static final FontAwesomeIcon SOLID_MONEY_BILL = createInternal("solid_money-bill");
+	public static final FontAwesomeIcon SOLID_MEDAL = createInternal("solid_medal");
+	public static final FontAwesomeIcon SOLID_MARS_DOUBLE = createInternal("solid_mars-double");
+	public static final FontAwesomeIcon SOLID_WON_SIGN = createInternal("solid_won-sign");
+	public static final FontAwesomeIcon SOLID_COMMENT = createInternal("solid_comment");
+	public static final FontAwesomeIcon SOLID_TORII_GATE = createInternal("solid_torii-gate");
+	public static final FontAwesomeIcon SOLID_VIDEO_SLASH = createInternal("solid_video-slash");
+	public static final FontAwesomeIcon SOLID_CALENDAR = createInternal("solid_calendar");
+	public static final FontAwesomeIcon SOLID_GLOBE = createInternal("solid_globe");
+	public static final FontAwesomeIcon SOLID_ARROW_LEFT = createInternal("solid_arrow-left");
+	public static final FontAwesomeIcon SOLID_ALIGN_CENTER = createInternal("solid_align-center");
+	public static final FontAwesomeIcon SOLID_HOSPITAL_SYMBOL = createInternal("solid_hospital-symbol");
+	public static final FontAwesomeIcon SOLID_CROSS = createInternal("solid_cross");
+	public static final FontAwesomeIcon SOLID_BLOG = createInternal("solid_blog");
+	public static final FontAwesomeIcon SOLID_UNIVERSITY = createInternal("solid_university");
+	public static final FontAwesomeIcon SOLID_ROUTE = createInternal("solid_route");
+	public static final FontAwesomeIcon SOLID_BOWLING_BALL = createInternal("solid_bowling-ball");
+	public static final FontAwesomeIcon SOLID_MONEY_BILL_WAVE_ALT = createInternal("solid_money-bill-wave-alt");
+	public static final FontAwesomeIcon SOLID_MINUS_CIRCLE = createInternal("solid_minus-circle");
+	public static final FontAwesomeIcon SOLID_GRIP_LINES_VERTICAL = createInternal("solid_grip-lines-vertical");
+	public static final FontAwesomeIcon SOLID_MICROCHIP = createInternal("solid_microchip");
+	public static final FontAwesomeIcon SOLID_FROG = createInternal("solid_frog");
+	public static final FontAwesomeIcon SOLID_LAPTOP = createInternal("solid_laptop");
+	public static final FontAwesomeIcon SOLID_POWER_OFF = createInternal("solid_power-off");
+	public static final FontAwesomeIcon SOLID_THEATER_MASKS = createInternal("solid_theater-masks");
+	public static final FontAwesomeIcon SOLID_HEARTBEAT = createInternal("solid_heartbeat");
+	public static final FontAwesomeIcon SOLID_CHART_AREA = createInternal("solid_chart-area");
+	public static final FontAwesomeIcon SOLID_SIGN_LANGUAGE = createInternal("solid_sign-language");
+	public static final FontAwesomeIcon SOLID_QUOTE_LEFT = createInternal("solid_quote-left");
+	public static final FontAwesomeIcon SOLID_FILE_PRESCRIPTION = createInternal("solid_file-prescription");
+	public static final FontAwesomeIcon SOLID_MOUNTAIN = createInternal("solid_mountain");
+	public static final FontAwesomeIcon SOLID_MICROPHONE_SLASH = createInternal("solid_microphone-slash");
+	public static final FontAwesomeIcon SOLID_TIMES_CIRCLE = createInternal("solid_times-circle");
+	public static final FontAwesomeIcon SOLID_CARET_LEFT = createInternal("solid_caret-left");
+	public static final FontAwesomeIcon SOLID_DICE_TWO = createInternal("solid_dice-two");
+	public static final FontAwesomeIcon SOLID_TOOTH = createInternal("solid_tooth");
+	public static final FontAwesomeIcon SOLID_CHESS_QUEEN = createInternal("solid_chess-queen");
+	public static final FontAwesomeIcon SOLID_CALENDAR_TIMES = createInternal("solid_calendar-times");
+	public static final FontAwesomeIcon SOLID_HEADPHONES_ALT = createInternal("solid_headphones-alt");
+	public static final FontAwesomeIcon SOLID_DIGITAL_TACHOGRAPH = createInternal("solid_digital-tachograph");
+	public static final FontAwesomeIcon SOLID_FILE_CODE = createInternal("solid_file-code");
+	public static final FontAwesomeIcon SOLID_FILE_CSV = createInternal("solid_file-csv");
+	public static final FontAwesomeIcon SOLID_EXTERNAL_LINK_ALT = createInternal("solid_external-link-alt");
+	public static final FontAwesomeIcon SOLID_HEART_BROKEN = createInternal("solid_heart-broken");
+	public static final FontAwesomeIcon SOLID_ANGLE_DOUBLE_DOWN = createInternal("solid_angle-double-down");
+	public static final FontAwesomeIcon SOLID_DICE_SIX = createInternal("solid_dice-six");
+	public static final FontAwesomeIcon SOLID_CUT = createInternal("solid_cut");
+	public static final FontAwesomeIcon SOLID_USER_ALT = createInternal("solid_user-alt");
+	public static final FontAwesomeIcon SOLID_CLOUD = createInternal("solid_cloud");
+	public static final FontAwesomeIcon SOLID_HOCKEY_PUCK = createInternal("solid_hockey-puck");
+	public static final FontAwesomeIcon SOLID_TTY = createInternal("solid_tty");
+	public static final FontAwesomeIcon SOLID_GRIP_VERTICAL = createInternal("solid_grip-vertical");
+	public static final FontAwesomeIcon SOLID_FUTBOL = createInternal("solid_futbol");
+	public static final FontAwesomeIcon SOLID_SNOWBOARDING = createInternal("solid_snowboarding");
+	public static final FontAwesomeIcon SOLID_CHEESE = createInternal("solid_cheese");
+	public static final FontAwesomeIcon SOLID_COMMENT_ALT = createInternal("solid_comment-alt");
+	public static final FontAwesomeIcon SOLID_DICE = createInternal("solid_dice");
+	public static final FontAwesomeIcon SOLID_BARS = createInternal("solid_bars");
+	public static final FontAwesomeIcon SOLID_BEZIER_CURVE = createInternal("solid_bezier-curve");
+	public static final FontAwesomeIcon SOLID_CHAIR = createInternal("solid_chair");
+	public static final FontAwesomeIcon SOLID_DICE_D20 = createInternal("solid_dice-d20");
+	public static final FontAwesomeIcon SOLID_SUITCASE = createInternal("solid_suitcase");
+	public static final FontAwesomeIcon SOLID_LAUGH_SQUINT = createInternal("solid_laugh-squint");
+	public static final FontAwesomeIcon SOLID_SORT_NUMERIC_DOWN = createInternal("solid_sort-numeric-down");
+	public static final FontAwesomeIcon SOLID_MOTORCYCLE = createInternal("solid_motorcycle");
+	public static final FontAwesomeIcon SOLID_UPLOAD = createInternal("solid_upload");
+	public static final FontAwesomeIcon SOLID_PAUSE = createInternal("solid_pause");
+	public static final FontAwesomeIcon SOLID_FORWARD = createInternal("solid_forward");
+	public static final FontAwesomeIcon SOLID_DICE_FOUR = createInternal("solid_dice-four");
+	public static final FontAwesomeIcon SOLID_BOOKMARK = createInternal("solid_bookmark");
+	public static final FontAwesomeIcon SOLID_BRAILLE = createInternal("solid_braille");
+	public static final FontAwesomeIcon SOLID_FILE_UPLOAD = createInternal("solid_file-upload");
+	public static final FontAwesomeIcon SOLID_ROCKET = createInternal("solid_rocket");
+	public static final FontAwesomeIcon SOLID_ICICLES = createInternal("solid_icicles");
+	public static final FontAwesomeIcon SOLID_CARET_SQUARE_UP = createInternal("solid_caret-square-up");
+	public static final FontAwesomeIcon SOLID_BLENDER_PHONE = createInternal("solid_blender-phone");
+	public static final FontAwesomeIcon SOLID_ASTERISK = createInternal("solid_asterisk");
+	public static final FontAwesomeIcon SOLID_USER_CHECK = createInternal("solid_user-check");
+	public static final FontAwesomeIcon SOLID_HAND_POINTER = createInternal("solid_hand-pointer");
+	public static final FontAwesomeIcon SOLID_CLOUD_SUN_RAIN = createInternal("solid_cloud-sun-rain");
+	public static final FontAwesomeIcon SOLID_RUPEE_SIGN = createInternal("solid_rupee-sign");
+	public static final FontAwesomeIcon SOLID_SLEIGH = createInternal("solid_sleigh");
+	public static final FontAwesomeIcon SOLID_TABLET = createInternal("solid_tablet");
+	public static final FontAwesomeIcon SOLID_KISS = createInternal("solid_kiss");
+	public static final FontAwesomeIcon SOLID_LIST_OL = createInternal("solid_list-ol");
+	public static final FontAwesomeIcon SOLID_RANDOM = createInternal("solid_random");
+	public static final FontAwesomeIcon SOLID_CAR_ALT = createInternal("solid_car-alt");
+	public static final FontAwesomeIcon SOLID_LAPTOP_MEDICAL = createInternal("solid_laptop-medical");
+	public static final FontAwesomeIcon SOLID_RUBLE_SIGN = createInternal("solid_ruble-sign");
+	public static final FontAwesomeIcon SOLID_STORE_ALT = createInternal("solid_store-alt");
+	public static final FontAwesomeIcon SOLID_HAND_ROCK = createInternal("solid_hand-rock");
+	public static final FontAwesomeIcon SOLID_LOCK_OPEN = createInternal("solid_lock-open");
+	public static final FontAwesomeIcon SOLID_ATOM = createInternal("solid_atom");
+	public static final FontAwesomeIcon SOLID_CAT = createInternal("solid_cat");
+	public static final FontAwesomeIcon SOLID_YIN_YANG = createInternal("solid_yin-yang");
+	public static final FontAwesomeIcon SOLID_GRIN_STARS = createInternal("solid_grin-stars");
+	public static final FontAwesomeIcon SOLID_ICE_CREAM = createInternal("solid_ice-cream");
+	public static final FontAwesomeIcon SOLID_RING = createInternal("solid_ring");
+	public static final FontAwesomeIcon SOLID_POLL = createInternal("solid_poll");
+	public static final FontAwesomeIcon SOLID_GLOBE_AFRICA = createInternal("solid_globe-africa");
+	public static final FontAwesomeIcon SOLID_PARKING = createInternal("solid_parking");
+	public static final FontAwesomeIcon SOLID_SNOWPLOW = createInternal("solid_snowplow");
+	public static final FontAwesomeIcon SOLID_BACKSPACE = createInternal("solid_backspace");
+	public static final FontAwesomeIcon SOLID_ANGLE_LEFT = createInternal("solid_angle-left");
+	public static final FontAwesomeIcon SOLID_HDD = createInternal("solid_hdd");
+	public static final FontAwesomeIcon SOLID_STICKY_NOTE = createInternal("solid_sticky-note");
+	public static final FontAwesomeIcon SOLID_SHOPPING_CART = createInternal("solid_shopping-cart");
+	public static final FontAwesomeIcon SOLID_PARACHUTE_BOX = createInternal("solid_parachute-box");
+	public static final FontAwesomeIcon SOLID_SPA = createInternal("solid_spa");
+	public static final FontAwesomeIcon SOLID_SORT_DOWN = createInternal("solid_sort-down");
+	public static final FontAwesomeIcon SOLID_CALCULATOR = createInternal("solid_calculator");
+	public static final FontAwesomeIcon SOLID_WINDOW_RESTORE = createInternal("solid_window-restore");
+	public static final FontAwesomeIcon SOLID_USER_SLASH = createInternal("solid_user-slash");
+	public static final FontAwesomeIcon SOLID_VOTE_YEA = createInternal("solid_vote-yea");
+	public static final FontAwesomeIcon SOLID_SHIPPING_FAST = createInternal("solid_shipping-fast");
+	public static final FontAwesomeIcon SOLID_SCREWDRIVER = createInternal("solid_screwdriver");
+	public static final FontAwesomeIcon SOLID_FEMALE = createInternal("solid_female");
+	public static final FontAwesomeIcon SOLID_MONEY_BILL_WAVE = createInternal("solid_money-bill-wave");
+	public static final FontAwesomeIcon SOLID_HAND_MIDDLE_FINGER = createInternal("solid_hand-middle-finger");
+	public static final FontAwesomeIcon SOLID_CHESS_BISHOP = createInternal("solid_chess-bishop");
+	public static final FontAwesomeIcon SOLID_SHOPPING_BASKET = createInternal("solid_shopping-basket");
+	public static final FontAwesomeIcon SOLID_DHARMACHAKRA = createInternal("solid_dharmachakra");
+	public static final FontAwesomeIcon SOLID_CHARGING_STATION = createInternal("solid_charging-station");
+	public static final FontAwesomeIcon SOLID_BUILDING = createInternal("solid_building");
+	public static final FontAwesomeIcon SOLID_BINOCULARS = createInternal("solid_binoculars");
+	public static final FontAwesomeIcon SOLID_ANGRY = createInternal("solid_angry");
+	public static final FontAwesomeIcon SOLID_GENDERLESS = createInternal("solid_genderless");
+	public static final FontAwesomeIcon SOLID_QUIDDITCH = createInternal("solid_quidditch");
+	public static final FontAwesomeIcon SOLID_HISTORY = createInternal("solid_history");
+	public static final FontAwesomeIcon SOLID_GAVEL = createInternal("solid_gavel");
+	public static final FontAwesomeIcon SOLID_TORAH = createInternal("solid_torah");
+	public static final FontAwesomeIcon SOLID_FOLDER = createInternal("solid_folder");
+	public static final FontAwesomeIcon SOLID_ARROWS_ALT = createInternal("solid_arrows-alt");
+	public static final FontAwesomeIcon SOLID_DRAFTING_COMPASS = createInternal("solid_drafting-compass");
+	public static final FontAwesomeIcon SOLID_ASSISTIVE_LISTENING_SYSTEMS = createInternal("solid_assistive-listening-systems");
+	public static final FontAwesomeIcon SOLID_USERS = createInternal("solid_users");
+	public static final FontAwesomeIcon SOLID_HANDS = createInternal("solid_hands");
+	public static final FontAwesomeIcon SOLID_FINGERPRINT = createInternal("solid_fingerprint");
+	public static final FontAwesomeIcon SOLID_FILL = createInternal("solid_fill");
+	public static final FontAwesomeIcon SOLID_HANUKIAH = createInternal("solid_hanukiah");
+	public static final FontAwesomeIcon SOLID_SYNAGOGUE = createInternal("solid_synagogue");
+	public static final FontAwesomeIcon SOLID_FILE_PDF = createInternal("solid_file-pdf");
+	public static final FontAwesomeIcon SOLID_FLUSHED = createInternal("solid_flushed");
+	public static final FontAwesomeIcon SOLID_GAMEPAD = createInternal("solid_gamepad");
+	public static final FontAwesomeIcon SOLID_WALKING = createInternal("solid_walking");
+	public static final FontAwesomeIcon SOLID_CLIPBOARD_CHECK = createInternal("solid_clipboard-check");
+	public static final FontAwesomeIcon SOLID_MINUS = createInternal("solid_minus");
+	public static final FontAwesomeIcon SOLID_PHONE_SQUARE = createInternal("solid_phone-square");
+	public static final FontAwesomeIcon SOLID_TIMES = createInternal("solid_times");
+	public static final FontAwesomeIcon SOLID_CHEVRON_LEFT = createInternal("solid_chevron-left");
+	public static final FontAwesomeIcon SOLID_FILM = createInternal("solid_film");
+	public static final FontAwesomeIcon SOLID_PRINT = createInternal("solid_print");
+	public static final FontAwesomeIcon SOLID_MOON = createInternal("solid_moon");
+	public static final FontAwesomeIcon SOLID_STROOPWAFEL = createInternal("solid_stroopwafel");
+	public static final FontAwesomeIcon SOLID_PRAY = createInternal("solid_pray");
+	public static final FontAwesomeIcon SOLID_EXCLAMATION = createInternal("solid_exclamation");
+	public static final FontAwesomeIcon SOLID_WEIGHT = createInternal("solid_weight");
+	public static final FontAwesomeIcon SOLID_BAND_AID = createInternal("solid_band-aid");
+	public static final FontAwesomeIcon SOLID_SORT_AMOUNT_UP = createInternal("solid_sort-amount-up");
+	public static final FontAwesomeIcon SOLID_CAPSULES = createInternal("solid_capsules");
+	public static final FontAwesomeIcon SOLID_SURPRISE = createInternal("solid_surprise");
+	public static final FontAwesomeIcon SOLID_TRASH_RESTORE_ALT = createInternal("solid_trash-restore-alt");
+	public static final FontAwesomeIcon SOLID_USER_SHIELD = createInternal("solid_user-shield");
+	public static final FontAwesomeIcon SOLID_MOUSE_POINTER = createInternal("solid_mouse-pointer");
+	public static final FontAwesomeIcon SOLID_RIBBON = createInternal("solid_ribbon");
+	public static final FontAwesomeIcon SOLID_SWATCHBOOK = createInternal("solid_swatchbook");
+	public static final FontAwesomeIcon SOLID_SWIMMING_POOL = createInternal("solid_swimming-pool");
+	public static final FontAwesomeIcon SOLID_STAMP = createInternal("solid_stamp");
+	public static final FontAwesomeIcon SOLID_SORT_UP = createInternal("solid_sort-up");
+	public static final FontAwesomeIcon SOLID_ALIGN_LEFT = createInternal("solid_align-left");
+	public static final FontAwesomeIcon SOLID_TEMPERATURE_LOW = createInternal("solid_temperature-low");
+	public static final FontAwesomeIcon SOLID_PASTAFARIANISM = createInternal("solid_pastafarianism");
+	public static final FontAwesomeIcon SOLID_HEART = createInternal("solid_heart");
+	public static final FontAwesomeIcon SOLID_FONT = createInternal("solid_font");
+	public static final FontAwesomeIcon REGULAR_COMMENT_DOTS = createInternal("regular_comment-dots");
+	public static final FontAwesomeIcon REGULAR_CLONE = createInternal("regular_clone");
+	public static final FontAwesomeIcon REGULAR_GRIMACE = createInternal("regular_grimace");
+	public static final FontAwesomeIcon REGULAR_PAUSE_CIRCLE = createInternal("regular_pause-circle");
+	public static final FontAwesomeIcon REGULAR_CHECK_SQUARE = createInternal("regular_check-square");
+	public static final FontAwesomeIcon REGULAR_GRIN_SQUINT = createInternal("regular_grin-squint");
+	public static final FontAwesomeIcon REGULAR_FILE_EXCEL = createInternal("regular_file-excel");
+	public static final FontAwesomeIcon REGULAR_FONT_AWESOME_LOGO_FULL = createInternal("regular_font-awesome-logo-full");
+	public static final FontAwesomeIcon REGULAR_PLAY_CIRCLE = createInternal("regular_play-circle");
+	public static final FontAwesomeIcon REGULAR_LIST_ALT = createInternal("regular_list-alt");
+	public static final FontAwesomeIcon REGULAR_HOURGLASS = createInternal("regular_hourglass");
+	public static final FontAwesomeIcon REGULAR_ARROW_ALT_CIRCLE_LEFT = createInternal("regular_arrow-alt-circle-left");
+	public static final FontAwesomeIcon REGULAR_GRIN_HEARTS = createInternal("regular_grin-hearts");
+	public static final FontAwesomeIcon REGULAR_DOT_CIRCLE = createInternal("regular_dot-circle");
+	public static final FontAwesomeIcon REGULAR_USER = createInternal("regular_user");
+	public static final FontAwesomeIcon REGULAR_ID_BADGE = createInternal("regular_id-badge");
+	public static final FontAwesomeIcon REGULAR_SMILE_WINK = createInternal("regular_smile-wink");
+	public static final FontAwesomeIcon REGULAR_CIRCLE = createInternal("regular_circle");
+	public static final FontAwesomeIcon REGULAR_GRIN_TONGUE_WINK = createInternal("regular_grin-tongue-wink");
+	public static final FontAwesomeIcon REGULAR_COPYRIGHT = createInternal("regular_copyright");
+	public static final FontAwesomeIcon REGULAR_LAUGH_WINK = createInternal("regular_laugh-wink");
+	public static final FontAwesomeIcon REGULAR_HAND_POINT_RIGHT = createInternal("regular_hand-point-right");
+	public static final FontAwesomeIcon REGULAR_FILE_WORD = createInternal("regular_file-word");
+	public static final FontAwesomeIcon REGULAR_OBJECT_GROUP = createInternal("regular_object-group");
+	public static final FontAwesomeIcon REGULAR_FILE_AUDIO = createInternal("regular_file-audio");
+	public static final FontAwesomeIcon REGULAR_GRIN_WINK = createInternal("regular_grin-wink");
+	public static final FontAwesomeIcon REGULAR_MAP = createInternal("regular_map");
+	public static final FontAwesomeIcon REGULAR_COMMENTS = createInternal("regular_comments");
+	public static final FontAwesomeIcon REGULAR_PLUS_SQUARE = createInternal("regular_plus-square");
+	public static final FontAwesomeIcon REGULAR_FILE = createInternal("regular_file");
+	public static final FontAwesomeIcon REGULAR_MEH_BLANK = createInternal("regular_meh-blank");
+	public static final FontAwesomeIcon REGULAR_KISS_WINK_HEART = createInternal("regular_kiss-wink-heart");
+	public static final FontAwesomeIcon REGULAR_FROWN_OPEN = createInternal("regular_frown-open");
+	public static final FontAwesomeIcon REGULAR_LAUGH = createInternal("regular_laugh");
+	public static final FontAwesomeIcon REGULAR_SAD_TEAR = createInternal("regular_sad-tear");
+	public static final FontAwesomeIcon REGULAR_FILE_VIDEO = createInternal("regular_file-video");
+	public static final FontAwesomeIcon REGULAR_FOLDER_OPEN = createInternal("regular_folder-open");
+	public static final FontAwesomeIcon REGULAR_KEYBOARD = createInternal("regular_keyboard");
+	public static final FontAwesomeIcon REGULAR_GRIN_ALT = createInternal("regular_grin-alt");
+	public static final FontAwesomeIcon REGULAR_QUESTION_CIRCLE = createInternal("regular_question-circle");
+	public static final FontAwesomeIcon REGULAR_CLIPBOARD = createInternal("regular_clipboard");
+	public static final FontAwesomeIcon REGULAR_LIFE_RING = createInternal("regular_life-ring");
+	public static final FontAwesomeIcon REGULAR_MEH = createInternal("regular_meh");
+	public static final FontAwesomeIcon REGULAR_CARET_SQUARE_LEFT = createInternal("regular_caret-square-left");
+	public static final FontAwesomeIcon REGULAR_CALENDAR_PLUS = createInternal("regular_calendar-plus");
+	public static final FontAwesomeIcon REGULAR_STOP_CIRCLE = createInternal("regular_stop-circle");
+	public static final FontAwesomeIcon REGULAR_CALENDAR_CHECK = createInternal("regular_calendar-check");
+	public static final FontAwesomeIcon REGULAR_MINUS_SQUARE = createInternal("regular_minus-square");
+	public static final FontAwesomeIcon REGULAR_THUMBS_DOWN = createInternal("regular_thumbs-down");
+	public static final FontAwesomeIcon REGULAR_ENVELOPE = createInternal("regular_envelope");
+	public static final FontAwesomeIcon REGULAR_HAND_POINT_LEFT = createInternal("regular_hand-point-left");
+	public static final FontAwesomeIcon REGULAR_HAND_LIZARD = createInternal("regular_hand-lizard");
+	public static final FontAwesomeIcon REGULAR_HAND_SCISSORS = createInternal("regular_hand-scissors");
+	public static final FontAwesomeIcon REGULAR_HAND_POINT_UP = createInternal("regular_hand-point-up");
+	public static final FontAwesomeIcon REGULAR_MONEY_BILL_ALT = createInternal("regular_money-bill-alt");
+	public static final FontAwesomeIcon REGULAR_OBJECT_UNGROUP = createInternal("regular_object-ungroup");
+	public static final FontAwesomeIcon REGULAR_DIZZY = createInternal("regular_dizzy");
+	public static final FontAwesomeIcon REGULAR_FILE_IMAGE = createInternal("regular_file-image");
+	public static final FontAwesomeIcon REGULAR_BELL = createInternal("regular_bell");
+	public static final FontAwesomeIcon REGULAR_FLAG = createInternal("regular_flag");
+	public static final FontAwesomeIcon REGULAR_HAND_PEACE = createInternal("regular_hand-peace");
+	public static final FontAwesomeIcon REGULAR_NEWSPAPER = createInternal("regular_newspaper");
+	public static final FontAwesomeIcon REGULAR_SNOWFLAKE = createInternal("regular_snowflake");
+	public static final FontAwesomeIcon REGULAR_STAR_HALF = createInternal("regular_star-half");
+	public static final FontAwesomeIcon REGULAR_FROWN = createInternal("regular_frown");
+	public static final FontAwesomeIcon REGULAR_GRIN_TONGUE_SQUINT = createInternal("regular_grin-tongue-squint");
+	public static final FontAwesomeIcon REGULAR_ENVELOPE_OPEN = createInternal("regular_envelope-open");
+	public static final FontAwesomeIcon REGULAR_SHARE_SQUARE = createInternal("regular_share-square");
+	public static final FontAwesomeIcon REGULAR_HOSPITAL = createInternal("regular_hospital");
+	public static final FontAwesomeIcon REGULAR_FILE_ARCHIVE = createInternal("regular_file-archive");
+	public static final FontAwesomeIcon REGULAR_GRIN_BEAM = createInternal("regular_grin-beam");
+	public static final FontAwesomeIcon REGULAR_COPY = createInternal("regular_copy");
+	public static final FontAwesomeIcon REGULAR_KISS_BEAM = createInternal("regular_kiss-beam");
+	public static final FontAwesomeIcon REGULAR_CLOSED_CAPTIONING = createInternal("regular_closed-captioning");
+	public static final FontAwesomeIcon REGULAR_ARROW_ALT_CIRCLE_RIGHT = createInternal("regular_arrow-alt-circle-right");
+	public static final FontAwesomeIcon REGULAR_IMAGE = createInternal("regular_image");
+	public static final FontAwesomeIcon REGULAR_HAND_POINT_DOWN = createInternal("regular_hand-point-down");
+	public static final FontAwesomeIcon REGULAR_LIGHTBULB = createInternal("regular_lightbulb");
+	public static final FontAwesomeIcon REGULAR_CHECK_CIRCLE = createInternal("regular_check-circle");
+	public static final FontAwesomeIcon REGULAR_SAVE = createInternal("regular_save");
+	public static final FontAwesomeIcon REGULAR_SMILE = createInternal("regular_smile");
+	public static final FontAwesomeIcon REGULAR_IMAGES = createInternal("regular_images");
+	public static final FontAwesomeIcon REGULAR_GRIN_TEARS = createInternal("regular_grin-tears");
+	public static final FontAwesomeIcon REGULAR_CALENDAR_ALT = createInternal("regular_calendar-alt");
+	public static final FontAwesomeIcon REGULAR_LAUGH_BEAM = createInternal("regular_laugh-beam");
+	public static final FontAwesomeIcon REGULAR_HAND_PAPER = createInternal("regular_hand-paper");
+	public static final FontAwesomeIcon REGULAR_CARET_SQUARE_DOWN = createInternal("regular_caret-square-down");
+	public static final FontAwesomeIcon REGULAR_FILE_ALT = createInternal("regular_file-alt");
+	public static final FontAwesomeIcon REGULAR_THUMBS_UP = createInternal("regular_thumbs-up");
+	public static final FontAwesomeIcon REGULAR_SQUARE = createInternal("regular_square");
+	public static final FontAwesomeIcon REGULAR_EYE_SLASH = createInternal("regular_eye-slash");
+	public static final FontAwesomeIcon REGULAR_PAPER_PLANE = createInternal("regular_paper-plane");
+	public static final FontAwesomeIcon REGULAR_ARROW_ALT_CIRCLE_UP = createInternal("regular_arrow-alt-circle-up");
+	public static final FontAwesomeIcon REGULAR_GRIN_SQUINT_TEARS = createInternal("regular_grin-squint-tears");
+	public static final FontAwesomeIcon REGULAR_FILE_POWERPOINT = createInternal("regular_file-powerpoint");
+	public static final FontAwesomeIcon REGULAR_GRIN_TONGUE = createInternal("regular_grin-tongue");
+	public static final FontAwesomeIcon REGULAR_GRIN_BEAM_SWEAT = createInternal("regular_grin-beam-sweat");
+	public static final FontAwesomeIcon REGULAR_HAND_SPOCK = createInternal("regular_hand-spock");
+	public static final FontAwesomeIcon REGULAR_GEM = createInternal("regular_gem");
+	public static final FontAwesomeIcon REGULAR_CHART_BAR = createInternal("regular_chart-bar");
+	public static final FontAwesomeIcon REGULAR_WINDOW_MAXIMIZE = createInternal("regular_window-maximize");
+	public static final FontAwesomeIcon REGULAR_ADDRESS_BOOK = createInternal("regular_address-book");
+	public static final FontAwesomeIcon REGULAR_MEH_ROLLING_EYES = createInternal("regular_meh-rolling-eyes");
+	public static final FontAwesomeIcon REGULAR_STAR = createInternal("regular_star");
+	public static final FontAwesomeIcon REGULAR_SUN = createInternal("regular_sun");
+	public static final FontAwesomeIcon REGULAR_EDIT = createInternal("regular_edit");
+	public static final FontAwesomeIcon REGULAR_ADDRESS_CARD = createInternal("regular_address-card");
+	public static final FontAwesomeIcon REGULAR_CARET_SQUARE_RIGHT = createInternal("regular_caret-square-right");
+	public static final FontAwesomeIcon REGULAR_LEMON = createInternal("regular_lemon");
+	public static final FontAwesomeIcon REGULAR_SMILE_BEAM = createInternal("regular_smile-beam");
+	public static final FontAwesomeIcon REGULAR_COMPASS = createInternal("regular_compass");
+	public static final FontAwesomeIcon REGULAR_CREDIT_CARD = createInternal("regular_credit-card");
+	public static final FontAwesomeIcon REGULAR_USER_CIRCLE = createInternal("regular_user-circle");
+	public static final FontAwesomeIcon REGULAR_TRASH_ALT = createInternal("regular_trash-alt");
+	public static final FontAwesomeIcon REGULAR_WINDOW_CLOSE = createInternal("regular_window-close");
+	public static final FontAwesomeIcon REGULAR_TIRED = createInternal("regular_tired");
+	public static final FontAwesomeIcon REGULAR_CLOCK = createInternal("regular_clock");
+	public static final FontAwesomeIcon REGULAR_WINDOW_MINIMIZE = createInternal("regular_window-minimize");
+	public static final FontAwesomeIcon REGULAR_SAD_CRY = createInternal("regular_sad-cry");
+	public static final FontAwesomeIcon REGULAR_EYE = createInternal("regular_eye");
+	public static final FontAwesomeIcon REGULAR_REGISTERED = createInternal("regular_registered");
+	public static final FontAwesomeIcon REGULAR_ARROW_ALT_CIRCLE_DOWN = createInternal("regular_arrow-alt-circle-down");
+	public static final FontAwesomeIcon REGULAR_GRIN = createInternal("regular_grin");
+	public static final FontAwesomeIcon REGULAR_CALENDAR_MINUS = createInternal("regular_calendar-minus");
+	public static final FontAwesomeIcon REGULAR_ID_CARD = createInternal("regular_id-card");
+	public static final FontAwesomeIcon REGULAR_BELL_SLASH = createInternal("regular_bell-slash");
+	public static final FontAwesomeIcon REGULAR_HANDSHAKE = createInternal("regular_handshake");
+	public static final FontAwesomeIcon REGULAR_COMMENT = createInternal("regular_comment");
+	public static final FontAwesomeIcon REGULAR_CALENDAR = createInternal("regular_calendar");
+	public static final FontAwesomeIcon REGULAR_TIMES_CIRCLE = createInternal("regular_times-circle");
+	public static final FontAwesomeIcon REGULAR_CALENDAR_TIMES = createInternal("regular_calendar-times");
+	public static final FontAwesomeIcon REGULAR_FILE_CODE = createInternal("regular_file-code");
+	public static final FontAwesomeIcon REGULAR_FUTBOL = createInternal("regular_futbol");
+	public static final FontAwesomeIcon REGULAR_COMMENT_ALT = createInternal("regular_comment-alt");
+	public static final FontAwesomeIcon REGULAR_LAUGH_SQUINT = createInternal("regular_laugh-squint");
+	public static final FontAwesomeIcon REGULAR_BOOKMARK = createInternal("regular_bookmark");
+	public static final FontAwesomeIcon REGULAR_CARET_SQUARE_UP = createInternal("regular_caret-square-up");
+	public static final FontAwesomeIcon REGULAR_HAND_POINTER = createInternal("regular_hand-pointer");
+	public static final FontAwesomeIcon REGULAR_KISS = createInternal("regular_kiss");
+	public static final FontAwesomeIcon REGULAR_HAND_ROCK = createInternal("regular_hand-rock");
+	public static final FontAwesomeIcon REGULAR_GRIN_STARS = createInternal("regular_grin-stars");
+	public static final FontAwesomeIcon REGULAR_HDD = createInternal("regular_hdd");
+	public static final FontAwesomeIcon REGULAR_STICKY_NOTE = createInternal("regular_sticky-note");
+	public static final FontAwesomeIcon REGULAR_WINDOW_RESTORE = createInternal("regular_window-restore");
+	public static final FontAwesomeIcon REGULAR_BUILDING = createInternal("regular_building");
+	public static final FontAwesomeIcon REGULAR_ANGRY = createInternal("regular_angry");
+	public static final FontAwesomeIcon REGULAR_FOLDER = createInternal("regular_folder");
+	public static final FontAwesomeIcon REGULAR_FILE_PDF = createInternal("regular_file-pdf");
+	public static final FontAwesomeIcon REGULAR_FLUSHED = createInternal("regular_flushed");
+	public static final FontAwesomeIcon REGULAR_MOON = createInternal("regular_moon");
+	public static final FontAwesomeIcon REGULAR_SURPRISE = createInternal("regular_surprise");
+	public static final FontAwesomeIcon REGULAR_HEART = createInternal("regular_heart");
+
+	private static FontAwesomeIcon createInternal(String name) {
+		FontAwesomeIcon standardIcon = new FontAwesomeIcon(name);
+		ICONS_BY_ICON_NAME.put(name, standardIcon);
+		return standardIcon;
+	}
+
+	public static FontAwesomeIcon forName(String constantName) {
+		return ICONS_BY_ICON_NAME.get(constantName);
+	}
+
+	private final String name;
+	private final FontAwesomeIconStyle style;
+
+	private FontAwesomeIcon(String name) {
+		this(name, null);
+	}
+
+	private FontAwesomeIcon(String name, FontAwesomeIconStyle style) {
+		this.name = name;
+		this.style = style;
 	}
 
 	@Override
-	public String getIconName() {
-		return iconName;
+	public FontAwesomeIcon withStyle(FontAwesomeIconStyle style) {
+		return new FontAwesomeIcon(name, style);
 	}
 
 	@Override
-	public String getIconLibraryId() {
-		return FontAwesomeIconProvider.LIBRARY_ID;
+	public FontAwesomeIconStyle getStyle() {
+		return style;
 	}
 
-	public Icon withStyle(SingleColorStyle style) {
-		return new StyledIcon(getIconLibraryId(), style.getStyleId(), getIconName());
+	public String getName() {
+		return name;
 	}
-
-
 }
